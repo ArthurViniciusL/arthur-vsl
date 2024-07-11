@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+* {
+    
+    margin: 0;
+    border: 0;
+    padding: 0;
+    /* background-color: red; */
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    scroll-snap-type: y mandatory;
+}

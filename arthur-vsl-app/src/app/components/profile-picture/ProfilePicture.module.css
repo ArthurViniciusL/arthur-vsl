@@ -1,0 +1,19 @@
+.imgStyle {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+    .imgStyle {
+        width: 200px;
+        /* border: solid red; */
+    }
+}
+
+@media (min-width: 1280px) {
+    .imgStyle {
+        width: 400px;
+        /* border: solid blue; */
+    }
+}

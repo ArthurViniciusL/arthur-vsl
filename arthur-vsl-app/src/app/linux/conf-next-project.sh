@@ -12,7 +12,7 @@ cd src/app
 
 echo "Criandos pastas..."
 
-foldersPattern=("components" "views" "styles" "assets/images" "utils" "api" "tests" "json" "linux" );
+foldersPattern=("components" "views" "styles" "assets" "utils" "api" "tests" "json" "linux" );
 
 for foldersPattern in "${foldersPattern[@]}"
 do

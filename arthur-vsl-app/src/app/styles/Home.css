@@ -1,0 +1,48 @@
+.homeSection {
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+    /* transition: height 10s ease-in; */
+    scroll-snap-type: y mandatory;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec01Content {
+    width: 90%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sec01TextContent {
+    flex: 0 0 60%;
+    max-height: 45vh;
+    overflow: auto;
+    overflow-wrap: break-word;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 90px;
+}
+
+p {
+    font-size: larger;
+}
+
+@media (max-width: 700px) {
+    .homeSection {
+        flex-direction: column;
+    }
+
+    .sec01Content {
+        flex-direction: column;
+    }
+}
