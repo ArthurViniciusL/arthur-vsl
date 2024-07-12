@@ -1,4 +1,22 @@
-.homeSection {
+.html {
+    scroll-snap-type: y mandatory;
+}
+
+.html::-webkit-scrollbar {
+    display: none;
+}
+
+.body {
+    scroll-snap-type: y mandatory;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
     width: 100dvw;
     height: 100dvh;
     overflow: hidden;
@@ -23,22 +41,30 @@
 
 .sec01TextContent {
     flex: 0 0 60%;
-    max-height: 45vh;
-    overflow: auto;
+    height: 50vh;
+    text-align: justify;
+    /*
+    max-height: 50vh; 
+     overflow: auto;
     overflow-wrap: break-word;
+    */
     padding: 10px;
 }
 
-h2 {
+.sec01TextContent::-webkit-scrollbar {
+    display: none;
+}
+
+.h2 {
     font-size: 90px;
 }
 
-p {
+.p {
     font-size: larger;
 }
 
 @media (max-width: 700px) {
-    .homeSection {
+    .section {
         flex-direction: column;
     }
 
