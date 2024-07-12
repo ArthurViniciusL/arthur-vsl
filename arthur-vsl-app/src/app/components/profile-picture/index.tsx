@@ -1,16 +1,8 @@
-import styles from './ProfilePicture.module.css'
+import styles from './ProfilePicture.module.css';
 
 import Image from "next/image";
 
 import imgProfile from "../../assets/images/img_profile.jpg";
-
-/* interface ViewSizeProps {
-    size: number;
-}
-interface BorderColor {
-    color?: string
-} */
-
 
 export default function ProfilePicture() {
     /* const borderColor = {
