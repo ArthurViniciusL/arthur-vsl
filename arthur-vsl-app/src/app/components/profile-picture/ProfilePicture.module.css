@@ -4,9 +4,14 @@
     border-radius: 20px;
 }
 
-@media (max-width: 600px) {
+/* .imgStyle:hover {
+    width: 380px;
+    transition: 0.5 ease;
+} */
+
+@media (max-width: 700px) {
     .imgStyle {
-        width: 200px;
+        display: none;
         /* border: solid red; */
     }
 }

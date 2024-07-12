@@ -1,49 +1,49 @@
+// 'use server';
+
 import "./styles/global.css";
-import './styles/Home.css';
+import styles from "./styles/Home.module.css"
 import ProfilePicture from "./components/profile-picture";
+import { Header } from "./components/Header";
+import Link from "next/link";
+import { Button } from "./components/Button";
 
 export default function Home() {
   return (
-    <main>
-      <section className="homeSection">
-        <div className="sec01Content">
-          <ProfilePicture />
-          <div className="sec01TextContent">
-            <h2>Sobre mim</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque sed sint dicta aperiam, laboriosam error unde asperiores et dolorum iste tempora nobis facere minus tempore. Doloribus id laborum corrupti voluptatem?
-            </p>
-            <br></br>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nisi? Totam, assumenda qui tempora ipsa voluptatem aperiam deleniti quod, doloribus quos mollitia autem aliquid possimus molestias, nostrum commodi reiciendis odio.
-            </p>
-            <br></br>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nisi? Totam, assumenda qui tempora ipsa voluptatem aperiam deleniti quod, doloribus quos mollitia autem aliquid possimus molestias, nostrum commodi reiciendis odio.
-            </p>
-            <br></br>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nisi? Totam, assumenda qui tempora ipsa voluptatem aperiam deleniti quod, doloribus quos mollitia autem aliquid possimus molestias, nostrum commodi reiciendis odio.
-            </p>
-            <br></br>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nisi? Totam, assumenda qui tempora ipsa voluptatem aperiam deleniti quod, doloribus quos mollitia autem aliquid possimus molestias, nostrum commodi reiciendis odio.
-            </p>
-          </div>
-        </div>
-      </section>
+    <html className={styles.html}>
+      <body className={styles.body}>
 
-      <section className="homeSection">
-        <h2>Section 2</h2>
-      </section>
+        <main className={styles.main}>
+          <Header title="Início" />
 
-      <section className="homeSection">
-        <h2>Section 3</h2>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=arthurviniciusl&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=7&hide_border=true&order=2" height="300" alt="languages graph" />
-        <footer></footer>
-      </section>
+          <section className={styles.section}>
+            <div className={styles.sec01Content}>
+              <ProfilePicture />
 
+              <div className={styles.sec01TextContent}>
 
-    </main>
+                <h2 className={styles.h2} >Sobre mim</h2>
+
+                <p className={styles.p}>Desenvolvedor Full Stack focado com: React js , Node.js, Java Spring Framework, Python, SQL e Docker. E também graduando de Sistemas de Informação.</p>
+              </div>
+
+              <Link href="/views/test-page">
+                <Button bgColor="blue" color='white'>Página 2</Button>
+              </Link>
+
+            </div>
+          </section>
+
+          <section className={styles.section}>
+            <h2 className={styles.h2} >Section 2</h2>
+          </section>
+
+          <section className={styles.section}>
+            <h2 className={styles.h2} >Section 3</h2>
+            <img src="https://github-readme-stats.vercel.app/api/top-langs?username=arthurviniciusl&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=7&hide_border=true&order=2" height="300" alt="languages graph" />
+            <footer></footer>
+          </section>
+        </main>
+      </body>
+    </html>
   );
 }
