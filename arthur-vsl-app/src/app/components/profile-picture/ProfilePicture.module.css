@@ -1,6 +1,8 @@
 .imgStyle {
-    width: 300px;
+    max-width: 20dvw;
+    min-width: 12vw;
     height: auto;
+  
     border-radius: 20px;
 }
 
@@ -18,7 +20,7 @@
 
 @media (min-width: 1280px) {
     .imgStyle {
-        width: 400px;
+       /*  width: 400px; */
         /* border: solid blue; */
     }
 }

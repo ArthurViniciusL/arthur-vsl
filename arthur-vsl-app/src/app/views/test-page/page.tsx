@@ -2,7 +2,6 @@
 
 import '../../styles/global.css'
 import styles from "../../styles/Home.module.css"
-import ProfilePicture from "../../components/profile-picture";
 import { Header } from "../../components/Header";
 
 export default function Page2() {
