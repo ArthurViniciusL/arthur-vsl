@@ -17,7 +17,13 @@
 }
 
 html {
-    
+    animation: fade 1s ease-in;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
 }
 
 html::-webkit-scrollbar {

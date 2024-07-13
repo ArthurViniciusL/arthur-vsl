@@ -4,24 +4,24 @@ import ButtonStyled from './Style';
 
 interface BtnProps {
     onClick?: () => void;
-    children?: React.ReactNode;
+    children: React.ReactNode;
 }
 
 interface BtnStyleProps {
     border?: string;
     bgColor?: string;
-    color?: string;
+    fontColor?: string;
 }
 
 type ButtonProps = BtnProps & BtnStyleProps;
 
 
-export function Button({ onClick, children, border, bgColor, color}: ButtonProps) {
+export function Button({ onClick, children, border, bgColor, fontColor }: ButtonProps) {
     return (
         <ButtonStyled
-            bg_color={bgColor}
-            f_color={color}
             onClick={onClick}
+            $backgroundColor={bgColor}
+            color={fontColor}
         >
             {children}
         </ButtonStyled>
