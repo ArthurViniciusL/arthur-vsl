@@ -1,11 +1,11 @@
 // 'use server';
 
 import "./styles/global.css";
-import styles from "./styles/Home.module.css"
+import styles from "./styles/Home.module.css";
 import ProfilePicture from "./components/profile-picture";
 import { Header } from "./components/Header";
+
 import Link from "next/link";
-import { Button } from "./components/Button";
 
 export default function Home() {
   return (
@@ -17,7 +17,10 @@ export default function Home() {
 
           <section className={styles.section}>
             <div className={styles.sec01Content}>
-              <ProfilePicture />
+
+              <div className={styles.pictureContainer} >
+                <ProfilePicture />
+              </div>
 
               <div className={styles.sec01TextContent}>
 
@@ -26,9 +29,9 @@ export default function Home() {
                 <p className={styles.p}>Desenvolvedor Full Stack focado com: React js , Node.js, Java Spring Framework, Python, SQL e Docker. E também graduando de Sistemas de Informação.</p>
               </div>
 
-              <Link href="/views/test-page">
-                <Button bgColor="blue" color='white'>Página 2</Button>
-              </Link>
+              {/* <Link href="/views/test-page">
+                <Button bgColor="blue" fontColor='white'>Página 2</Button>
+              </Link> */}
 
             </div>
           </section>
@@ -39,7 +42,7 @@ export default function Home() {
 
           <section className={styles.section}>
             <h2 className={styles.h2} >Section 3</h2>
-            <img src="https://github-readme-stats.vercel.app/api/top-langs?username=arthurviniciusl&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=7&hide_border=true&order=2" height="300" alt="languages graph" />
+            {/*  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=arthurviniciusl&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=7&hide_border=true&order=2" height="300" alt="languages graph" /> */}
             <footer></footer>
           </section>
         </main>
