@@ -17,6 +17,7 @@ export function Header({ title }: HeaderTitleProps) {
 
     return (
         <header className={`${styles.header} ${globalCss.Blur}`}>
+
             <Link href="/">
                 <Button>
                     <Icon src={arthurLogo} size={30} alt='logo tipo Arthur Vinicius' />
