@@ -16,41 +16,20 @@
     /* background-color: red; */
 }
 
-html {
-    animation: fade 1s ease-in;
+.HeaderBox {
+    /* border: red solid; */
+    min-height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-}
-
-html::-webkit-scrollbar {
-    display: none;
-}
-
-body {
+.FooterBox {
+    flex:1;
     
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-section {
-    width: 100dvw;
-    height: 100dvh;
-    overflow: hidden;
-    scroll-behavior: smooth;
-    scroll-snap-align: center;
-    /* transition: height 10s ease-in; */
-    scroll-snap-type: y mandatory;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.sectionBox {
 
 }
