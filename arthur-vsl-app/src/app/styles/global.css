@@ -33,3 +33,24 @@ html::-webkit-scrollbar {
 body {
     
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+    /* transition: height 10s ease-in; */
+    scroll-snap-type: y mandatory;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
