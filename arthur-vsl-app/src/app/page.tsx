@@ -1,13 +1,15 @@
-// 'use server';
-
 import "./styles/global.css";
 import styles from "./styles/Home.module.css";
 import ProfilePicture from "./components/profile-picture";
 import { Header } from "./components/Header";
+import { ListSocialNetwork } from "./components/SocialNetwork";
 
-import Link from "next/link";
 
-export default function Home() {
+
+/* Home */
+export default function Index() {
+
+
   return (
     <html className={styles.html}>
       <body className={styles.body}>
@@ -29,21 +31,26 @@ export default function Home() {
                 <p className={styles.p}>Desenvolvedor Full Stack focado com: React js , Node.js, Java Spring Framework, Python, SQL e Docker. E também graduando de Sistemas de Informação.</p>
               </div>
 
-              {/* <Link href="/views/test-page">
-                <Button bgColor="blue" fontColor='white'>Página 2</Button>
-              </Link> */}
-
             </div>
           </section>
 
           <section className={styles.section}>
+
             <h2 className={styles.h2} >Section 2</h2>
+            {/*  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=arthurviniciusl&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=7&hide_border=true&order=2" height="300" alt="languages graph" /> */}
           </section>
 
           <section className={styles.section}>
-            <h2 className={styles.h2} >Section 3</h2>
-            {/*  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=arthurviniciusl&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=7&hide_border=true&order=2" height="300" alt="languages graph" /> */}
-            <footer></footer>
+
+            <h2 className={styles.h2} >Minhas redes</h2>
+            <ListSocialNetwork />
+
+
+            <footer className={styles.footer}>
+              <p>
+                &copy; 2024 Arthur Lucena. Todos os direitos reservados.
+              </p>
+            </footer>
           </section>
         </main>
       </body>
