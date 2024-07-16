@@ -1,11 +1,18 @@
 @charset "UTF-8";
+
 @font-face {
     font-family: 'OpenSansRegular';
     src: url('../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
 }
+
 @font-face {
     font-family: 'OpenSansItalic';
     src: url('../assets/fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf');
+}
+
+:root {
+    --h2Size: 5vh;
+    --pSize: large;
 }
 
 * {
@@ -16,20 +23,43 @@
     /* background-color: red; */
 }
 
-.HeaderBox {
-    /* border: red solid; */
-    min-height: 120px;
+.Html {
+    flex: 1;
+    height: 100vh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+
+    opacity: 0;
+    animation: fadeIn 4s forwards;
 }
 
-.FooterBox {
-    flex:1;
-    
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
 
-.sectionBox {
+.Html::-webkit-scrollbar {
+    display: none;
+}
 
+/* footer {
+    padding: 20px;
+    border: red solid;
+    z-index: 1;
+    bottom: 0;
+} */
+
+h1 {
+    font-size: x-large;
+}
+
+h2 {
+    font-size: var(--h2Size);
+}
+
+p {
+    font-size: medium;
 }
