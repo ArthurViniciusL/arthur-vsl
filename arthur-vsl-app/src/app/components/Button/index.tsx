@@ -12,6 +12,8 @@ interface BtnStyleProps {
     bgColor?: string;
     gradient?: string
     fontColor?: string;
+    fontSize?: string;
+    fontWeight?: string;
 
     width?: number;
     height?: number;
@@ -20,14 +22,15 @@ interface BtnStyleProps {
 type ButtonProps = BtnProps & BtnStyleProps;
 
 
-export function Button({ onClick, children, border, bgColor, gradient, fontColor, width, height }: ButtonProps) {
+export function Button({ onClick, children, border, bgColor, gradient, fontColor, fontSize, fontWeight , width, height }: ButtonProps) {
     return (
         <ButtonStyled
             onClick={onClick}
-            $backgroundColor={bgColor}
+            $background_color={bgColor}
             $gradient={gradient}
             color={fontColor}
-
+            $font_size={fontSize}
+            $font_weight={fontWeight}
             $width={width}
             $height={height}
         >
