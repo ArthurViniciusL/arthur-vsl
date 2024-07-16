@@ -5,9 +5,11 @@ import styles from './pages/Home/Home.module.css';
 import { Header } from './components/Header';
 import ProfilePicture from './components/Home-Components/ProfilePicture';
 import { AboutMe } from './components/Home-Components/AboutMe';
-import { Link } from 'lucide-react';
+import { ProjectsPreview } from './components/Home-Components/ProjectsPreview';
 import { ListSocialNetwork } from './components/Home-Components/ListSocialNetwork';
-
+import { Button } from './components/Button';
+import Link from 'next/link';
+import { ExternalLink } from 'lucide-react';
 
 export default function Home() {
 
@@ -24,23 +26,25 @@ export default function Home() {
 
       <section className={styles.Section}>
         <div className={styles.ContainerSectionRow}>
-
           <ProfilePicture />
           <div className={styles.ContainerText}>
             <h2 className={styles.h2}>Sobre mim</h2>
-            <AboutMe/>
+            <AboutMe />
           </div>
-
         </div>
       </section>
 
       <section className={styles.Section}>
         <div className={styles.ContainerSectionColumm}>
           <h2>Meus projetos</h2>
-          {/* <Link href="/pages/Projects">
-            <ProjectsPreview />
-          </Link> */}
+          <Link href="/pages/Projects">
+            <div>
+              <ProjectsPreview />
+              <ExternalLink size={15} color='black' />
+            </div>
+          </Link>
         </div>
+
       </section>
 
       {/*  <section className={styles.Section}>

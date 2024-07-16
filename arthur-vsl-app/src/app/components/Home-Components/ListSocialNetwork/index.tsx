@@ -8,12 +8,15 @@ const iconWidth = 300;
 const iconHeight = 80;
 const iconsSize = 30;
 
+const fontColor = 'white';
+const fontSize = 'large';
+const fontWeight = 'bold';
+
 const attributes = {
     'github': {
         link: 'https://github.com/ArthurViniciusL',
         name: 'Github',
-        gradient: '93.8deg, #3A3A3A 1.86%, #000000 98.73%',
-        icon: '<Github color="white" />'
+        gradient: '93.8deg, #3A3A3A 1.86%, #000000 98.73%'
     },
     'linkedin': {
         link: 'https://www.linkedin.com/in/arthur-vin%C3%ADcius-79a8441b6/',
@@ -50,36 +53,36 @@ export function ListSocialNetwork() {
 
             <li className={styles.li}>
                 <a href={attributes.github.link} target="_blank" rel="noopener noreferrer">
-                    <Button width={iconWidth} height={iconHeight} gradient={attributes.github.gradient}>
+                    <Button width={iconWidth} height={iconHeight} gradient={attributes.github.gradient} fontColor={fontColor} fontSize={fontSize} fontWeight={fontWeight}>
                         <Github color="white" />
-                        <p className={styles.p}>{attributes.github.name}</p>
+                        {attributes.github.name}
                     </Button>
                 </a>
             </li>
 
-             <li className={styles.li}>
+            <li className={styles.li}>
                 <a href={attributes.linkedin.link} target="_blank" rel="noopener noreferrer">
-                    <Button width={iconWidth} height={iconHeight} gradient={attributes.linkedin.gradient}>
+                    <Button width={iconWidth} height={iconHeight} gradient={attributes.linkedin.gradient} fontColor={fontColor} fontSize={fontSize} fontWeight={fontWeight}>
                         <Linkedin fill="white" stroke="0" />
-                        <p className={styles.p}>{attributes.linkedin.name}</p>
+                        {attributes.linkedin.name}
                     </Button>
                 </a>
             </li>
 
-             <li className={styles.li}>
+            <li className={styles.li}>
                 <a href={attributes.email.link} target="_blank" rel="noopener noreferrer">
-                    <Button width={iconWidth} height={iconHeight} gradient={attributes.email.gradient}>
+                    <Button width={iconWidth} height={iconHeight} gradient={attributes.email.gradient} fontColor={fontColor} fontSize={fontSize} fontWeight={fontWeight}>
                         <Mail color="white" />
-                        <p className={styles.p}>{attributes.email.name}</p>
+                        {attributes.email.name}
                     </Button>
                 </a>
             </li>
 
-             <li className={styles.li}>
+            <li className={styles.li}>
                 <a href={attributes.instagram.link} target="_blank" rel="noopener noreferrer">
-                    <Button width={iconWidth} height={iconHeight} gradient={attributes.instagram.gradient}>
+                    <Button width={iconWidth} height={iconHeight} gradient={attributes.instagram.gradient} fontColor={fontColor} fontSize={fontSize} fontWeight={fontWeight}>
                         <Instagram color="white" />
-                        <p className={styles.p}>{attributes.instagram.name}</p>
+                        {attributes.instagram.name}
                     </Button>
                 </a>
             </li>
