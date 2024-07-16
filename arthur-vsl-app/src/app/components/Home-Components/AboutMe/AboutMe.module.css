@@ -1,0 +1,21 @@
+.Description {
+    max-width: 50vw;
+    max-height: 60vh;
+    overflow: scroll;
+    flex-wrap: wrap;
+
+    font-size: var(--pSize);
+    text-align: justify;
+}
+
+.Description::-webkit-scrollbar {
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+    .Description {
+        max-width: 90%;
+        height: 400px;
+    }
+}

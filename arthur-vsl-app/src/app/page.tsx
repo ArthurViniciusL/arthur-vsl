@@ -1,31 +1,58 @@
 'use client';
 
-import './styles/global.css'
-import { useContext } from "react";
-import { ThemeContext } from "./Context/ThemeContext";
-import { Header } from "./components/Header";
-import Home from "./pages/Home/pages";
-import { Footer } from "./components/Footer";
+import './styles/global.css';
+import styles from './pages/Home/Home.module.css';
+import { Header } from './components/Header';
+import ProfilePicture from './components/Home-Components/ProfilePicture';
+import { AboutMe } from './components/Home-Components/AboutMe';
+import { Link } from 'lucide-react';
+import { ListSocialNetwork } from './components/Home-Components/ListSocialNetwork';
 
 
-export default function Index() {
+export default function Home() {
 
-  const { theme, setPageTheme } = useContext(ThemeContext);
+  // const { theme, setPageTheme } = useContext(ThemeContext);
 
   return (
-    <main>
-      <header className="HeaderBox">
-        <Header title="Início" />
-      </header>
-      <Home />
-      <p>
-        <button onClick={setPageTheme}>
-          {theme}
-        </button>
-      </p>
-      <footer className="FooterBox">
-        <Footer />
-      </footer>
+    <main className={styles.Main}>
+
+      <Header title='Início' />
+
+      {/* <button onClick={setPageTheme}>
+        {theme}
+        </button> */}
+
+      <section className={styles.Section}>
+        <div className={styles.ContainerSectionRow}>
+
+          <ProfilePicture />
+          <div className={styles.ContainerText}>
+            <h2 className={styles.h2}>Sobre mim</h2>
+            <AboutMe/>
+          </div>
+
+        </div>
+      </section>
+
+      <section className={styles.Section}>
+        <div className={styles.ContainerSectionColumm}>
+          <h2>Meus projetos</h2>
+          {/* <Link href="/pages/Projects">
+            <ProjectsPreview />
+          </Link> */}
+        </div>
+      </section>
+
+      {/*  <section className={styles.Section}>
+        <h2> Como eu posso te ajuar?</h2>
+      </section> */}
+
+      <section className={styles.Section}>
+        <div className={styles.ContainerSectionColumm}>
+          <h2>Minhas redes</h2>
+          <ListSocialNetwork />
+        </div>
+      </section>
     </main>
   );
 }
