@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './AboutMe.module.css';
 
 export function AboutMe() {
