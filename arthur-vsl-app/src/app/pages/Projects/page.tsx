@@ -1,15 +1,15 @@
 import { Header } from '@/app/components/Header';
 import '../../styles/global.css';
+import { useContext } from 'react';
+
+interface ProjectsPops {
+    title: string;
+}
 
 export default function Projects() {
-
-    const css = {
-        border: 'solid red',
-        "height": "150px"
-    }
     return (
         <main>
-            <Header title="Projetos" />
+            <Header title='Projetos'/>
             <h1>Página de projeto</h1>
         </main>
     )

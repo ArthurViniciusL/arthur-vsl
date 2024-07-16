@@ -1,4 +1,12 @@
-.header {
+.HeaderBox {
+    /* border: red solid; */
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerContent {
     width: 70vw;
     max-height: 40px;
     position: fixed;
@@ -19,7 +27,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
-
     justify-content: center;
+}
+
+@media (max-width: 700px) {
+    .headerContent {
+        width: 85vw;
+    }
 }

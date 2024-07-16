@@ -1,7 +1,7 @@
 'use client'
 
 import styles from './SocialNetwork.module.css';
-import { Button } from "../Button";
+import { Button } from '../../Button';
 import { Github, Linkedin, Mail, Instagram, Component } from "lucide-react";
 
 const iconWidth = 300;

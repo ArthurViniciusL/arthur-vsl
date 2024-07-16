@@ -1,6 +1,6 @@
 'use client';
 
-import globalCss from '../../styles/BgBlur.module.css'
+import blurCss from '../../styles/BgBlur.module.css'
 import styles from './Header.module.css';
 
 import Link from "next/link";
@@ -16,18 +16,20 @@ interface HeaderTitleProps {
 export function Header({ title }: HeaderTitleProps) {
 
     return (
-        <header className={`${styles.header} ${globalCss.Blur}`}>
 
-            <Link href="/">
-                <Button>
-                    <Icon src={arthurLogo} size={30} alt='logo tipo Arthur Vinicius' />
-                </Button>
-            </Link>
+        <header className={styles.HeaderBox}>
+            <div className={`${styles.headerContent} ${blurCss.Blur}`}>
 
-            <h1>{title}</h1>
+                <Link href="/">
+                    <Button>
+                        <Icon src={arthurLogo} size={30} alt='logo tipo Arthur Vinicius' />
+                    </Button>
+                </Link>
 
-            <DropdownMenu />
+                <h1 className={styles.h1}>{title}</h1>
 
+                <DropdownMenu />
+            </div>
         </header>
     )
 }
