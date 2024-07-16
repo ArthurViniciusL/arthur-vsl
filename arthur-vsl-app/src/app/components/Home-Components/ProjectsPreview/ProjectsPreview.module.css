@@ -1,0 +1,16 @@
+.imgPreview {
+   max-width: 30vw;
+   min-width: 10px;
+   height: auto;
+}
+
+@media (max-width: 600px) {
+    .imgPreview {
+        max-width: 90vw;
+    }
+    
+}
+
+@media (min-width: 2560px) {
+
+}
