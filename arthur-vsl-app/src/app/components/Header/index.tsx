@@ -5,9 +5,10 @@ import styles from './Header.module.css';
 
 import Link from "next/link";
 import arthurLogo from "../../assets/icons/logo-marca.svg";
-import { DropdownMenu } from '../DropdownMenu';
-import { Button } from '../Button';
+import arthurAppRoutes from '@/app/app.routes';
 import { Icon } from '../Icon';
+import { Button } from '../Button';
+import { DropdownMenu } from '../DropdownMenu';
 
 interface HeaderTitleProps {
     title: string;
@@ -15,13 +16,14 @@ interface HeaderTitleProps {
 
 export function Header({ title }: HeaderTitleProps) {
 
+    // arthurAppRoutes.home
+
     return (
 
         <header className={styles.HeaderBox}>
             <div className={`${styles.headerContent} ${blurCss.Blur}`}>
-
-                <Link href="/">
-                    <Button>
+                <Link href={arthurAppRoutes.home}>
+                    <Button >
                         <Icon src={arthurLogo} size={30} alt='logo tipo Arthur Vinicius' />
                     </Button>
                 </Link>
