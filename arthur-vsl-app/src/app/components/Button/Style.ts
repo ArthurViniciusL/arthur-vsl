@@ -14,10 +14,11 @@ interface Props {
 
 const ButtonStyled = styled.button<Props>`
 gap: 10px;
-cursor: pointer;
 padding: 10px;
-display: flex;
+cursor: pointer;
+border-radius: 15px;
 
+display: flex;
 align-items: center;
 justify-content: center;
 
@@ -29,7 +30,6 @@ width: ${({ $width }) => $width}px;
 height: ${({ $height }) => $height}px;
 background: linear-gradient(${({ $gradient }) => $gradient || 'transparent'});
 background-color: ${({ $background_color }) => $background_color || 'transparent'};
-border-radius: 15px;
     &:hover {
         opacity: 0.6;
         transition: opacity 0.5s ease;

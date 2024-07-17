@@ -11,28 +11,41 @@ import projects from "../../assets/icons/Adwaita/shapes-large-symbolic.svg";
 import { useState } from 'react';
 
 import Link from 'next/link';
+import colorsApp from '@/app/styles/colorsApp';
 
 export function DropdownMenu() {
+
 
     const [isDashIcon, setdashIcon] = useState(false);
     const dashIcon = isDashIcon ? dashIconOn : dashIconOff;
 
-    const [painel, setPainel] = useState("none")
-    const visibility = {
+    const [painel, setPainel] = useState("none");
+
+   /*  const visibility = {
         display: `${painel}`
-    }
+    } */
 
     function handleIconClick() {
-        setdashIcon(!isDashIcon);
-        // painel === 'none' ? setPainel('') : setPainel('none');
 
+        setdashIcon(!isDashIcon);
+
+        // painel === 'none' ? setPainel('') : setPainel('none');
         if (painel === 'none') {
             setPainel('');
         } else {
             setPainel('none');
         }
     }
+    
+    const pageTheme = "ligth";
+    //const componentsTheme = pageTheme === 'ligth' ? colorsApp.ligth.bgColor02 : colorsApp.dark.bgColor;
 
+    const btnAttributes = {
+        width: 200,
+        height: 60,
+        fontSize: 'large',
+        iconSize: 20
+    }
 
     return (
         <div className={styles.DropdownMenuContent}>
@@ -42,30 +55,18 @@ export function DropdownMenu() {
             </Button>
 
 
-            <ul className={`${styles.painel} ${globalCss.Blur}`} style={visibility} >
+            <ul className={`${styles.painel} ${globalCss.Blur}`} style={{display: painel}} >
+
                 <li>
                     <Link href="/">
-                        <Button>
-                            <Icon src={home} size={30} alt='icone de inicio' />
+                        <Button bgColor={colorsApp.ligth['bg-color']} width={btnAttributes.width} height={btnAttributes.height} fontSize={btnAttributes.fontSize}>
+                            <Icon src={home} size={btnAttributes.iconSize} alt='icone de inicio' />
                             {/* <AdwaitaIcons name={'/home'} size={30} alt=''/> */}
                             Início
                         </Button>
                     </Link>
                 </li>
-                <li>
-                    <Link href="/pages/Projects">
-                        <Button>
-                            <Icon src={projects} size={30} alt='icone de inicio' />
-                            {/* <AdwaitaIcons name={'/home'} size={30} alt=''/> */}
-                            Projetos
-                        </Button>
-
-                    </Link>
-                </li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-                <li>Item 5</li>
-
+                
             </ul>
 
         </div>

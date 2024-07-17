@@ -38,19 +38,8 @@ const attributes = {
 export function ListSocialNetwork() {
 
     return (
+        
         <ul className={styles.ul}>
-            {/* {
-                Object.entries(attributes).map(([key, value]) => (
-                    <li key={key}>
-                        <a href={value.link} target="_blank" rel="noopener noreferrer">
-                            <Button width={iconWidth} height={iconHeight} gradient={value.gradient}>
-                                <p className={styles.p}>{value.name}</p>
-                            </Button>
-                        </a>
-                    </li>
-                ))
-            } */}
-
             <li className={styles.li}>
                 <a href={attributes.github.link} target="_blank" rel="noopener noreferrer">
                     <Button width={iconWidth} height={iconHeight} gradient={attributes.github.gradient} fontColor={fontColor} fontSize={fontSize} fontWeight={fontWeight}>

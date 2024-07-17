@@ -3,10 +3,10 @@
 import './styles/global.css';
 import styles from './pages/Home/Home.module.css';
 import { Header } from './components/Header';
-import ProfilePicture from './components/Home-Components/ProfilePicture';
-import { AboutMe } from './components/Home-Components/AboutMe';
-import { ProjectsPreview } from './components/Home-Components/ProjectsPreview';
-import { ListSocialNetwork } from './components/Home-Components/ListSocialNetwork';
+import ProfilePicture from './components/HomeComponents/ProfilePicture';
+import { AboutMe } from './components/HomeComponents/AboutMe';
+import { ProjectsPreview } from './components/HomeComponents/ProjectsPreview';
+import { ListSocialNetwork } from './components/HomeComponents/ListSocialNetwork';
 import { Button } from './components/Button';
 import Link from 'next/link';
 import { ExternalLink } from 'lucide-react';
