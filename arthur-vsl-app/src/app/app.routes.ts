@@ -1,7 +1,7 @@
-const arthurAppRoutes = {
+const AppRoutes = {
     home: '/',
     projects: '/pages/projects',
     post: (id:number) => `/rotaDoPost/${id}`
 }
 
-export default arthurAppRoutes;
+export default AppRoutes;

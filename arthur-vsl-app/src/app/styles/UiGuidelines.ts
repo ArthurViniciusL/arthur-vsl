@@ -1,5 +1,5 @@
 const UiGuidelines = {
-    "ligth": {
+    "light": {
         "bg-color-01": "#ffffff",
         "bg-color-02": "#f8f9fb",
         "bg-color-03": "#f6f5f4",
