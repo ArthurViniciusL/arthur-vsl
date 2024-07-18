@@ -1,7 +1,7 @@
-.Main {
-    height: 100%;
+/* .Main {
+   height: 100%;
 }
-
+ */
 .Section {
     scroll-snap-align: start;
     scroll-behavior: smooth;

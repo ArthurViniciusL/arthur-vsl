@@ -1,6 +1,7 @@
 'use client'
 
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
+import UiGuidelines from "../styles/UiGuidelines";
 
 interface ThemeProviderProps {
     children: React.ReactNode;
@@ -8,23 +9,36 @@ interface ThemeProviderProps {
 
 export const ThemeContext = createContext<any>({});
 
-// export const TitleContext = createContext<any>({});
-
 export function AppProvider({ children }: ThemeProviderProps) {
+   
+    const [darkTheme, setDarkTheme] = useState(false);
+    const [pageColor, setPageColor] = useState('');
+    const [fontColor, setFontColor] = useState('');
 
-    // const [title, setTitle] = useState('Início');
+    function setThemes(isDarkMode: boolean) {
+        const background_color = isDarkMode ? UiGuidelines.dark['bg-color-01'] : UiGuidelines.light['bg-color-01'];
+        const font_color = isDarkMode ? UiGuidelines.dark['font-color-02'] : UiGuidelines.light['font-color-01'];
 
-    /* function setPageTitle(title: string) {
-        setTitle(title);
-        } */
+        setPageColor(background_color);
+        setFontColor(font_color)
+    };
+    
+    useEffect(() => {
+        setDarkTheme(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) // => true or false
+        setThemes(darkTheme);
 
-    const [theme, setTheme] = useState("light");
-    function setPageTheme() {
-        setTheme(theme === 'light' ? 'dark' : 'light');
-    }
+        const browserDarkTheme = window.matchMedia('(prefers-color-scheme: dark)');
+        
+        function themeHandleChange(event:any) {
+            setDarkTheme(event.matches)
+            console.log(event.matches)
+        }
+       
+        browserDarkTheme.addEventListener('change', themeHandleChange);
+    }, [darkTheme]);
 
     return (
-        <ThemeContext.Provider value={{ theme, setPageTheme }} >
+        <ThemeContext.Provider value={{ pageColor, fontColor }} >
             {children}
         </ThemeContext.Provider>
     )
