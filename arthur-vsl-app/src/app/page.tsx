@@ -1,22 +1,26 @@
 'use client';
 
 import './styles/global.css';
-import styles from './pages/Home/Home.module.css';
-import { Header } from './components/Header';
+import styles from '@/app/pages/Home/Home.module.css'
+
+import { useContext } from 'react';
+import { ThemeContext } from './Context/ThemeContext';
+import { HeaderContext } from './Context/HeaderContext';
 import ProfilePicture from './components/HomeComponents/ProfilePicture';
 import { AboutMe } from './components/HomeComponents/AboutMe';
 import { ListSocialNetwork } from './components/HomeComponents/ListSocialNetwork';
-import { useContext, useEffect } from 'react';
-import { ThemeContext } from './Context/AppContext';
+
 
 export default function Home() {
 
   const { pageColor, fontColor } = useContext(ThemeContext);
-  
-  return (
-    <main style={{ background: pageColor, color: fontColor}} >
-      <Header title='Início' />
 
+  const { title, setPageTitle } = useContext(HeaderContext);
+
+  setPageTitle('Início');
+
+  return (
+    <main style={{ background: pageColor, color: fontColor }} >      
       <section className={styles.Section}>
         {/* <button onClick={setThemes}>
           clik
