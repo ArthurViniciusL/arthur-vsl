@@ -1,45 +1,22 @@
 'use client'
+import { createContext } from "react";
+import { ThemeProvider } from "./ThemeContext";
+import { HeaderProvider } from "./HeaderContext";
 
-import React, { createContext, useEffect, useState } from "react";
-import UiGuidelines from "../styles/UiGuidelines";
+export const AppContext = createContext<any>({});
 
-interface ThemeProviderProps {
+interface AppProviderPops {
     children: React.ReactNode;
 }
 
-export const ThemeContext = createContext<any>({});
-
-export function AppProvider({ children }: ThemeProviderProps) {
-   
-    const [darkTheme, setDarkTheme] = useState(false);
-    const [pageColor, setPageColor] = useState('');
-    const [fontColor, setFontColor] = useState('');
-
-    function setThemes(isDarkMode: boolean) {
-        const background_color = isDarkMode ? UiGuidelines.dark['bg-color-01'] : UiGuidelines.light['bg-color-01'];
-        const font_color = isDarkMode ? UiGuidelines.dark['font-color-02'] : UiGuidelines.light['font-color-01'];
-
-        setPageColor(background_color);
-        setFontColor(font_color)
-    };
-    
-    useEffect(() => {
-        setDarkTheme(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) // => true or false
-        setThemes(darkTheme);
-
-        const browserDarkTheme = window.matchMedia('(prefers-color-scheme: dark)');
-        
-        function themeHandleChange(event:any) {
-            setDarkTheme(event.matches)
-            console.log(event.matches)
-        }
-       
-        browserDarkTheme.addEventListener('change', themeHandleChange);
-    }, [darkTheme]);
-
+export function AppProvider({ children }: AppProviderPops) {
     return (
-        <ThemeContext.Provider value={{ pageColor, fontColor }} >
-            {children}
-        </ThemeContext.Provider>
+        <AppContext.Provider value={{}}>
+            <ThemeProvider>
+                <HeaderProvider>
+                    {children}
+                </HeaderProvider>
+            </ThemeProvider>
+        </AppContext.Provider>
     )
 }

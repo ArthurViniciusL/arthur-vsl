@@ -5,3 +5,18 @@ const AppRoutes = {
 }
 
 export default AppRoutes;
+
+/* 
+const routes = [
+    {
+        path: '/',
+        component: 'Home'
+    },
+    {
+        path: '',
+        component: ''
+    }
+];
+
+export default routes;
+*/

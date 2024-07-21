@@ -6,7 +6,6 @@ import { Icon } from '../Icon';
 import dashIconOn from "../../assets/icons/Adwaita/dock-top-symbolic.svg";
 import dashIconOff from "../../assets/icons/Adwaita/dock-bottom-symbolic.svg";
 import home from "../../assets/icons/Adwaita/user-home-symbolic.svg";
-import projects from "../../assets/icons/Adwaita/shapes-large-symbolic.svg";
 
 import { useState } from 'react';
 
