@@ -1,15 +1,17 @@
-import { Header } from '@/app/components/Header';
+'use client';
+
 import '../../styles/global.css';
 import { useContext } from 'react';
-
-interface ProjectsPops {
-    title: string;
-}
+import { HeaderContext } from '@/app/Context/HeaderContext';
 
 export default function Projects() {
+
+    const { title, setPageTitle } = useContext(HeaderContext);
+
+    setPageTitle('Projetos');
+
     return (
         <main>
-            <Header title='Projetos'/>
             <h1>Página de projeto</h1>
         </main>
     )

@@ -9,14 +9,13 @@ import arthurAppRoutes from '@/app/app.routes';
 import { Icon } from '../Icon';
 import { Button } from '../Button';
 import { DropdownMenu } from '../DropdownMenu';
+import { useContext } from 'react';
+import { HeaderContext } from '@/app/Context/HeaderContext';
 
-interface HeaderTitleProps {
-    title: string;
-}
 
-export function Header({ title }: HeaderTitleProps) {
+export function Header() {
 
-    // arthurAppRoutes.home
+    const { title, setTtitle } = useContext(HeaderContext)
 
     return (
 
@@ -28,7 +27,9 @@ export function Header({ title }: HeaderTitleProps) {
                     </Button>
                 </Link>
 
-                <h1 className={styles.h1}>{title}</h1>
+                <h1 className={styles.h1}>
+                    {title}
+                </h1>
 
                 <DropdownMenu />
             </div>
