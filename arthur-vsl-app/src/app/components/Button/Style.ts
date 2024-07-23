@@ -2,14 +2,20 @@ import styled from "styled-components";
 
 
 interface Props {
-    // No styled-components, o uso do prefixo $ para propriedades transitórias ajuda a distinguir entre propriedades que são usadas apenas para estilização e aquelas que devem ser passadas para o elemento DOM. 
-    $background_color?: string;
-    $gradient?: string;
-    color?: string;
-    $font_size?: string;
-    $font_weight?: string;
+    /*
+    * No styled-components, o uso do prefixo $ para propriedades transitórias ajuda a distinguir
+    * entre propriedades que são usadas apenas para estilização e aquelas que devem ser passadas
+    * para o elemento DOM.
+    */
+
+    $fontWeight?: string;
     $width?: number;
-    $height?: number
+    $height?: number;
+    $fontColor?: string;
+    $bgColor?: string;
+    $bgGradient?: string;
+    $fontColorHover?: string;
+    $bgColorHover?: string;
 }
 
 const ButtonStyled = styled.button<Props>`
@@ -22,19 +28,21 @@ display: flex;
 align-items: center;
 justify-content: center;
 
-font-size: ${({ $font_size }) => $font_size};
-font-weight: ${({ $font_weight }) => $font_weight};
+font-size: medium;
+font-weight: ${({ $fontWeight }) => $fontWeight || "normal"};
 
-color: ${({ color }) => color};
 width: ${({ $width }) => $width}px;
 height: ${({ $height }) => $height}px;
-background: linear-gradient(${({ $gradient }) => $gradient || 'transparent'});
-background-color: ${({ $background_color }) => $background_color || 'transparent'};
-    &:hover {
-        opacity: 0.6;
-        transition: opacity 0.5s ease;
-        text-decoration: underline;
-    }
+
+color: ${({ $fontColor }) => $fontColor};
+background-color: ${({ $bgColor }) => $bgColor || 'transparent'};
+background: linear-gradient(${({ $bgGradient }) => $bgGradient});
+&:hover {
+    text-decoration: underline;
+    color: ${({ $fontColorHover }) => $fontColorHover};
+    background: ${({ $bgColorHover }) => $bgColorHover};
+    background-color: ${({ $bgColorHover }) => $bgColorHover};
+}
 
 `;
 export default ButtonStyled;

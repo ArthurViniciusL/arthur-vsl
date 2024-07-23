@@ -5,11 +5,11 @@ import { Icon } from '../Icon';
 
 import dashIconOn from "../../assets/icons/Adwaita/dock-top-symbolic.svg";
 import dashIconOff from "../../assets/icons/Adwaita/dock-bottom-symbolic.svg";
-import home from "../../assets/icons/Adwaita/user-home-symbolic.svg";
 
 import { useState } from 'react';
 
 import Link from 'next/link';
+import { Adwaita_Home_Icon } from '../AdwaitaIcon/AdwaitaIcons';
 
 export function DropdownMenu() {
 
@@ -48,8 +48,8 @@ export function DropdownMenu() {
 
                 <li>
                     <Link href="/">
-                        <Button width={btnAttributes.width} height={btnAttributes.height} fontSize={btnAttributes.fontSize}>
-                            <Icon src={home} size={btnAttributes.iconSize} alt='icone de inicio' />
+                        <Button width={btnAttributes.width}>
+                            <Icon src={Adwaita_Home_Icon} size={btnAttributes.iconSize} alt='icone de inicio' />
                             {/* <AdwaitaIcons name={'/home'} size={30} alt=''/> */}
                             Início
                         </Button>
