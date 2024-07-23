@@ -4,7 +4,7 @@ import styles from './ProfilePicture.module.css';
 
 import Image from "next/image";
 
-import imgProfile from "../../../assets/images/img_profile.jpg";
+import imgProfile from "@/app/assets/images/img_profile.jpg";
 
 export default function ProfilePicture() {
     /* const borderColor = {

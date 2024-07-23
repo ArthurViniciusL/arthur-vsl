@@ -1,7 +1,7 @@
 'use client'
 
 import styles from './SocialNetwork.module.css';
-import { Button } from '../../Button';
+import { Button } from '../Button';
 import { Github, Linkedin, Mail, Instagram, Component } from "lucide-react";
 
 const iconWidth = 300;
@@ -9,8 +9,10 @@ const iconHeight = 80;
 const iconsSize = 30;
 
 const fontColor = 'white';
-const fontSize = 'large';
 const fontWeight = 'bold';
+
+const bgColorHover = 'black';
+
 
 const attributes = {
     'github': {
@@ -38,11 +40,17 @@ const attributes = {
 export function ListSocialNetwork() {
 
     return (
-        
+
         <ul className={styles.ul}>
             <li className={styles.li}>
                 <a href={attributes.github.link} target="_blank" rel="noopener noreferrer">
-                    <Button width={iconWidth} height={iconHeight} gradient={attributes.github.gradient} fontColor={fontColor} fontSize={fontSize} fontWeight={fontWeight}>
+                    <Button
+                        width={iconWidth}
+                        height={iconHeight}
+                        bgGradient={attributes.github.gradient}
+                        bgColorH={bgColorHover} fontColor={fontColor}
+                        fontWeight={fontWeight}
+                    >
                         <Github color="white" />
                         {attributes.github.name}
                     </Button>
@@ -51,7 +59,13 @@ export function ListSocialNetwork() {
 
             <li className={styles.li}>
                 <a href={attributes.linkedin.link} target="_blank" rel="noopener noreferrer">
-                    <Button width={iconWidth} height={iconHeight} gradient={attributes.linkedin.gradient} fontColor={fontColor} fontSize={fontSize} fontWeight={fontWeight}>
+                    <Button
+                        width={iconWidth} height={iconHeight}
+                        bgGradient={attributes.linkedin.gradient}
+                        bgColorH={bgColorHover}
+                        fontColor={fontColor}
+                        fontWeight={fontWeight}
+                    >
                         <Linkedin fill="white" stroke="0" />
                         {attributes.linkedin.name}
                     </Button>
@@ -60,7 +74,12 @@ export function ListSocialNetwork() {
 
             <li className={styles.li}>
                 <a href={attributes.email.link} target="_blank" rel="noopener noreferrer">
-                    <Button width={iconWidth} height={iconHeight} gradient={attributes.email.gradient} fontColor={fontColor} fontSize={fontSize} fontWeight={fontWeight}>
+                    <Button width={iconWidth}
+                        height={iconHeight}
+                        bgGradient={attributes.email.gradient}
+                        bgColorH={bgColorHover} fontColor={fontColor}
+                        fontWeight={fontWeight}
+                    >
                         <Mail color="white" />
                         {attributes.email.name}
                     </Button>
@@ -69,7 +88,12 @@ export function ListSocialNetwork() {
 
             <li className={styles.li}>
                 <a href={attributes.instagram.link} target="_blank" rel="noopener noreferrer">
-                    <Button width={iconWidth} height={iconHeight} gradient={attributes.instagram.gradient} fontColor={fontColor} fontSize={fontSize} fontWeight={fontWeight}>
+                    <Button width={iconWidth}
+                        height={iconHeight}
+                        bgGradient={attributes.instagram.gradient}
+                        bgColorH={bgColorHover} fontColor={fontColor}
+                        fontWeight={fontWeight}
+                    >
                         <Instagram color="white" />
                         {attributes.instagram.name}
                     </Button>

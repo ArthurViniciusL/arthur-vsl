@@ -8,6 +8,6 @@ interface IconProps {
 
 export function Icon({src, size, alt}:IconProps) {
     return (
-      <Image src={src} width={size} height={size} alt={alt}/>
+      <Image src={src} width={size} height={size} alt={alt} priority/>
     )
 }
