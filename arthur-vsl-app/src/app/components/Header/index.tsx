@@ -30,7 +30,6 @@ export function Header() {
                 <h1 className={styles.h1}>
                     {title}
                 </h1>
-
                 <DropdownMenu />
             </div>
         </header>

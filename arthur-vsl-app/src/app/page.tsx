@@ -6,9 +6,9 @@ import styles from '@/app/pages/Home/Home.module.css'
 import { useContext } from 'react';
 import { ThemeContext } from './Context/ThemeContext';
 import { HeaderContext } from './Context/HeaderContext';
-import ProfilePicture from './components/HomeComponents/ProfilePicture';
-import { AboutMe } from './components/HomeComponents/AboutMe';
-import { ListSocialNetwork } from './components/HomeComponents/ListSocialNetwork';
+import ProfilePicture from './components/ProfilePicture';
+import { AboutMe } from './components/AboutMe';
+import { ListSocialNetwork } from './components/ListSocialNetwork';
 
 
 export default function Home() {
