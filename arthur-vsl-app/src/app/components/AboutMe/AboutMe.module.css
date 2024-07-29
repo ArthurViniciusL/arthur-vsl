@@ -1,4 +1,4 @@
-.Description {
+.description {
     max-width: 50vw;
     max-height: 60vh;
     overflow: scroll;
@@ -8,14 +8,14 @@
     text-align: justify;
 }
 
-.Description::-webkit-scrollbar {
+.description::-webkit-scrollbar {
     display: none;
 }
 
 
 @media (max-width: 600px) {
-    .Description {
+    .description {
         max-width: 100%;
-        height: 400px;
+        height: 900px;
     }
 }

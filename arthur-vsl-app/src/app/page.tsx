@@ -1,42 +1,43 @@
 'use client';
-
-import './styles/global.css';
-import styles from '@/app/pages/Home/Home.module.css'
-
-import { useContext } from 'react';
+import style from '@/app/pages//Home/Home.module.css'
+import { useContext, useEffect, useLayoutEffect } from 'react';
 import { ThemeContext } from './Context/ThemeContext';
 import { HeaderContext } from './Context/HeaderContext';
-import ProfilePicture from './components/ProfilePicture';
-import { AboutMe } from './components/AboutMe';
-import { ListSocialNetwork } from './components/ListSocialNetwork';
-
+import ProfilePicture from '@/app/components/ProfilePicture';
+import { AboutMe } from '@/app/components/AboutMe';
+import { ContactLinks } from './components/ContactLinks';
 
 export default function Home() {
 
   const { pageColor, fontColor } = useContext(ThemeContext);
 
-  const { title, setPageTitle } = useContext(HeaderContext);
+  const { setPageTitle } = useContext(HeaderContext);
 
-  setPageTitle('Início');
+  useEffect(() => {
+    setPageTitle('Início');
+  }, []);
 
   return (
-    <main style={{ background: pageColor, color: fontColor }} >      
-      <section className={styles.Section}>
-        {/* <button onClick={setThemes}>
-          clik
-        </button> */}
-        <div className={styles.ContainerSectionRow}>
+    <main style={{ background: pageColor, color: fontColor }} >
+      <section className={style.section}>
+        <div className={style.sectionContentRow}>
           <ProfilePicture />
-          <div className={styles.ContainerText}>
-            <h2 className={styles.h2}>Sobre mim</h2>
+
+          {/* <video width="300" height="600" controls preload='none'>
+            <source src="./assets/teste.mp4" type="video/mp4" />
+          </video> */}
+
+          <div className={style.textBox}>
+            <h2 className=''>Sobre mim</h2>
             <AboutMe />
           </div>
         </div>
       </section>
 
-      <section className={styles.Section}>
-        <div className={styles.ContainerSectionColumm}>
+      <section className={style.section}>
+        <div className={style.sectionContent}>
           <h2>Meus projetos</h2>
+          
           {/* <Link href={AppRoutes.projects}>
             <div>
             <ProjectsPreview />
@@ -47,16 +48,13 @@ export default function Home() {
 
       </section>
 
-      {/*  <section className={styles.Section}>
-        <h2> Como eu posso te ajuar?</h2>
-        </section> */}
-
-      <section className={styles.Section}>
-        <div className={styles.ContainerSectionColumm}>
+      <section className={style.section}>
+        <div className={style.sectionContent}>
           <h2>Minhas redes</h2>
-          <ListSocialNetwork />
+          <ContactLinks />
         </div>
       </section>
+
     </main>
 
   );
