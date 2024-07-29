@@ -30,8 +30,7 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
         const browserDarkTheme = window.matchMedia('(prefers-color-scheme: dark)');
         
         function themeHandleChange(event:any) {
-            setDarkTheme(event.matches)
-            console.log(event.matches)
+            setDarkTheme(event.matches);
         }
        
         browserDarkTheme.addEventListener('change', themeHandleChange);
