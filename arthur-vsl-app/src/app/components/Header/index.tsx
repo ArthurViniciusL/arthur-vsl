@@ -11,15 +11,18 @@ import { Button } from '../Button';
 import { DropdownMenu } from '../DropdownMenu';
 import { useContext } from 'react';
 import { HeaderContext } from '@/app/Context/HeaderContext';
+import { ThemeContext } from '@/app/Context/ThemeContext';
 
 
 export function Header() {
+
+    const { pageColor, fontColor } = useContext(ThemeContext);
 
     const { title, setTtitle } = useContext(HeaderContext)
 
     return (
 
-        <header className={styles.HeaderBox}>
+        <header className={styles.HeaderBox} style={{ background: pageColor, color: fontColor }}>
             <div className={`${styles.headerContent} ${blurCss.Blur}`}>
                 <Link href={arthurAppRoutes.home}>
                     <Button >
