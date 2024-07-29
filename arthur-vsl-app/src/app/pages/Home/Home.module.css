@@ -1,8 +1,3 @@
-/* .Main {
-   height: 100%;
-}
- */
-
 .section {
     height: 98dvh;
     scroll-snap-align: start;
@@ -24,6 +19,7 @@
     height: 100%;
 
     display: flex;
+    gap: var(--appPadding);
     flex-direction: column;
     align-items: center;
     justify-content: center;

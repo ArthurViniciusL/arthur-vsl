@@ -10,7 +10,7 @@ const UiGuidelines = {
     "dark": {
         "bg-color-01": "#131416",
         "bg-color-02": "#1a1c1e",
-        "bg-color-03": "##241f31",
+        "bg-color-03": "#444444",
         "bg-color-04": "#000000",
         "font-color-01": "#ffffff",
         "font-color-02": "#f6f5f4"

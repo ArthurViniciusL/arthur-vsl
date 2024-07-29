@@ -37,13 +37,6 @@ export default function Home() {
       <section className={style.section}>
         <div className={style.sectionContent}>
           <h2>Meus projetos</h2>
-          
-          {/* <Link href={AppRoutes.projects}>
-            <div>
-            <ProjectsPreview />
-            <ExternalLink size={15} color='black' />
-            </div>
-            </Link> */}
         </div>
 
       </section>
