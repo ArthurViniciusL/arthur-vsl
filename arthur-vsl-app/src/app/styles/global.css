@@ -13,6 +13,7 @@
 :root {
     --h2Size: 5vh;
     --pSize: large;
+    --appPadding: 20px;
 }
 
 * {
@@ -26,12 +27,12 @@
 
 html {
     flex: 1;
-    height: 100vh;
+    /* height: 100vh; */
 
     overflow-y: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    
+
     opacity: 0;
     animation: fadeIn 4s forwards;
 }
@@ -42,7 +43,7 @@ html {
     }
 }
 
-.Html::-webkit-scrollbar {
+html::-webkit-scrollbar {
     display: none;
 }
 
@@ -63,4 +64,21 @@ h2 {
 
 p {
     font-size: medium;
+}
+
+main {
+    width: 100vw;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    scroll-behavior: smooth;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
