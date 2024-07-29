@@ -1,8 +1,9 @@
 'use client'
 
-import styles from './SocialNetwork.module.css';
+import styles from './ContactLinks.module.css';
 import { Button } from '../Button';
 import { Github, Linkedin, Mail, Instagram, Component } from "lucide-react";
+import UiGuidelines from '@/app/styles/UiGuidelines';
 
 const iconWidth = 300;
 const iconHeight = 80;
@@ -11,7 +12,7 @@ const iconsSize = 30;
 const fontColor = 'white';
 const fontWeight = 'bold';
 
-const bgColorHover = 'black';
+const bgColorHover = UiGuidelines.yellow;
 
 
 const attributes = {
@@ -37,7 +38,7 @@ const attributes = {
     }
 }
 
-export function ListSocialNetwork() {
+export function ContactLinks() {
 
     return (
 

@@ -1,5 +1,6 @@
 .HeaderBox {
     /* border: red solid; */
+    width: 100vw;
     min-height: 120px;
     display: flex;
     justify-content: center;
