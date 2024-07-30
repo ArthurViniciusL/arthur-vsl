@@ -1,20 +1,22 @@
 'use client';
 
+import { useContext } from 'react';
 import blurCss from '../../styles/BgBlur.module.css'
 import styles from './Header.module.css';
 
-import Link from "next/link";
-import arthurLogo from "../../assets/icons/logo-marca.svg";
-import arthurAppRoutes from '@/app/app.routes';
-import { Icon } from '../Icon';
-import { Button } from '../Button';
-import { DropdownMenu } from '../DropdownMenu';
-import { useContext } from 'react';
-import { HeaderContext } from '@/app/Context/HeaderContext';
 import { ThemeContext } from '@/app/Context/ThemeContext';
-
+import { HeaderContext } from '@/app/Context/HeaderContext';
+import { Link } from 'lucide-react';
+import AppRoutes from '@/app/app.routes';
+import { Button } from '../Button';
+import { Icon } from '../Icon';
+import { DropdownMenu } from '../DropdownMenu';
+import AppAssets from '@/app/modules/app.modules';
+import { useRouter } from 'next/navigation';
 
 export function Header() {
+    
+    const routes = useRouter()
 
     const { pageColor, fontColor } = useContext(ThemeContext);
 
@@ -24,11 +26,11 @@ export function Header() {
 
         <header className={styles.HeaderBox} style={{ background: pageColor, color: fontColor }}>
             <div className={`${styles.headerContent} ${blurCss.Blur}`}>
-                <Link href={arthurAppRoutes.home}>
-                    <Button >
-                        <Icon src={arthurLogo} size={30} alt='logo tipo Arthur Vinicius' />
-                    </Button>
-                </Link>
+                <Button onClick={() => routes.push(AppRoutes.home)}>
+                    <Icon src={AppAssets.ArthurLogo} size={30} alt='logo tipo Arthur Vinicius' />
+                </Button>
+
+
 
                 <h1 className={styles.h1}>
                     {title}

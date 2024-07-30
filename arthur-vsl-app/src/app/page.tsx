@@ -34,9 +34,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={style.section}>
+      <section className={style.section} >
         <div className={style.sectionContent}>
           <h2>Meus projetos</h2>
+          
         </div>
 
       </section>
