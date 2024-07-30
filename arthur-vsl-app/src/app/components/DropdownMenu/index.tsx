@@ -1,27 +1,21 @@
 import styles from './DropdownMenu.module.css';
-import globalCss from '../../styles/BgBlur.module.css';
+import { useContext, useState } from 'react';
+import BlurCss from '../../styles/BgBlur.module.css';
+import Link from 'next/link';
+import { ThemeContext } from '@/app/Context/ThemeContext';
 import { Button } from '../Button';
 import { Icon } from '../Icon';
-
-import dashIconOn from "../../assets/icons/Adwaita/dock-top-symbolic.svg";
-import dashIconOff from "../../assets/icons/Adwaita/dock-bottom-symbolic.svg";
-
-import { useContext, useState } from 'react';
-
-import Link from 'next/link';
-import { CV_Icon, Home_Icon, Projects_Icon } from '../AdwaitaIcon/AdwaitaIcons';
 import UiGuidelines from '@/app/styles/UiGuidelines';
-import { ThemeContext } from '@/app/Context/ThemeContext';
 import AppRoutes from '@/app/app.routes';
+import AppAssets from '@/app/modules/app.modules';
 
 export function DropdownMenu() {
 
     const { pageColor, fontColor } = useContext(ThemeContext);
 
     const [isDashIcon, setdashIcon] = useState(false);
-    const dashIcon = isDashIcon ? dashIconOn : dashIconOff;
+    const dashIcon = isDashIcon ? AppAssets.DashIconOn : AppAssets.DashIconOff;
     const [painelState, setPainelState] = useState("none");
-
 
     function handleIconClick() {
         setdashIcon(!isDashIcon);
@@ -35,7 +29,7 @@ export function DropdownMenu() {
 
     }
 
-    const btnAttributes = {
+    const Btn = {
         width: 200,
         height: 60,
         fontSize: 'large',
@@ -52,17 +46,16 @@ export function DropdownMenu() {
             </Button>
 
 
-            <ul className={`${styles.painel} ${globalCss.Blur}`} style={{ display: painelState, background: pageColor, color: fontColor }}>
+            <ul className={`${styles.painel} ${BlurCss.Blur}`} style={{ display: painelState, background: pageColor, color: fontColor }}>
                 <li>
                     <Link href={AppRoutes.home}>
                         <Button
-                            width={btnAttributes.width}
-                            height={btnAttributes.height}
-                            bgColor={btnAttributes.bgColor}
-                            bgColorH=''
-                            fontColor={btnAttributes.fontColor}
+                            width={Btn.width}
+                            height={Btn.height}
+                            bgColorH={Btn.bgColor}
+                            fontColor={Btn.fontColor}
                         >
-                            <Icon src={Home_Icon} size={btnAttributes.iconSize} alt='icone de inicio' />
+                            <Icon src={AppAssets.HomeIcon} size={Btn.iconSize} alt='icone de inicio' />
                             Início
                         </Button>
                     </Link>
@@ -71,13 +64,12 @@ export function DropdownMenu() {
                 <li>
                     <Link href={AppRoutes.projects}>
                         <Button
-                            width={btnAttributes.width}
-                            height={btnAttributes.height}
-                            bgColor={btnAttributes.bgColor}
-                            bgColorH=''
-                            fontColor={btnAttributes.fontColor}
+                            width={Btn.width}
+                            height={Btn.height}
+                            bgColorH={Btn.bgColor}
+                            fontColor={Btn.fontColor}
                         >
-                            <Icon src={Projects_Icon} size={btnAttributes.iconSize} alt='icone de projetos' />
+                            <Icon src={AppAssets.ProjectsIcon} size={Btn.iconSize} alt='icone de projetos' />
                             Projetos
                         </Button>
                     </Link>
@@ -86,13 +78,12 @@ export function DropdownMenu() {
                 <li>
                     <Link href='./Arthur_Vinicius_CV.pdf' download="Arthur_Vinicius_CV">
                         <Button
-                            width={btnAttributes.width}
-                            height={btnAttributes.height}
-                            bgColor={btnAttributes.bgColor}
-                            bgColorH=''
-                            fontColor={btnAttributes.fontColor}
+                            width={Btn.width}
+                            height={Btn.height}
+                            bgColorH={Btn.bgColor}
+                            fontColor={Btn.fontColor}
                         >
-                            <Icon src={CV_Icon} size={btnAttributes.iconSize} alt='icone de projetos' />
+                            <Icon src={AppAssets.CvIcon} size={Btn.iconSize} alt='icone de projetos' />
                             Currículo
                         </Button>
                     </Link>
