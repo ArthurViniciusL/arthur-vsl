@@ -1,24 +1,26 @@
 'use client';
 
+import AppAssets from '@/app/modules/app.modules';
 import styles from './ProfilePicture.module.css';
 
 import Image from "next/image";
 
-import imgProfile from "@/app/assets/images/img_profile.jpg";
+/* <picture>
+                <Image
+                    className={styles.imgStyle}
+                    src={AppAssets.ImgProfile}
+                    alt="imagem_do_perfil"
+                    priority={true}
+                />
+            </picture>
+            */
+
 
 export default function ProfilePicture() {
-    /* const borderColor = {
-        border: `2px solid ${color}`
-     } */
     return (
-        <picture>
-            <Image
-                className={styles.imgStyle}
-                src={imgProfile}
-                alt="imagem_do_perfil"
-                priority={true}
-            />
-        </picture>
+        <video className={styles.video} controls={false} autoPlay loop muted>
+            <source src={AppAssets.VideoProfile} />
+        </video>
     )
 }
 

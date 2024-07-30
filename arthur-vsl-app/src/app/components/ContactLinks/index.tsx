@@ -95,7 +95,7 @@ export function ContactLinks() {
                         bgColorH={bgColorHover} fontColor={fontColor}
                         fontWeight={fontWeight}
                     >
-                        <Instagram color="white" />
+                        <Instagram/>
                         {attributes.instagram.name}
                     </Button>
                 </a>
