@@ -32,6 +32,25 @@
     padding: var(--appPadding);
 }
 
+.projects {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.h2 {
+
+}
+
+.videoProjects {
+    width: 40vw;
+    height: auto;
+    border-radius: 10px;
+}
+
 @media (max-width: 600px) {
     .section {
         margin: 0;
@@ -45,5 +64,13 @@
 
     .h2 {
         font-size: var(--h2Size);
+        margin-top: 35%;
+        margin-left: 50%;
     }
+
+    .videoProjects {
+        width: 90vw;
+    }
+
+
 }
