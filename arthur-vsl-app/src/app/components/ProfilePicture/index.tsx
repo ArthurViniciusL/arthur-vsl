@@ -3,8 +3,6 @@
 import AppAssets from '@/app/modules/app.modules';
 import styles from './ProfilePicture.module.css';
 
-import Image from "next/image";
-
 /* <picture>
                 <Image
                     className={styles.imgStyle}
