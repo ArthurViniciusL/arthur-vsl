@@ -7,11 +7,23 @@ import ProfilePicture from '@/app/components/ProfilePicture';
 import { AboutMe } from '@/app/components/AboutMe';
 import { ContactLinks } from './components/ContactLinks';
 
+import VideoProjectsLight from "@/app/assets/videos/meus_projetos_light.mp4";
+import VideoProjectsDark from "@/app/assets/videos/meus_projetos_dark.mp4";
+
+import { Button } from './components/Button';
+import UiGuidelines from './styles/UiGuidelines';
+import { Icon } from './components/Icon';
+import AppAssets from './modules/app.modules';
+
 export default function Home() {
 
   const { pageColor, fontColor } = useContext(ThemeContext);
 
   const { setPageTitle } = useContext(HeaderContext);
+
+  const BtnBg = pageColor === "#ffffff" ? UiGuidelines.light['bg-color-03'] : UiGuidelines.dark['bg-color-04'];
+
+  const myProjects = pageColor === "#ffffff" ? VideoProjectsLight : VideoProjectsDark;
 
   useEffect(() => {
     setPageTitle('Início');
@@ -36,8 +48,20 @@ export default function Home() {
 
       <section className={style.section} >
         <div className={style.sectionContent}>
-          <h2>Meus projetos</h2>
-          
+
+          <div className={style.projects}>
+
+            <video className={style.videoProjects} controls={false} autoPlay loop muted>
+              <source src={myProjects} type="" />
+            </video>
+
+            <Button bgColorH={BtnBg} width={400} height={90} fontWeight='bold' fontColor={fontColor}>
+              <Icon src={AppAssets.ProjectsIcon} size={40} alt=''/>
+              Clique aqui!
+            </Button>
+
+          </div>
+
         </div>
 
       </section>
