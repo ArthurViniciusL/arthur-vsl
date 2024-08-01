@@ -1,6 +1,6 @@
 'use client';
 import style from '@/app/pages//Home/Home.module.css'
-import { useContext, useEffect, useLayoutEffect } from 'react';
+import { useContext, useEffect, useLayoutEffect, useState } from 'react';
 import { ThemeContext } from './Context/ThemeContext';
 import { HeaderContext } from './Context/HeaderContext';
 import ProfilePicture from '@/app/components/ProfilePicture';
@@ -13,17 +13,19 @@ import VideoProjectsDark from "@/app/assets/videos/meus_projetos_dark.mp4";
 import { Button } from './components/Button';
 import UiGuidelines from './styles/UiGuidelines';
 import { Icon } from './components/Icon';
-import AppAssets from './modules/app.modules';
+import { useRouter } from 'next/navigation';
+import AppRoutes from './app.routes';
+import { IconThemeContext } from './Context/IconThemeContext';
 
 export default function Home() {
 
-  const { pageColor, fontColor } = useContext(ThemeContext);
+  const router = useRouter();
 
   const { setPageTitle } = useContext(HeaderContext);
+  const { pageColor, fontColor, darkTheme } = useContext(ThemeContext);
+  const { projectsIcon } = useContext(IconThemeContext)
 
-  const BtnBg = pageColor === "#ffffff" ? UiGuidelines.light['bg-color-03'] : UiGuidelines.dark['bg-color-04'];
-
-  const myProjects = pageColor === "#ffffff" ? VideoProjectsLight : VideoProjectsDark;
+  const BtnBg = darkTheme ? UiGuidelines.dark['bg-color-04'] : UiGuidelines.light['bg-color-03'];
 
   useEffect(() => {
     setPageTitle('Início');
@@ -34,10 +36,6 @@ export default function Home() {
       <section className={style.section}>
         <div className={style.sectionContentRow}>
           <ProfilePicture />
-
-          {/* <video width="300" height="600" controls preload='none'>
-            <source src="./assets/teste.mp4" type="video/mp4" />
-          </video> */}
 
           <div className={style.textBox}>
             <h2 className=''>Sobre mim</h2>
@@ -52,11 +50,11 @@ export default function Home() {
           <div className={style.projects}>
 
             <video className={style.videoProjects} controls={false} autoPlay loop muted>
-              <source src={myProjects} type="" />
+              <source src={VideoProjectsLight} type="" />
             </video>
 
-            <Button bgColorH={BtnBg} width={400} height={90} fontWeight='bold' fontColor={fontColor}>
-              <Icon src={AppAssets.ProjectsIcon} size={40} alt=''/>
+            <Button onClick={() => router.push(AppRoutes.projects)} bgColorH={BtnBg} width={200} height={80} fontWeight='bold' fontColor={fontColor}>
+              <Icon src={projectsIcon} size={40} alt='' />
               Clique aqui!
             </Button>
 
@@ -66,7 +64,7 @@ export default function Home() {
 
       </section>
 
-      <section className={style.section}>
+      <section id="secContact" className={style.section}>
         <div className={style.sectionContent}>
           <h2>Minhas redes</h2>
           <ContactLinks />
