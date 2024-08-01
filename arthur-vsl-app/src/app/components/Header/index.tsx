@@ -6,7 +6,6 @@ import styles from './Header.module.css';
 
 import { ThemeContext } from '@/app/Context/ThemeContext';
 import { HeaderContext } from '@/app/Context/HeaderContext';
-import { Link } from 'lucide-react';
 import AppRoutes from '@/app/app.routes';
 import { Button } from '../Button';
 import { Icon } from '../Icon';
@@ -20,7 +19,7 @@ export function Header() {
 
     const { pageColor, fontColor } = useContext(ThemeContext);
 
-    const { title, setTtitle } = useContext(HeaderContext)
+    const { title } = useContext(HeaderContext)
 
     return (
 
@@ -29,8 +28,6 @@ export function Header() {
                 <Button onClick={() => routes.push(AppRoutes.home)}>
                     <Icon src={AppAssets.ArthurLogo} size={30} alt='logo tipo Arthur Vinicius' />
                 </Button>
-
-
 
                 <h1 className={styles.h1}>
                     {title}
