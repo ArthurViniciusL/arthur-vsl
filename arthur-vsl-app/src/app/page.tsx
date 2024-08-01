@@ -16,6 +16,7 @@ import { Icon } from './components/Icon';
 import { useRouter } from 'next/navigation';
 import AppRoutes from './app.routes';
 import { IconThemeContext } from './Context/IconThemeContext';
+import VideoPorfileMobile from './components/VideoPorfileMobile';
 
 export default function Home() {
 
@@ -38,6 +39,8 @@ export default function Home() {
           <ProfilePicture />
 
           <div className={style.textBox}>
+            {/* Este componente só fica visivel para dispositivos moveis (max-width: 600px) */}
+            <VideoPorfileMobile/>
             <h2 className=''>Sobre mim</h2>
             <AboutMe />
           </div>
