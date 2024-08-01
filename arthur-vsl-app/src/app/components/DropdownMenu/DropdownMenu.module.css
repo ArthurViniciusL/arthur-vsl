@@ -27,6 +27,7 @@
     }
 
     .painel {
-        width: 64vw;
+        /* width: 64vw; */
+        width: 75vw;
     }
 }

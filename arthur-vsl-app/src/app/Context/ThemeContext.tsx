@@ -36,8 +36,10 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
         browserDarkTheme.addEventListener('change', themeHandleChange);
     }, [darkTheme]);
 
+    
+
     return (
-        <ThemeContext.Provider value={{ pageColor, fontColor }} >
+        <ThemeContext.Provider value={{ pageColor, fontColor, darkTheme }} >
             {children}
         </ThemeContext.Provider>
     )
