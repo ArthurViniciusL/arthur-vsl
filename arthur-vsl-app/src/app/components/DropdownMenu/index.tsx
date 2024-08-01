@@ -8,13 +8,17 @@ import { Icon } from '../Icon';
 import UiGuidelines from '@/app/styles/UiGuidelines';
 import AppRoutes from '@/app/app.routes';
 import AppAssets from '@/app/modules/app.modules';
+import { IconThemeContext } from '@/app/Context/IconThemeContext';
 
 export function DropdownMenu() {
 
     const { pageColor, fontColor } = useContext(ThemeContext);
 
+    const { homeIcon, projectsIcon, myLinks, cvIcon } = useContext(IconThemeContext)
+
     const [isDashIcon, setdashIcon] = useState(false);
     const dashIcon = isDashIcon ? AppAssets.DashIconOn : AppAssets.DashIconOff;
+
     const [painelState, setPainelState] = useState("none");
 
     function handleIconClick() {
@@ -30,7 +34,7 @@ export function DropdownMenu() {
     }
 
     const Btn = {
-        width: 200,
+        width: 150,
         height: 60,
         fontSize: 'large',
         iconSize: 20,
@@ -48,45 +52,45 @@ export function DropdownMenu() {
 
             <ul className={`${styles.painel} ${BlurCss.Blur}`} style={{ display: painelState, background: pageColor, color: fontColor }}>
                 <li>
-                    <Link href={AppRoutes.home}>
+                    <a href={AppRoutes.home}>
                         <Button
                             width={Btn.width}
                             height={Btn.height}
                             bgColorH={Btn.bgColor}
                             fontColor={Btn.fontColor}
                         >
-                            <Icon src={AppAssets.HomeIcon} size={Btn.iconSize} alt='icone de inicio' />
+                            <Icon src={homeIcon} size={Btn.iconSize} alt='icone de inicio' />
                             Início
                         </Button>
-                    </Link>
+                    </a>
                 </li>
 
                 <li>
-                    <Link href={AppRoutes.projects}>
+                    <a href={AppRoutes.projects}>
                         <Button
                             width={Btn.width}
                             height={Btn.height}
                             bgColorH={Btn.bgColor}
                             fontColor={Btn.fontColor}
                         >
-                            <Icon src={AppAssets.ProjectsIcon} size={Btn.iconSize} alt='icone de projetos' />
+                            <Icon src={projectsIcon} size={Btn.iconSize} alt='icone de projetos' />
                             Projetos
                         </Button>
-                    </Link>
+                    </a>
                 </li>
 
                 <li>
-                    <Link href='./Arthur_Vinicius_CV.pdf' download="Arthur_Vinicius_CV">
+                    <a href='./Arthur_Vinicius_CV.pdf' download="Arthur_Vinicius_CV">
                         <Button
                             width={Btn.width}
                             height={Btn.height}
                             bgColorH={Btn.bgColor}
                             fontColor={Btn.fontColor}
                         >
-                            <Icon src={AppAssets.CvIcon} size={Btn.iconSize} alt='icone de projetos' />
+                            <Icon src={cvIcon} size={Btn.iconSize} alt='icone de projetos' />
                             Currículo
                         </Button>
-                    </Link>
+                    </a>
                 </li>
 
             </ul>
