@@ -1,6 +1,7 @@
 import ArthurLogo from '@/app/assets/icons/logo-marca.svg';
 import ImgProfile from "@/app/assets/images/img_profile.jpg";
 import VideoProfile from "@/app/assets/videos/arthur_profile.mp4";
+import VideoProfileMobile from "@/app/assets/videos/arthur_profile_mobile.mp4"
 import DashIconOn from "@/app/assets/icons/Adwaita/dock-bottom-symbolic.svg";
 import DashIconOff from "@/app/assets/icons/Adwaita/dock-top-symbolic.svg";
 
@@ -22,6 +23,7 @@ const AppAssets = {
     ArthurLogo,
     ImgProfile,
     VideoProfile,
+    VideoProfileMobile,
     DashIconOn,
     DashIconOff,
 

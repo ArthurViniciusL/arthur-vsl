@@ -3,9 +3,11 @@
     max-height: 60vh;
     overflow: scroll;
     flex-wrap: wrap;
-
+    
     font-size: var(--pSize);
     text-align: justify;
+
+    border-radius: 10px;    
 }
 
 .description::-webkit-scrollbar {
