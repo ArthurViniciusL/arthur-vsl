@@ -14,6 +14,7 @@
     --h2Size: 5vh;
     --pSize: large;
     --appPadding: 20px;
+    --appRouded: 20px;
 }
 
 * {
@@ -64,6 +65,7 @@ h2 {
 
 p {
     font-size: medium;
+    margin-bottom: 20px;
 }
 
 main {
