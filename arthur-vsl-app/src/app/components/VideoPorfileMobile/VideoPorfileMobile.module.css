@@ -1,0 +1,13 @@
+.videoMobile {
+    border-radius: var(--appRouded);
+    margin-top: 30px;
+    width: 100px;
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+    .videoMobile {
+        display: flex;
+    }
+}
