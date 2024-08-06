@@ -40,7 +40,7 @@ export default function Home() {
 
           <div className={style.textBox}>
             {/* Este componente só fica visivel para dispositivos moveis (max-width: 600px) */}
-            <VideoPorfileMobile/>
+            <VideoPorfileMobile />
             <h2 className=''>Sobre mim</h2>
             <AboutMe />
           </div>
