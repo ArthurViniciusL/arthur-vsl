@@ -38,20 +38,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    
+
+/*     animation-name: projectsAnimation;
+    position: relative;
+    animation-duration: 4s; */
 }
 
-.h2 {
+/* @keyframes projectsAnimation {
+    0% {
+        top: 200px;
+    }
 
-}
+    100% {
+        top: 0px;
+    }
+} */
 
-.videoProjects {
-    width: 40vw;
-    height: auto;
-    border-radius: 10px;
-}
+.h2 {}
 
-@media (max-width: 600px) {
+@media (max-width: 760px) {
     .section {
         margin: 0;
     }
@@ -67,10 +72,4 @@
         margin-top: 35%;
         margin-left: 50%;
     }
-
-    .videoProjects {
-        width: 90vw;
-    }
-
-
 }
