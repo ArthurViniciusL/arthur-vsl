@@ -1,5 +1,5 @@
 import styles from './DropdownMenu.module.css';
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import BlurCss from '../../styles/BgBlur.module.css';
 import Link from 'next/link';
 import { ThemeContext } from '@/app/Context/ThemeContext';
@@ -12,6 +12,8 @@ import { IconThemeContext } from '@/app/Context/IconThemeContext';
 
 export function DropdownMenu() {
 
+
+
     const { pageColor, fontColor } = useContext(ThemeContext);
 
     const { homeIcon, projectsIcon, myLinks, cvIcon } = useContext(IconThemeContext)
@@ -22,11 +24,11 @@ export function DropdownMenu() {
     const [painelState, setPainelState] = useState("none");
 
     function handleIconClick() {
+
         setdashIcon(!isDashIcon);
 
-        // painel === 'none' ? setPainel('') : setPainel('none');
         if (painelState === 'none') {
-            setPainelState('');
+            setPainelState('flex');
         } else {
             setPainelState('none');
         }
@@ -44,11 +46,9 @@ export function DropdownMenu() {
 
     return (
         <div className={styles.dropdownMenuContent} >
-
             <Button onClick={handleIconClick} >
                 <Icon src={dashIcon} size={30} alt='icone de nevegação dos menus' />
             </Button>
-
 
             <ul className={`${styles.painel} ${BlurCss.Blur}`} style={{ display: painelState, background: pageColor, color: fontColor }}>
                 <li>
@@ -94,7 +94,6 @@ export function DropdownMenu() {
                 </li>
 
             </ul>
-
         </div>
     )
 }

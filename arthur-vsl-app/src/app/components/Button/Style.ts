@@ -37,6 +37,7 @@ height: ${({ $height }) => $height}px;
 color: ${({ $fontColor }) => $fontColor};
 background-color: ${({ $bgColor }) => $bgColor || 'transparent'};
 background: linear-gradient(${({ $bgGradient }) => $bgGradient});
+transition: background-color 0.2s ease;
 &:hover {
     text-decoration: underline;
     color: ${({ $fontColorHover }) => $fontColorHover};

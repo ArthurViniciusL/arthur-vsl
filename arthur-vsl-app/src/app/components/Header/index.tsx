@@ -14,7 +14,7 @@ import AppAssets from '@/app/modules/app.modules';
 import { useRouter } from 'next/navigation';
 
 export function Header() {
-    
+
     const routes = useRouter()
 
     const { pageColor, fontColor } = useContext(ThemeContext);
@@ -23,7 +23,7 @@ export function Header() {
 
     return (
 
-        <header className={styles.HeaderBox} style={{ background: pageColor, color: fontColor }}>
+        <header className={styles.headerBox} style={{ background: pageColor, color: fontColor }}>
             <div className={`${styles.headerContent} ${blurCss.Blur}`}>
                 <Button onClick={() => routes.push(AppRoutes.home)}>
                     <Icon src={AppAssets.ArthurLogo} size={30} alt='logo tipo Arthur Vinicius' />

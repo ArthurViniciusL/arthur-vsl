@@ -17,6 +17,7 @@ import { useRouter } from 'next/navigation';
 import AppRoutes from './app.routes';
 import { IconThemeContext } from './Context/IconThemeContext';
 import VideoPorfileMobile from './components/VideoPorfileMobile';
+import MyProjectsVideo from './components/MyProjectsVideo';
 
 export default function Home() {
 
@@ -51,12 +52,16 @@ export default function Home() {
         <div className={style.sectionContent}>
 
           <div className={style.projects}>
+            
+            <MyProjectsVideo />
 
-            <video className={style.videoProjects} controls={false} autoPlay loop muted>
-              <source src={VideoProjectsLight} type="" />
-            </video>
-
-            <Button onClick={() => router.push(AppRoutes.projects)} bgColorH={BtnBg} width={200} height={80} fontWeight='bold' fontColor={fontColor}>
+            <Button
+              onClick={() => router.push(AppRoutes.projects)}
+              bgColorH={BtnBg} width={200}
+              height={80}
+              fontWeight='bold'
+              fontColor={fontColor}
+            >
               <Icon src={projectsIcon} size={40} alt='' />
               Clique aqui!
             </Button>
