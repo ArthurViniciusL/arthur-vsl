@@ -33,10 +33,9 @@ export default function Home() {
     <main style={{ background: pageColor, color: fontColor }} >
       <section className={style.section}>
         {/* Componente dedicado a simular o espaçamento do Hedader que nao e respeitado devido a formatacao da section */}
-        <span className={style.paddingBox}></span>
+        {/* <span className={style.paddingBox}></span> */}
 
         <div className={style.sectionContentRow}>
-
           <ProfilePicture />
           <div className={style.textBox}>
             <h2>Sobre mim</h2>
@@ -46,8 +45,6 @@ export default function Home() {
       </section>
 
       <section className={style.section} >
-
-        <span className={style.paddingBox}></span>
 
         <div className={style.sectionContent}>
 
@@ -73,8 +70,6 @@ export default function Home() {
       </section>
 
       <section id="secContact" className={style.section}>
-
-        <span className={style.paddingBox}></span>
 
         <div className={style.sectionContent}>
           <h2>Minhas redes</h2>
