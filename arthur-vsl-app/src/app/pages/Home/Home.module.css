@@ -1,5 +1,6 @@
 .section {
     height: 98dvh;
+    padding-top: 90px;
     scroll-snap-align: start;
     scroll-behavior: smooth;
 }
@@ -9,7 +10,7 @@
 
     /* border: red solid; */
     width: 100vw;
-    min-height: 100px;
+    min-height: 120px;
 }
 
 .sectionContentRow {
@@ -52,6 +53,7 @@
 @media (max-width: 760px) {
     .section {
         margin: 0;
+        padding-top: 70px;
     }
 
     .sectionContentRow {
