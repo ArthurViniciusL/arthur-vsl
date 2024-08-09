@@ -7,7 +7,7 @@
     font-size: var(--pSize);
     text-align: justify;
 
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 
 .description::-webkit-scrollbar {

@@ -4,6 +4,14 @@
     scroll-behavior: smooth;
 }
 
+.paddingBox {
+    /* Componente dedicado a simular o espaçamento do Hedader que nao e respeitado devido a formatacao da section */
+
+    /* border: red solid; */
+    width: 100vw;
+    min-height: 100px;
+}
+
 .sectionContentRow {
     width: 100%;
     height: 100%;
@@ -29,7 +37,8 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: var(--appPadding);
+    padding-right: var(--appPadding);
+    padding-left: var(--appPadding);
 }
 
 .projects {
@@ -38,38 +47,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
-/*     animation-name: projectsAnimation;
-    position: relative;
-    animation-duration: 4s; */
 }
-
-/* @keyframes projectsAnimation {
-    0% {
-        top: 200px;
-    }
-
-    100% {
-        top: 0px;
-    }
-} */
-
-.h2 {}
 
 @media (max-width: 760px) {
     .section {
         margin: 0;
     }
 
-    .textBox {
-        margin-top: 40px;
-        display: flex;
-        align-items: center;
+    .sectionContentRow {
+        flex-direction: column;
     }
 
-    .h2 {
-        font-size: var(--h2Size);
-        margin-top: 35%;
-        margin-left: 50%;
+    .textBox {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
     }
 }
