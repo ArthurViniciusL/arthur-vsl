@@ -7,16 +7,12 @@ import ProfilePicture from '@/app/components/ProfilePicture';
 import { AboutMe } from '@/app/components/AboutMe';
 import { ContactLinks } from './components/ContactLinks';
 
-import VideoProjectsLight from "@/app/assets/videos/meus_projetos_light.mp4";
-import VideoProjectsDark from "@/app/assets/videos/meus_projetos_dark.mp4";
-
 import { Button } from './components/Button';
 import UiGuidelines from './styles/UiGuidelines';
 import { Icon } from './components/Icon';
 import { useRouter } from 'next/navigation';
 import AppRoutes from './app.routes';
 import { IconThemeContext } from './Context/IconThemeContext';
-import VideoPorfileMobile from './components/VideoPorfileMobile';
 import MyProjectsVideo from './components/MyProjectsVideo';
 
 export default function Home() {
@@ -36,23 +32,27 @@ export default function Home() {
   return (
     <main style={{ background: pageColor, color: fontColor }} >
       <section className={style.section}>
-        <div className={style.sectionContentRow}>
-          <ProfilePicture />
+        {/* Componente dedicado a simular o espaçamento do Hedader que nao e respeitado devido a formatacao da section */}
+        <span className={style.paddingBox}></span>
 
+        <div className={style.sectionContentRow}>
+
+          <ProfilePicture />
           <div className={style.textBox}>
-            {/* Este componente só fica visivel para dispositivos moveis (max-width: 600px) */}
-            <VideoPorfileMobile />
-            <h2 className=''>Sobre mim</h2>
+            <h2>Sobre mim</h2>
             <AboutMe />
           </div>
         </div>
       </section>
 
       <section className={style.section} >
+
+        <span className={style.paddingBox}></span>
+
         <div className={style.sectionContent}>
 
           <div className={style.projects}>
-            
+
             <MyProjectsVideo />
 
             <Button
@@ -73,6 +73,9 @@ export default function Home() {
       </section>
 
       <section id="secContact" className={style.section}>
+
+        <span className={style.paddingBox}></span>
+
         <div className={style.sectionContent}>
           <h2>Minhas redes</h2>
           <ContactLinks />

@@ -3,13 +3,25 @@
   min-width: 10px;
   height: auto;
   margin: 30px;
-  margin-top: 10%;
   border-radius: 20px;
+
+  /* margin-top: 10%; */
+
+}
+
+.videoMobile {
+  display: none;
+  width: 120px;
+  border-radius: var(--appRouded);
+ /*  margin-top: 20%; */
 }
 
 @media (max-width: 760px) {
-
   .video {
     display: none;
   }
+
+  .videoMobile {
+    display: flex;
+}
 }

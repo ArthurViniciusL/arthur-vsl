@@ -1,24 +1,19 @@
 'use client';
 
-import AppAssets from '@/app/modules/app.modules';
 import styles from './ProfilePicture.module.css';
-
-/* <picture>
-                <Image
-                    className={styles.imgStyle}
-                    src={AppAssets.ImgProfile}
-                    alt="imagem_do_perfil"
-                    priority={true}
-                />
-            </picture>
-            */
-
+import AppAssets from '@/app/modules/app.modules';
 
 export default function ProfilePicture() {
     return (
-        <video className={styles.video} controls={false} autoPlay loop muted>
-            <source src={AppAssets.VideoProfile} />
+        <div>
+            <video className={styles.video} controls={false} autoPlay loop muted>
+                <source src={AppAssets.VideoProfile} />
+            </video>
+
+            <video className={styles.videoMobile} controls={false} autoPlay loop muted>
+            <source src={AppAssets.VideoProfileMobile} />
         </video>
+        </div>
     )
 }
 

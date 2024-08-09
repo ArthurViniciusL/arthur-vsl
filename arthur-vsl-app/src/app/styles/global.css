@@ -61,11 +61,14 @@ h1 {
 
 h2 {
     font-size: var(--h2Size);
+    /* color: #ffbd08; */
 }
 
 p {
     font-size: medium;
     margin-bottom: 20px;
+
+    
 }
 
 main {
