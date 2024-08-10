@@ -1,6 +1,6 @@
 const AppRoutes = {
     home: '/',
-    projects: '/pages/Shortly',
+    projects: '/pages/Projects',
     post: (id:number) => `/rotaDoPost/${id}`
 }
 
