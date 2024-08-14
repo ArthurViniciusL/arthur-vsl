@@ -6,15 +6,15 @@ export function AboutMe() {
     return (
         <div className={styles.description}>
             <p>
-                Olá meu nome é Arthur, desenvolvedor web full-stack, cinefilo na horas vagas e paraibano em cem porcento do tempo.
+                Olá! Meu nome é Arthur, sou desenvolvedor web full-stack, um cinéfilo nas horas vagas e paraibano de coração.
             </p>
 
             <p>
-                Atualmente estou no sétimo período da graduação de Sistemas de Informação, tenho uma paixão por criar e aprimorar produtos através de soluções criativas, e ao longo dos últimos anos, acumulei experiência no desenvolvimento de software graças ao meu envolvimento em diversos projetos acadêmicos.
+                Atualmente, estou no sétimo período da graduação em Sistemas de Informação, onde descobri minha paixão por criar e aprimorar produtos por meio de soluções criativas. Nos últimos anos, acumulei experiência no desenvolvimento de software ao me envolver em diversos projetos acadêmicos.
             </p>
 
             <p>
-                Minha jornada na universidade proporcionou a oportunidade de atuar em múltiplos papéis, desde desenvolvedor front-end até designer de UI e UX, Scrum Master e QA. Essas experiências aprimoraram minhas habilidades técnicas e me permitiram explorar diferentes facetas do desenvolvimento de software.
+                Durante minha jornada na universidade, tive a oportunidade de desempenhar múltiplos papéis, desde desenvolvedor front-end até designer de UI/UX, Scrum Master e QA. Essas experiências não apenas fortaleceram minhas habilidades técnicas, mas também me permitiram explorar diferentes aspectos do desenvolvimento de software.
             </p>
 
 
