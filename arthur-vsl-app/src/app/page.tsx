@@ -1,6 +1,6 @@
 'use client';
 import style from '@/app/pages//Home/Home.module.css'
-import { useContext, useEffect, useLayoutEffect, useState } from 'react';
+import { useContext, useEffect } from 'react';
 import { ThemeContext } from './Context/ThemeContext';
 import { HeaderContext } from './Context/HeaderContext';
 import ProfilePicture from '@/app/components/ProfilePicture';

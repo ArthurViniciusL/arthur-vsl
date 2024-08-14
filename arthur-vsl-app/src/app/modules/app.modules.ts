@@ -1,3 +1,9 @@
+/* 
+* This file is an implementation inspired by the way
+* Angular organizes the modularization of components in
+* its projects
+*/
+
 import ArthurLogo from '@/app/assets/icons/logo-marca.svg';
 import ImgProfile from "@/app/assets/images/img_profile.jpg";
 import VideoProfile from "@/app/assets/videos/arthur_profile.mp4";
@@ -38,6 +44,6 @@ const AppAssets = {
     CvIconDark,
 
     videoShortly
-}
+};
 
 export default AppAssets;

@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import styles from './ProfilePicture.module.css';
 import AppAssets from '@/app/modules/app.modules';
 

@@ -1,9 +1,9 @@
 'use client'
 
 import styles from './ContactLinks.module.css';
-import { Button } from '../Button';
-import { Github, Linkedin, Mail, Instagram, Component } from "lucide-react";
 import UiGuidelines from '@/app/styles/UiGuidelines';
+import { Button } from '../Button';
+import { GithubIcon, LinkedinIcon, MailIcon, InstagramIcon } from  "@/app/modules/icons.module";
 
 const iconWidth = 300;
 const iconHeight = 80;
@@ -13,7 +13,6 @@ const fontColor = 'white';
 const fontWeight = 'bold';
 
 const bgColorHover = UiGuidelines.yellow;
-
 
 const attributes = {
     'github': {
@@ -52,7 +51,7 @@ export function ContactLinks() {
                         bgColorH={bgColorHover} fontColor={fontColor}
                         fontWeight={fontWeight}
                     >
-                        <Github color="white" />
+                        <GithubIcon color="white" />
                         {attributes.github.name}
                     </Button>
                 </a>
@@ -67,7 +66,8 @@ export function ContactLinks() {
                         fontColor={fontColor}
                         fontWeight={fontWeight}
                     >
-                        <Linkedin fill="white" stroke="0" />
+                        {/* <Linkedin fill="white" stroke="0" /> */}
+                        <LinkedinIcon/>
                         {attributes.linkedin.name}
                     </Button>
                 </a>
@@ -81,7 +81,8 @@ export function ContactLinks() {
                         bgColorH={bgColorHover} fontColor={fontColor}
                         fontWeight={fontWeight}
                     >
-                        <Mail color="white" />
+                        {/* <Mail color="white" /> */}
+                        <MailIcon />
                         {attributes.email.name}
                     </Button>
                 </a>
@@ -95,7 +96,7 @@ export function ContactLinks() {
                         bgColorH={bgColorHover} fontColor={fontColor}
                         fontWeight={fontWeight}
                     >
-                        <Instagram/>
+                        <InstagramIcon />
                         {attributes.instagram.name}
                     </Button>
                 </a>
