@@ -32,9 +32,6 @@ export default function Home() {
   return (
     <main style={{ background: pageColor, color: fontColor }} >
       <section className={style.section}>
-        {/* Componente dedicado a simular o espaçamento do Hedader que nao e respeitado devido a formatacao da section */}
-        {/* <span className={style.paddingBox}></span> */}
-
         <div className={style.sectionContentRow}>
           <ProfilePicture />
           <div className={style.textBox}>

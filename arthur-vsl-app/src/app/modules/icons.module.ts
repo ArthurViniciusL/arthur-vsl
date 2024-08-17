@@ -5,8 +5,9 @@
 */
 
 export {
-    Github    as GithubIcon,
-    Linkedin  as LinkedinIcon,
-    Mail      as MailIcon,
-    Instagram as InstagramIcon
+    Github       as GithubIcon,
+    Linkedin     as LinkedinIcon,
+    Mail         as MailIcon,
+    Instagram    as InstagramIcon,
+    ExternalLink as ExternalLink
 } from "lucide-react";
