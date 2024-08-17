@@ -1,3 +1,4 @@
+import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { AppProvider } from './Context/AppContext'
 import './styles/global.css'
@@ -19,8 +20,9 @@ export default function RootLayout({
     <html lang="pt-br" className='Html'>
       <body>
         <AppProvider>
-          <Header/>
+          <Header />
           {children}
+          <Footer />
         </AppProvider>
       </body>
     </html>

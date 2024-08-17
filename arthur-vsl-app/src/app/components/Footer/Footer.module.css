@@ -1,4 +1,23 @@
-.footer {
-    position: absolute;
+.footerBox {
+    width: 100%;
+    /*  
     bottom: 0;
+    position: fixed;
+    */
+    display: flex;
+    justify-content: center;
+}
+
+.footerContent {
+    width: 90%;
+    display: flex;
+    padding: var(--appPadding);
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 760px) {
+    .footerContent {
+        flex-direction: column;
+    }
 }

@@ -66,9 +66,15 @@ h2 {
 
 p {
     font-size: medium;
-    margin-bottom: 20px;
+    margin-bottom: 20px;   
+}
 
-    
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: underline;
 }
 
 main {

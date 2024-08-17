@@ -14,7 +14,7 @@ export function DropdownMenu() {
 
 
 
-    const { pageColor, fontColor } = useContext(ThemeContext);
+    const { pageColor, fontColor, darkTheme } = useContext(ThemeContext);
 
     const { homeIcon, projectsIcon, myLinks, cvIcon } = useContext(IconThemeContext)
 
@@ -40,8 +40,8 @@ export function DropdownMenu() {
         height: 60,
         fontSize: 'large',
         iconSize: 20,
-        bgColor: pageColor === '#ffffff' ? UiGuidelines.light['bg-color-03'] : UiGuidelines.dark['bg-color-04'],
-        fontColor: pageColor === '#ffffff' ? UiGuidelines.light['font-color-01'] : UiGuidelines.dark['font-color-01']
+        bgColor: darkTheme ? UiGuidelines.dark['bg-color-04'] : UiGuidelines.light['bg-color-03'],
+        fontColor: darkTheme ? UiGuidelines.dark['font-color-01'] : UiGuidelines.light['font-color-01']
     }
 
     return (
