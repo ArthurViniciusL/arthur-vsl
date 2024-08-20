@@ -9,5 +9,5 @@ export {
     Linkedin     as LinkedinIcon,
     Mail         as MailIcon,
     Instagram    as InstagramIcon,
-    ExternalLink as ExternalLink
+    ExternalLink as ExternalLinkIcon
 } from "lucide-react";
