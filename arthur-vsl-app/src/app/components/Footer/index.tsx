@@ -6,7 +6,7 @@ import { ThemeContext } from '@/app/Context/ThemeContext';
 import UiGuidelines from "@/app/styles/UiGuidelines";
 import { Icon } from "../Icon";
 
-import { ExternalLink } from "@/app/modules/icons.module";
+import { ExternalLinkIcon } from "@/app/modules/icons.module";
 import { Button } from "../Button";
 
 export function Footer() {
@@ -31,24 +31,24 @@ export function Footer() {
                 <a href="https://gnome.pages.gitlab.gnome.org/libadwaita/" target="_blank" rel="noopener noreferrer">
                     <Button fontColor={fontColor}>
                         Icones Adwaita
-                        <ExternalLink size={iconSize} />
+                        <ExternalLinkIcon size={iconSize} />
                     </Button>
                 </a>
                 <a href="https://lucide.dev/" target="_blank" rel="noopener noreferrer">
                     <Button fontColor={fontColor}>
                         Icones Lucide
-                        <ExternalLink size={iconSize} />
+                        <ExternalLinkIcon size={iconSize} />
                     </Button>
                 </a>
                 <a href="https://github.com/ArthurViniciusL/arthur-vsl/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
                     <Button fontColor={fontColor}>
                         Licença do projeto
-                        <ExternalLink size={iconSize} />
+                        <ExternalLinkIcon size={iconSize} />
                     </Button>
                 </a>
 
                 <div style={{
-                    opacity: "70%"
+                    opacity: "50%"
                 }}>
                     &#169; 2024 Arthur Lucena. Todos os direitos reservados.
                 </div>

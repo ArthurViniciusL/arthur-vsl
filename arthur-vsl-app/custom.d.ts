@@ -1,4 +1,4 @@
-// Declarações se necessário para outros tipos de mídia
+// Declarações necessárias para outros tipos de mídia
 
 declare module '*.mp4' {
     const src: string;
@@ -9,4 +9,3 @@ declare module '*.webm' {
     const src: string;
     export default src;
 }
-
