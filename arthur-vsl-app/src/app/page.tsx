@@ -50,7 +50,8 @@ export default function Home() {
             <MyProjectsVideo />
 
             <Button
-              onClick={() => router.push(AppRoutes.projects)}
+            /* AppRoutes.projects */
+              onClick={() => router.push("https://github.com/ArthurViniciusL")}
               bgColorH={BtnBg} width={200}
               height={80}
               fontWeight='bold'
