@@ -47,10 +47,13 @@ export function Footer() {
                     </Button>
                 </a>
 
-                <div style={{
-                    opacity: "50%"
-                }}>
-                    &#169; 2024 Arthur Lucena. Todos os direitos reservados.
+                <div style={{ opacity: "50%" }}>
+                    <p>
+                        &#169; 2024 Arthur Lucena.
+                    </p>
+                    <p>
+                        Todos os direitos reservados.
+                    </p>
                 </div>
             </div>
         </footer>
