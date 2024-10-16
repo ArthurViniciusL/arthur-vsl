@@ -12,8 +12,6 @@ import { IconThemeContext } from '@/app/Context/IconThemeContext';
 
 export function DropdownMenu() {
 
-
-
     const { pageColor, fontColor, darkTheme } = useContext(ThemeContext);
 
     const { homeIcon, projectsIcon, myLinks, cvIcon } = useContext(IconThemeContext)
@@ -80,7 +78,7 @@ export function DropdownMenu() {
                 </li>
 
                 <li>
-                    <a href='./Arthur_Vinicius_CV.pdf' download="Arthur_Vinicius_CV">
+                    <a href='./Arthur_Lucena_CV.pdf' download="Arthur_Vinicius_CV">
                         <Button
                             width={Btn.width}
                             height={Btn.height}
