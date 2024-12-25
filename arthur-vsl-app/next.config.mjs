@@ -1,3 +1,5 @@
+/* @arthur.vsl */
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     webpack(config) {
@@ -18,4 +20,4 @@ const nextConfig = {
   };
   
   export default nextConfig;
-  
+
