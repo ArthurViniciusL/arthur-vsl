@@ -1,0 +1,60 @@
+/*@import url('modules/art-modules.css');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --white-01: #FFFFFF;
+    --white-02: #F6F5F4;
+    --white-03: #EBEBEB;
+    --white-rgba: 255, 255, 255;
+
+    --black-01: #000000;
+    --black-02: #131416;
+    --black-03: #4A4B4D;
+    --black-rgba: 0, 0, 0;
+
+    --yellow-01: #FFDE83;
+    --yellow-02: #FFBD08;
+    --yellow-03: #C08E06;
+    --yellow-rgba: 255, 222, 131;
+
+    --green-01: #8FF0A4;
+    --green-02: #33D17A;
+    --green-03: #26A269;
+    --green-rgba: 38, 162, 105;
+
+    --blue-01: #62A0EA;
+    --blue-02: #376FE6;
+    --blue-03: #1C71D8;
+    --blue-rgba: 28, 113, 216;
+
+    --red-01: #ED333B;
+    --red-02: #F60000;
+    --red-03: #DB1111;
+    --red-rgba: 219, 17, 17;
+
+    --txt-black-01: #000000;
+
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --white-01: #000000;
+        --white-02: #131416;
+        --white-03: #4A4B4D;
+
+        --black-01: #FFFFFF;
+        --black-02: #F6F5F4;
+        --black-03: #EBEBEB;
+
+        --txt-black-01: #FFFFFF;
+    }
+}

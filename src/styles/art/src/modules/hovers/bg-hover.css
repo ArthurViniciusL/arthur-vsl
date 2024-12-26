@@ -1,0 +1,228 @@
+/* bg hovers:*/
+
+.hover\:bg\:art-black-01:hover {
+    background-color: var(--black-01);
+}
+
+.hover\:bg\:art-black-02:hover {
+    background-color: var(--black-02);
+}
+
+.hover\:bg\:art-black-03:hover {
+    background-color: var(--black-03);
+}
+
+.hover\:bg\:art-white-01:hover {
+    background-color: var(--white-01);
+}
+
+.hover\:bg\:art-white-02:hover {
+    background-color: var(--white-02);
+}
+
+.hover\:bg\:art-white-03:hover {
+    background-color: var(--white-03);
+}
+
+.hover\:bg\:art-yellow-01:hover {
+    background-color: var(--yellow-01);
+}
+
+.hover\:bg\:art-yellow-02:hover {
+    background-color: var(--yellow-02);
+}
+
+.hover\:bg\:art-yellow-03:hover {
+    background-color: var(--yellow-03);
+}
+
+.hover\:bg\:art-green-01:hover {
+    background-color: var(--green-01);
+}
+
+.hover\:bg\:art-green-02:hover {
+    background-color: var(--green-02);
+}
+
+.hover\:bg\:art-green-03:hover {
+    background-color: var(--green-03);
+}
+
+.hover\:bg\:art-blue-01:hover {
+    background-color: var(--blue-01);
+}
+
+.hover\:bg\:art-blue-03:hover {
+    background-color: var(--blue-03);
+}
+
+.hover\:bg\:art-blue-03:hover {
+    background-color: var(--blue-03);
+}
+
+.hover\:bg\:art-red-01:hover {
+    background-color: var(--red-01);
+}
+
+.hover\:bg\:art-red-02:hover {
+    background-color: var(--red-02);
+}
+
+.hover\:bg\:art-red-03:hover {
+    background-color: var(--red-03);
+}
+
+.hover\:bg\:art-white\:10\%:hover {
+    /* hover:art-white:10% */
+    background-color: rgba(var(--white-rgba) 0.1);
+}
+
+.hover\:bg\:art-white\:20\%:hover {
+    /* hover:art-white:10% */
+    background-color: rgba(var(--white-rgba) 0.2);
+}
+
+.hover\:bg\:art-white\:30\%:hover {
+    /* hover:art-white:30% */
+    background-color: rgba(var(--white-rgba) 0.3);
+}
+
+.hover\:bg\:art-white\:40\%:hover {
+    /* hover:art-white:40% */
+    background-color: rgba(var(--white-rgba) 0.4);
+}
+
+.hover\:bg\:art-white\:50\%:hover {
+    /* hover:art-white:50% */
+    background-color: rgba(var(--white-rgba) 0.5);
+}
+
+.hover\:bg\:art-white\:10\% {
+    /* hover:art-white:10% */
+    background-color: rgba(var(--white-rgba) 0.1);
+}
+
+.hover\:bg\:art-white\:20\% {
+    /* hover:art-white:20% */
+    background-color: rgba(var(--white-rgba), 0.2);
+}
+
+.hover\:bg\:art-white\:30\% {
+    /* hover:art-white:30% */
+    background-color: rgba(var(--white-rgba), 0.3);
+}
+
+.hover\:bg\:art-white\:40\% {
+    /* hover:art-white:40% */
+    background-color: rgba(var(--white-rgba), 0.4);
+}
+
+.hover\:bg\:art-white\:50\% {
+    /* hover:art-white:50% */
+    background-color: rgba(var(--white-rgba), 0.5);
+}
+
+.hover\:bg\:art-black\:10\% {
+    /* hover:art-white:10% */
+    background-color: rgba(var(--black-rgba) 0.1);
+}
+
+.hover\:bg\:art-black\:20\% {
+    /* hover:art-white:10% */
+    background-color: rgba(var(--black-rgba) 0.2);
+}
+
+.hover\:bg\:art-black\:30\% {
+    /* hover:art-white:10% */
+    background-color: rgba(var(--black-rgba) 0.3);
+}
+
+.hover\:bg\:art-black\:40\% {
+    /* hover:art-white:10% */
+    background-color: rgba(var(--black-rgba) 0.4);
+}
+
+.hover\:bg\:art-black\:50\% {
+    /* hover:art-white:10% */
+    background-color: rgba(var(--black-rgba) 0.5);
+}
+
+.hover\:bg\:art-yellow\:10\% {
+    background-color: rgba(var(--yellow-rgba), 0.1);
+}
+
+.hover\:bg\:art-yellow\:20\% {
+    background-color: rgba(var(--yellow-rgba), 0.2);
+}
+
+.hover\:bg\:art-yellow\:30\% {
+    background-color: rgba(var(--yellow-rgba), 0.3);
+}
+
+.hover\:bg\:art-yellow\:40\% {
+    background-color: rgba(var(--yellow-rgba), 0.4);
+}
+
+.hover\:bg\:art-yellow\:50\% {
+    background-color: rgba(var(--yellow-rgba), 0.5);
+}
+
+.hover\:bg\:art-green\:10\% {
+    background-color: rgba(var(--green-rgba), 0.1);
+}
+
+.hover\:bg\:art-green\:20\% {
+    background-color: rgba(var(--green-rgba), 0.2);
+}
+
+.hover\:bg\:art-green\:30\% {
+    background-color: rgba(var(--green-rgba), 0.3);
+}
+
+.hover\:bg\:art-green\:40\% {
+    background-color: rgba(var(--green-rgba), 0.4);
+}
+
+.hover\:bg\:art-green\:50\% {
+    background-color: rgba(var(--green-rgba), 0.5);
+}
+
+.hover\:bg\:art-blue\:10\% {
+    background-color: rgba(var(--blue-rgba), 0.1);
+}
+
+.hover\:bg\:art-blue\:20\% {
+    background-color: rgba(var(--blue-rgba), 0.2);
+}
+
+.hover\:bg\:art-blue\:30\% {
+    background-color: rgba(var(--blue-rgba), 0.3);
+}
+
+.hover\:bg\:art-blue\:40\% {
+    background-color: rgba(var(--blue-rgba), 0.4);
+}
+
+.hover\:bg\:art-blue\:50\% {
+    background-color: rgba(var(--blue-rgba), 0.5);
+}
+
+.hover\:bg\:art-red\:10\% {
+    background-color: rgba(var(--red-rgba) 0.1);
+}
+
+.hover\:bg\:art-red\:20\% {
+    background-color: rgba(var(--red-rgba) 0.2);
+}
+
+.hover\:bg\:art-red\:30\% {
+    background-color: rgba(var(--red-rgba) 0.3);
+}
+
+.hover\:bg\:art-red\:40\% {
+    background-color: rgba(var(--red-rgba) 0.4);
+}
+
+.hover\:bg\:art-red\:50\% {
+    background-color: rgba(var(--red-rgba) 0.5);
+}
