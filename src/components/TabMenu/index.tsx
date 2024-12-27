@@ -39,7 +39,7 @@ export function TabMenu() {
     if (tabMenu) {
         return (
             <>
-                <button onClick={handleTabMenu}>
+                <button className="art:btn:no-style" onClick={handleTabMenu}>
                     <Image src={Adwaita.dockTop} alt="icone do menu de links no site" className={`${styles.icon}`} />
                 </button>
 
@@ -49,9 +49,11 @@ export function TabMenu() {
                         onMouseLeave={() => setMouseOutMenu(true)}
                         className={`
                             ${styles.painelContent}
-                            art-bg:white-01
-                            art-border-solid:full:0.5:white-03
-                            art-border-radius:full:radius-02
+                            art:bg:white-01
+                            art:border-radius:r-01
+                            art:border-size:s-01
+                            art:border-style:solid
+                            art:border-color:white-03
                             `}
                     >
                         <li>
@@ -79,7 +81,7 @@ export function TabMenu() {
     else {
         return (
             <>
-                <button onClick={handleTabMenu}>
+                <button onClick={handleTabMenu} className="art:btn:no-style">
                     <Image src={Adwaita.dockBottom} alt="icone do menu de links no site" className={`${styles.icon}`} />
                 </button>
             </>

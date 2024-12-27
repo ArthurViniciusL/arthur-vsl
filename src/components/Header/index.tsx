@@ -8,11 +8,14 @@ export function Header() {
     return (
         <div className={`${styles.box}`}>
             <header className={`${styles.header}
-            art-bg:blur-01
-            art-border-radius:full:radius-02
+              art:bg:blur-01
+              art:border-radius:r-01
+              art:border-size:s-01
+              art:border-style:solid
+              art:border-color:white-03
             `}>
                 <div className={`${styles.content}`}>
-                    <Image src={artLogo} alt="" className={`${styles.logo}`} />
+                    <Image src={artLogo} alt="logo do site" className={`${styles.logo}`} />
 
                     {title}
 

@@ -1,567 +1,6 @@
-/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/TabMenu/tabMenu.module.css ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************/
-.tabMenu_icon___W7iU {
-    width: 2rem;
-    height: auto;
-}
-
-.tabMenu_painel__SDMWU {
-    background-color: transparent;
-
-    position: absolute;
-    margin-top: 11rem;
-    width: 95%;
-    height: 100%;
-
-    display: flex;
-    justify-content: flex-end;
-
-}
-
-.tabMenu_painelContent__j3QD5 {
-    width: 20%;
-    max-width: 40rem;
-    height: -moz-fit-content;
-    height: fit-content;
-    padding: 2rem;
-
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    align-items: center;
-    
-}
-
-@media (max-width: 800px) {
-    .tabMenu_painelContent__j3QD5 {
-        width: 100%;
-    }
-}
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/modules/background/bg-color.css ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************/
-.art-bg\:white-01 {
-    background-color: var(--white-01);
-}
-
-.art-bg\art-bg\:white-02 {
-    background-color: var(--white-02);
-}
-
-.art-bg\:white-03 {
-    background-color: var(--white-03);
-}
-
-.art-bg\:black-01 {
-    background-color: var(--black-01);
-}
-
-.art-bg\:black-02 {
-    background-color: var(--black-02);
-}
-
-.art-bg\:black-03 {
-    background-color: var(--black-03);
-}
-
-.art-bg\:yellow-01 {
-    background-color: var(--yellow-01);
-}
-
-.art-bg\:yellow-02 {
-    background-color: var(--yellow-02);
-}
-
-.art-bg\:yellow-03 {
-    background-color: var(--yellow-03);
-}
-
-.art-bg\:green-01 {
-    background-color: var(--green-01);
-}
-
-.art-bg\:green-02 {
-    background-color: var(--green-02);
-}
-
-.art-bg\:green-03 {
-    background-color: var(--green-02);
-}
-
-.art-bg\:blue-01 {
-    background-color: var(--blue-01);
-}
-
-.art-bg\:blue-02 {
-    background-color: var(--blue-02);
-}
-
-.art-bg\:blue-03 {
-    background-color: var(--blue-03);
-}
-
-.art-bg\:red-01 {
-    background-color: var(--red-01);
-}
-
-.art-bg\:red-02 {
-    background-color: var(--red-02);
-}
-
-.art-bg\:red-03 {
-    background-color: var(--red-03);
-}
-
-
-/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/modules/font/font-color.css ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************/
-/* Font colors:*/
-
-.art-font-color\:white-01 {
-    color: var(--white-01);
-}
-
-.art-font-color\:white-02 {
-    color: var(--white-02);
-}
-
-.art-font-color\:white-03 {
-    color: var(--white-03);
-}
-
-.art-font-color\:black-01 {
-    color: var(--black-01);
-}
-
-.art-font-color\:black-02 {
-    color: var(--black-02);
-}
-
-.art-font-color\:black-03 {
-    color: var(--black-03);
-}
-
-.art-font-color\:yellow-01 {
-    color: var(--yellow-01);
-}
-
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/modules/font/font-size.css ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************/
-.art-font-size\:title {
-    /* .art-font-size:title */
-    font-size: 2.5rem;
-}
-
-.art-font-size\:subtitle {
-    /* .art-font-size:subtitle */
-    font-size: 1.5rem;
-}
-
-.art-font-size\:normal {
-    /* .art-font-size:subtitle */
-    font-size: 1.2rem;
-}
-/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/modules/hovers/bg-hover.css ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************/
-/* bg hovers:*/
-
-.hover\:art-bg\:black-01:hover {
-    background-color: var(--black-01);
-}
-
-.hover\:art-bg\:black-02:hover {
-    background-color: var(--black-02);
-}
-
-.hover\:art-bg\:black-03:hover {
-    background-color: var(--black-03);
-}
-
-.hover\:art-bg\:white-01:hover {
-    background-color: var(--white-01);
-}
-
-.hover\:art-bg\:white-02:hover {
-    background-color: var(--white-02);
-}
-
-.hover\:art-bg\:white-03:hover {
-    background-color: var(--white-03);
-}
-
-.hover\:art-bg\:yellow-01:hover {
-    background-color: var(--yellow-01);
-}
-
-.hover\:art-bg\:yellow-02:hover {
-    background-color: var(--yellow-02);
-}
-
-.hover\:art-bg\:yellow-03:hover {
-    background-color: var(--yellow-03);
-}
-
-.hover\:art-bg\:green-01:hover {
-    background-color: var(--green-01);
-}
-
-.hover\:art-bg\:green-02:hover {
-    background-color: var(--green-02);
-}
-
-.hover\:art-bg\:green-03:hover {
-    background-color: var(--green-03);
-}
-
-.hover\:art-bg\:blue-01:hover {
-    background-color: var(--blue-01);
-}
-
-.hover\:art-bg\:blue-03:hover {
-    background-color: var(--blue-03);
-}
-
-.hover\:art-bg\:blue-03:hover {
-    background-color: var(--blue-03);
-}
-
-.hover\:art-bg\:red-01:hover {
-    background-color: var(--red-01);
-}
-
-.hover\:art-bg\:red-02:hover {
-    background-color: var(--red-02);
-}
-
-.hover\:art-bg\:red-03:hover {
-    background-color: var(--red-03);
-}
-
-.hover\:art-bg\:white\:10\%:hover {
-    /* hover:art-white:10% */
-    background-color: rgba(var(--white-rgba) 0.1);
-}
-
-.hover\:art-bg\:white\:20\%:hover {
-    /* hover:art-white:10% */
-    background-color: rgba(var(--white-rgba) 0.2);
-}
-
-.hover\:art-bg\:white\:30\%:hover {
-    /* hover:art-white:30% */
-    background-color: rgba(var(--white-rgba) 0.3);
-}
-
-.hover\:art-bg\:white\:40\%:hover {
-    /* hover:art-white:40% */
-    background-color: rgba(var(--white-rgba) 0.4);
-}
-
-.hover\:art-bg\:white\:50\%:hover {
-    /* hover:art-white:50% */
-    background-color: rgba(var(--white-rgba) 0.5);
-}
-
-.hover\:art-bg\:white\:10\% {
-    /* hover:art-white:10% */
-    background-color: rgba(var(--white-rgba) 0.1);
-}
-
-.hover\:art-bg\:white\:20\% {
-    /* hover:art-white:20% */
-    background-color: rgba(var(--white-rgba), 0.2);
-}
-
-.hover\:art-bg\:white\:30\% {
-    /* hover:art-white:30% */
-    background-color: rgba(var(--white-rgba), 0.3);
-}
-
-.hover\:art-bg\:white\:40\% {
-    /* hover:art-white:40% */
-    background-color: rgba(var(--white-rgba), 0.4);
-}
-
-.hover\:art-bg\:white\:50\% {
-    /* hover:art-white:50% */
-    background-color: rgba(var(--white-rgba), 0.5);
-}
-
-.hover\:art-bg\:black\:10\% {
-    /* hover:art-white:10% */
-    background-color: rgba(var(--black-rgba) 0.1);
-}
-
-.hover\:art-bg\:black\:20\% {
-    /* hover:art-white:10% */
-    background-color: rgba(var(--black-rgba) 0.2);
-}
-
-.hover\:art-bg\:black\:30\% {
-    /* hover:art-white:10% */
-    background-color: rgba(var(--black-rgba) 0.3);
-}
-
-.hover\:art-bg\:black\:40\% {
-    /* hover:art-white:10% */
-    background-color: rgba(var(--black-rgba) 0.4);
-}
-
-.hover\:art-bg\:black\:50\% {
-    /* hover:art-white:10% */
-    background-color: rgba(var(--black-rgba) 0.5);
-}
-
-.hover\:art-bg\:yellow\:10\% {
-    background-color: rgba(var(--yellow-rgba), 0.1);
-}
-
-.hover\:art-bg\:yellow\:20\% {
-    background-color: rgba(var(--yellow-rgba), 0.2);
-}
-
-.hover\:art-bg\:yellow\:30\% {
-    background-color: rgba(var(--yellow-rgba), 0.3);
-}
-
-.hover\:art-bg\:yellow\:40\% {
-    background-color: rgba(var(--yellow-rgba), 0.4);
-}
-
-.hover\:art-bg\:yellow\:50\% {
-    background-color: rgba(var(--yellow-rgba), 0.5);
-}
-
-.hover\:art-bg\:green\:10\% {
-    background-color: rgba(var(--green-rgba), 0.1);
-}
-
-.hover\:art-bg\:green\:20\% {
-    background-color: rgba(var(--green-rgba), 0.2);
-}
-
-.hover\:art-bg\:green\:30\% {
-    background-color: rgba(var(--green-rgba), 0.3);
-}
-
-.hover\:art-bg\:green\:40\% {
-    background-color: rgba(var(--green-rgba), 0.4);
-}
-
-.hover\:art-bg\:green\:50\% {
-    background-color: rgba(var(--green-rgba), 0.5);
-}
-
-.hover\:art-bg\:blue\:10\% {
-    background-color: rgba(var(--blue-rgba), 0.1);
-}
-
-.hover\:art-bg\:blue\:20\% {
-    background-color: rgba(var(--blue-rgba), 0.2);
-}
-
-.hover\:art-bg\:blue\:30\% {
-    background-color: rgba(var(--blue-rgba), 0.3);
-}
-
-.hover\:art-bg\:blue\:40\% {
-    background-color: rgba(var(--blue-rgba), 0.4);
-}
-
-.hover\:art-bg\:blue\:50\% {
-    background-color: rgba(var(--blue-rgba), 0.5);
-}
-
-.hover\:art-bg\:red\:10\% {
-    background-color: rgba(var(--red-rgba) 0.1);
-}
-
-.hover\:art-bg\:red\:20\% {
-    background-color: rgba(var(--red-rgba) 0.2);
-}
-
-.hover\:art-bg\:red\:30\% {
-    background-color: rgba(var(--red-rgba) 0.3);
-}
-
-.hover\:art-bg\:red\:40\% {
-    background-color: rgba(var(--red-rgba) 0.4);
-}
-
-.hover\:art-bg\:red\:50\% {
-    background-color: rgba(var(--red-rgba) 0.5);
-}
-
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/modules/hovers/font-hover.css ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************/
-/* Fonts hover: */
-
-.hover\:art-font-color\:white-01:hover {
-    /* hover:ft-color:white-01 */
-    color: var(--white-01);
-}
-
-.hover\:art-font-color\:white-02:hover {
-    /* hover:ft-color:white-02 */
-    color: var(--white-02);
-}
-
-.hover\:art-font-color\:white-03:hover {
-    /* hover:ft-color:white-02 */
-    color: var(--white-03);
-}
-
-.hover\:art-font-color\:black-01:hover {
-    color: var(--black-01);
-}
-
-.hover\:art-font-color\:black-02:hover {
-    color: var(--black-02);
-}
-
-.hover\:art-font-color\:black-03:hover {
-    color: var(--black-03);
-}
-
-.hover\:art-font-color\:yellow-01:hover {
-    color: var(--yellow-01);
-}
-
-.hover\:art-font-color\:yellow-02:hover {
-    color: var(--yellow-02);
-}
-
-.hover\:art-font-color\:yellow-03:hover {
-    color: var(--yellow-03);
-}
-
-.hover\:art-font-color\:green-01:hover {
-    color: var(--green-01);
-}
-
-.hover\:art-font-color\:green-02:hover {
-    color: var(--green-02);
-}
-
-.hover\:art-font-color\:green-03:hover {
-    color: var(--green-03);
-}
-
-.hover\:art-font-color\:blue-01:hover {
-    color: var(--blue-01);
-}
-
-.hover\:art-font-color\:blue-02:hover {
-    color: var(--blue-02);
-}
-
-.hover\:art-font-color\:blue-03:hover {
-    color: var(--blue-03);
-}
-
-.hover\:art-font-color\:red-01:hover {
-    color: var(--red-01);
-}
-
-.hover\:art-font-color\:red-02:hover {
-    color: var(--red-02);
-}
-
-.hover\:art-font-color\:red-03:hover {
-    color: var(--red-03);
-}
-
-
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/modules/border/border.css ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************/
-/* Borders */
-
-/* .border\:radius-04 {
-    border-radius: 0.9rem;
-} */
-
-.art-border-radius\:full\:radius-01 {
-    /* art-border-radius:full:radius-01 */
-    border-radius: 1rem;
-}
-
-.art-border-radius\:full\:radius-02 {
-    /* art-border-radius:full:radius-02 */
-    border-radius: 1.2rem;
-}
-
-.art-border-solid\:full\:0\.5\:white-01 {
-    /* art-border-solid:full:0.5:white-01 */
-    border: solid 0.5px var(--white-01);
-}
-
-.art-border-solid\:full\:0\.5\:white-02 {
-    /* art-border-solid:full:0.5:white-02 */
-    border: solid 0.5px var(--white-02);
-}
-
-.art-border-solid\:full\:0\.5\:white-03 {
-    /* art-border-solid:full:0.5:white-03 */
-    border: solid 0.5px var(--white-03);
-}
-
-.art-border-solid\:full\:0\.5\:black-01 {
-    /* art-border-solid:full:0.5:black-01 */
-    border: solid 0.5px var(--black-01);
-}
-
-.art-border-solid\:full\:0\.5\:black-02 {
-    /* art-border-solid:full:0.5:black-02 */
-    border: solid 0.5px var(--black-02);
-}
-
-.art-border-solid\:full\:0\.5\:black-03 {
-    /* art-border-solid:full:0.5:black-03 */
-    border: solid 0.5px var(--black-03);
-}
-
-/* 
-border-style:solid:full
-border-color:black-01
-border-width:0.5
-*/
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/modules/button/button.css ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************/
-button {
-    border-radius: 10px;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-}
-
-.art-btn\:small {
-
-    cursor: pointer;
-}
-
-.art-btn\:medium {
-
-    cursor: pointer;
-}
-
-/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/modules/art-modules.css ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************/
-
-/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/art-main.css ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************/
-/*@import url('modules/art-modules.css');*/
-
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/art.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 * {
@@ -603,8 +42,6 @@ button {
     --red-03: #DB1111;
     --red-rgba: 219, 17, 17;
 
-    --txt-black-01: #000000;
-
 }
 
 @media (prefers-color-scheme: dark) {
@@ -616,14 +53,698 @@ button {
         --black-01: #FFFFFF;
         --black-02: #F6F5F4;
         --black-03: #EBEBEB;
-
-        --txt-black-01: #FFFFFF;
     }
 }
-/*!************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/art.css ***!
-  \************************************************************************************************************************************************************************************************************************************************************************/
+/* ------------------------------------- background colors: ------------------------------------- */
 
+.art\:bg\:white-01 {
+    /* art:bg:white-01 */
+    background-color: var(--white-01);
+}
+
+.art\:bg\:white-02 {
+    /* art:bg:white-02 */
+    background-color: var(--white-02);
+}
+
+.art\:bg\:white-03 {
+    /* art:bg:white-03 */
+    background-color: var(--white-03);
+}
+
+.art\:bg\:white\:10\% {
+    /* art:bg:white:10% */
+    background-color: rgba(var(--white-rgba), 0.1);
+}
+
+.art\:bg\:white\:20\% {
+    /* art:bg:white:20% */
+    background-color: rgba(var(--white-rgba), 0.2);
+}
+
+.art\:bg\:white\:30\% {
+    /* art:bg:white:30% */
+    background-color: rgba(var(--white-rgba), 0.3);
+}
+
+.art\:bg\:white\:40\% {
+    /* art:bg:white:40% */
+    background-color: rgba(var(--white-rgba), 0.4);
+}
+
+.art\:bg\:white\:50\% {
+    /* art:bg:white:50% */
+    background-color: rgba(var(--white-rgba), 0.5);
+}
+
+.art\:bg\:black-01 {
+    /* art:bg:black-01 */
+    background-color: var(--black-01);
+}
+
+.art\:bg\:black-02 {
+    /* art:bg:black-02 */
+    background-color: var(--black-02);
+}
+
+.art\:bg\:black-03 {
+    /* art:bg:black-03 */
+    background-color: var(--black-03);
+}
+
+.art\:bg\:black\:10\% {
+    /* art:bg:black:10% */
+    background-color: rgba(var(--black-rgba), 0.1);
+}
+
+.art\:bg\:black\:20\% {
+    /* art:bg:black:20% */
+    background-color: rgba(var(--black-rgba), 0.2);
+}
+
+.art\:bg\:black\:30\% {
+    /* art:bg:black:30% */
+    background-color: rgba(var(--black-rgba), 0.3);
+}
+
+.art\:bg\:black\:40\% {
+    /* art:bg:black:40% */
+    background-color: rgba(var(--black-rgba), 0.4);
+}
+
+.art\:bg\:black\:50\% {
+    /* art:bg:black:50% */
+    background-color: rgba(var(--black-rgba), 0.5);
+}
+
+.art\:bg\:yellow-01 {
+    /* art:bg:yellow-01 */
+    background-color: var(--yellow-01);
+}
+
+.art\:bg\:yellow-02 {
+    /* art:bg:yellow-02 */
+    background-color: var(--yellow-02);
+}
+
+.art\:bg\:yellow-03 {
+    /* art:bg:yellow-03 */
+    background-color: var(--yellow-03);
+}
+
+.art\:bg\:yellow\:10\% {
+    /* art:bg:yellow:10% */
+    background-color: rgba(var(--yellow-rgba), 0.1);
+}
+
+.art\:bg\:yellow\:20\% {
+    /* art:bg:yellow:20% */
+    background-color: rgba(var(--yellow-rgba), 0.2);
+}
+
+.art\:bg\:yellow\:30\% {
+    /* art:bg:yellow:30% */
+    background-color: rgba(var(--yellow-rgba), 0.3);
+}
+
+.art\:bg\:yellow\:40\% {
+    /* art:bg:yellow:40% */
+    background-color: rgba(var(--yellow-rgba), 0.4);
+}
+
+.art\:bg\:yellow\:50\% {
+    /* art:bg:yellow:50% */
+    background-color: rgba(var(--yellow-rgba), 0.5);
+}
+
+.art\:bg\:green-01 {
+    /* art:bg:green-01 */
+    background-color: var(--green-01);
+}
+
+.art\:bg\:green-02 {
+    /* art:bg:green-02 */
+    background-color: var(--green-02);
+}
+
+.art\:bg\:green-03 {
+    /* art:bg:green-03 */
+    background-color: var(--green-02);
+}
+
+.art\:bg\:green\:10\% {
+    /* art:bg:green:10% */
+    background-color: rgba(var(--green-rgba), 0.1);
+}
+
+.art\:bg\:green\:20\% {
+    /* art:bg:green:20% */
+    background-color: rgba(var(--green-rgba), 0.2);
+}
+
+.art\:bg\:green\:30\% {
+    /* art:bg:green:30% */
+    background-color: rgba(var(--green-rgba), 0.3);
+}
+
+.art\:bg\:green\:40\% {
+    /* art:bg:green:40% */
+    background-color: rgba(var(--green-rgba), 0.4);
+}
+
+.art\:bg\:green\:50\% {
+    /* art:bg:green:50% */
+    background-color: rgba(var(--green-rgba), 0.5);
+}
+
+.art\:bg\:blue-01 {
+    /* art:bg:blue-01 */
+    background-color: var(--blue-01);
+}
+
+.art\:bg\:blue-02 {
+    /* art:bg:blue-02 */
+    background-color: var(--blue-02);
+}
+
+.art\:bg\:blue-03 {
+    /* art:bg:blue-03 */
+    background-color: var(--blue-03);
+}
+
+.art\:bg\:blue\:10\% {
+    /* art:bg:blue:10% */
+    background-color: rgba(var(--blue-rgba), 0.1);
+}
+
+.art\:bg\:blue\:20\% {
+    /* art:bg:blue:20% */
+    background-color: rgba(var(--blue-rgba), 0.2);
+}
+
+.art\:bg\:blue\:30\% {
+    /* art:bg:blue:30% */
+    background-color: rgba(var(--blue-rgba), 0.3);
+}
+
+.art\:bg\:blue\:40\% {
+    /* art:bg:blue:40% */
+    background-color: rgba(var(--blue-rgba), 0.4);
+}
+
+.art\:bg\:blue\:50\% {
+    /* art:bg:blue:50% */
+    background-color: rgba(var(--blue-rgba), 0.5);
+}
+
+.art\:bg\:red-01 {
+    /* art:bg:red-01 */
+    background-color: var(--red-01);
+}
+
+.art\:bg\:red-02 {
+    /* art:bg:red-02 */
+    background-color: var(--red-02);
+}
+
+.art\:bg\:red-03 {
+    /* art:bg:red-03 */
+    background-color: var(--red-03);
+}
+
+.art\:bg\:red\:10\% {
+    /* art:bg:red:10% */
+    background-color: rgba(var(--red-rgba), 0.1);
+}
+
+.art\:bg\:red\:20\% {
+    /* art:bg:red:20% */
+    background-color: rgba(var(--red-rgba), 0.2);
+}
+
+.art\:bg\:red\:30\% {
+    /* art:bg:red:30% */
+    background-color: rgba(var(--red-rgba), 0.3);
+}
+
+.art\:bg\:red\:40\% {
+    /* art:bg:red:40% */
+    background-color: rgba(var(--red-rgba), 0.4);
+}
+
+.art\:bg\:red\:50\% {
+    /* art:bg:red:50% */
+    background-color: rgba(var(--red-rgba), 0.5);
+}
+/* ------------------------------------- font colors: ------------------------------------- */
+
+.art\:font-color\:white-01 {
+    /* art:font-color:white-01 */
+    color: var(--white-01);
+}
+
+.art\:font-color\:white-02 {
+    /* art:font-color:white-02 */
+    color: var(--white-02);
+}
+
+.art\:font-color\:white-03 {
+    /* art:font-color:white-03 */
+    color: var(--white-03);
+}
+
+.art\:font-color\:black-01 {
+    /* art:font-color:black-01 */
+    color: var(--black-01);
+}
+
+.art\:font-color\:black-02 {
+    /* art:font-color:black-02 */
+    color: var(--black-02);
+}
+
+.art\:font-color\:black-03 {
+    /* art:font-color:black-03 */
+    color: var(--black-03);
+}
+
+.art\:font-color\:yellow-01 {
+    /* art:font-color:yellow-01 */
+    color: var(--yellow-01);
+}
+
+.art\:font-color\:yellow-02 {
+    /* art:font-color:yellow-02 */
+    color: var(--yellow-02);
+}
+
+.art\:font-color\:yellow-03 {
+    /* art:font-color:yellow-03 */
+    color: var(--yellow-03);
+}
+
+.art\:font-color\:green-01 {
+    /* art:font-color:green-01 */
+    color: var(--green-01);
+}
+
+.art\:font-color\:green-02 {
+    /* art:font-color:green-02 */
+    color: var(--green-02);
+}
+
+.art\:font-color\:green-03 {
+    /* art:font-color:green-03 */
+    color: var(--green-03);
+}
+
+.art\:font-color\:blue-01 {
+    /* art:font-color:blue-01 */
+    color: var(--blue-01);
+}
+
+.art\:font-color\:blue-02 {
+    /* art:font-color:blue-02 */
+    color: var(--blue-03);
+}
+
+.art\:font-color\:blue-3 {
+    /* art:font-color:blue-03 */
+    color: var(--blue-03);
+}
+
+.art\:font-color\:red-01 {
+    /* art:font-color:red-01 */
+    color: var(--red-01);
+}
+
+.art\:font-color\:red-02 {
+    /* art:font-color:red-02 */
+    color: var(--red-02);
+}
+
+.art\:font-color\:red-03 {
+    /* art:font-color:red-01 */
+    color: var(--red-03);
+}
+/* ------------------------------------- font size: ------------------------------------- */
+
+.art\:font-size\:title {
+    /* .art:font-size:title */
+    font-size: 2.5rem;
+}
+
+.art\:font-size\:subtitle {
+    /* .art:font-size:subtitle */
+    font-size: 1.5rem;
+}
+
+.art\:font-size\:normal {
+    /* .art:font-size:subtitle */
+    font-size: 1.2rem;
+}
+/* ------------------------------------- background color hovers: ------------------------------------- */
+
+.art\:hover\:bg\:white-01:hover {
+    /* art:hover:bg:white-01 */
+    background-color: var(--white-01);
+}
+
+.art\:hover\:bg\:white-02:hover {
+    /* art:hover:bg:white-02 */
+    background-color: var(--white-02);
+}
+
+.art\:hover\:bg\:white-03:hover {
+    /* art:hover:bg:white-03 */
+    background-color: var(--white-03);
+}
+
+.art\:hover\:bg\:black-01:hover {
+    /* art:hover:bg:black-01 */
+    background-color: var(--black-01);
+}
+
+.art\:hover\:bg\:black-02:hover {
+    /* art:hover:bg:black-02 */
+    background-color: var(--black-02);
+}
+
+.art\:hover\:bg\:black-03:hover {
+    /* art:hover:bg:black-03 */
+    background-color: var(--black-03);
+}
+
+.art\:hover\:bg\:yellow-01:hover {
+    /* art:hover:bg:yellow-01 */
+    background-color: var(--yellow-01);
+}
+
+.art\:hover\:bg\:yellow-02:hover {
+    /* art:hover:bg:yellow-02 */
+    background-color: var(--yellow-02);
+}
+
+.art\:hover\:bg\:yellow-03:hover {
+    /* art:hover:bg:yellow-03 */
+    background-color: var(--yellow-03);
+}
+
+.art\:hover\:bg\:green-01:hover {
+    /* art:hover:bg:green-01 */
+    background-color: var(--green-01);
+}
+
+.art\:hover\:bg\:green-02:hover {
+    /* art:hover:bg:green-02 */
+    background-color: var(--green-02);
+}
+
+.art\:hover\:bg\:green-03:hover {
+    /* art:hover:bg:green-03 */
+    background-color: var(--green-02);
+}
+
+.art\:hover\:bg\:blue-01:hover {
+    /* art:hover:bg:blue-01 */
+    background-color: var(--blue-01);
+}
+
+.art\:hover\:bg\:blue-02:hover {
+    /* art:hover:bg:blue-02 */
+    background-color: var(--blue-02);
+}
+
+.art\:hover\:bg\:blue-03:hover {
+    /* art:hover:bg:blue-03 */
+    background-color: var(--blue-03);
+}
+
+.art\:hover\:bg\:red-01:hover {
+    /* art:hover:bg:red-01 */
+    background-color: var(--red-01);
+}
+
+.art\:hover\:bg\:red-02:hover {
+    /* art:hover:bg:red-02 */
+    background-color: var(--red-02);
+}
+
+.art\:hover\:bg\:red-03:hover {
+    /* art:hover:bg:red-03 */
+    background-color: var(--red-03);
+}
+/* ------------------------------------- fonts color hovers: ------------------------------------- */
+
+.art\:hover\:font-color\:white-01:hover {
+    /* .art:hover:font-color:white-01 */
+    color: var(--white-01);
+}
+
+.art\:hover\:font-color\:white-02:hover {
+    /* .art:hover:font-color:white-02 */
+    color: var(--white-02);
+}
+
+.art\:hover\:font-color\:white-03:hover {
+    /* .art:hover:font-color:white-02 */
+    color: var(--white-03);
+}
+
+.art\:hover\:font-color\:black-01:hover {
+    /* .art:hover:font-color:black-01 */
+    color: var(--black-01);
+}
+
+.art\:hover\:font-color\:black-02:hover {
+    /* .art:hover:font-color:black-02 */
+    color: var(--black-02);
+}
+
+.art\:hover\:font-color\:black-03:hover {
+    /* .art:hover:font-color:black-03 */
+    color: var(--black-03);
+}
+
+.art\:hover\:font-color\:yellow-01:hover {
+    /* .art:hover:font-color:yellow-01 */
+    color: var(--yellow-01);
+}
+
+.art\:hover\:font-color\:yellow-02:hover {
+    /* .art:hover:font-color:yellow-02 */
+    color: var(--yellow-02);
+}
+
+.art\:hover\:font-color\:yellow-03:hover {
+    /* .art:hover:font-color:yellow-03 */
+    color: var(--yellow-03);
+}
+
+.art\:hover\:font-color\:green-01:hover {
+    /* .art:hover:font-color:green-01 */
+    color: var(--green-01);
+}
+
+.art\:hover\:font-color\:green-02:hover {
+    /* .art:hover:font-color:green-02 */
+    color: var(--green-02);
+}
+
+.art\:hover\:font-color\:green-03:hover {
+    /* .art:hover:font-color:green-03 */
+    color: var(--green-03);
+}
+
+.art\:hover\:font-color\:blue-01:hover {
+    /* .art:hover:font-color:blue-01 */
+    color: var(--blue-01);
+}
+
+.art\:hover\:font-color\:blue-02:hover {
+    /* .art:hover:font-color:blue-02 */
+    color: var(--blue-02);
+}
+
+.art\:hover\:font-color\:blue-03:hover {
+    /* .art:hover:font-color:blue-03 */
+    color: var(--blue-03);
+}
+
+.art\:hover\:font-color\:red-01:hover {
+    /* .art:hover:font-color:red-01 */
+    color: var(--red-01);
+}
+
+.art\:hover\:font-color\:red-02:hover {
+    /* .art:hover:font-color:red-02 */
+    color: var(--red-02);
+}
+
+.art\:hover\:font-color\:red-03:hover {
+    /* .art:hover:font-color:red-03 */
+    color: var(--red-03);
+}
+/* ------------------------------------- border styles: ------------------------------------- */
+
+.art\:border-style\:solid {
+    /* art:border-style:solid */
+    border-style: solid;
+}
+
+/* ------------------------------------- border colors: ------------------------------------- */
+
+.art\:border-color\:white-01 {
+    /* art:border-color:white-01  */
+    border-color: var(--white-01);
+}
+
+.art\:border-color\:white-02 {
+    /* art:border-color:white-02  */
+    border-color: var(--white-02);
+}
+
+.art\:border-color\:white-03 {
+    /* art:border-color:white-03  */
+    border-color: var(--white-03);
+}
+
+.art\:border-color\:black-01 {
+    /* art:border-color:black-01  */
+    border-color: var(--black-01);
+}
+
+.art\:border-color\:black-02 {
+    /* art:border-color:black-02  */
+    border-color: var(--black-02);
+}
+
+.art\:border-color\:black-03 {
+    /* art:border-color:black-03  */
+    border-color: var(--black-03);
+}
+
+.art\:border-color\:yellow-01 {
+    /* art:border-color:yellow-01  */
+    border-color: var(--yellow-01);
+}
+
+.art\:border-color\:yellow-02 {
+    /* art:border-color:yellow-02  */
+    border-color: var(--yellow-02);
+}
+
+.art\:border-color\:yellow-03 {
+    /* art:border-color:yellow-03  */
+    border-color: var(--yellow-03);
+}
+
+.art\:border-color\:green-01 {
+    /* art:border-color:green-01  */
+    border-color: var(--green-01);
+}
+
+.art\:border-color\:green-02 {
+    /* art:border-color:green-02  */
+    border-color: var(--green-02);
+}
+
+.art\:border-color\:green-03 {
+    /* art:border-color:green-03  */
+    border-color: var(--green-03);
+}
+
+.art\:border-color\:blue-01 {
+    /* art:border-color:blue-01  */
+    border-color: var(--blue-01);
+}
+
+.art\:border-color\:blue-02 {
+    /* art:border-color:blue-02  */
+    border-color: var(--blue-02);
+}
+
+.art\:border-color\:blue-03 {
+    /* art:border-color:blue-03  */
+    border-color: var(--blue-03);
+}
+
+.art\:border-color\:red-01 {
+    /* art:border-color:red-01  */
+    border-color: var(--red-01);
+}
+
+.art\:border-color\:red-02 {
+    /* art:border-color:red-02  */
+    border-color: var(--red-02);
+}
+
+.art\:border-color\:red-03 {
+    /* art:border-color:red-03  */
+    border-color: var(--red-03);
+}
+
+/* ------------------------------------- border sizes: ------------------------------------- */
+
+.art\:border-size\:s-01 {
+    /* art:border-size:s-01 */
+    border-width: 0.5px;
+}
+
+/* ------------------------------------- border radius: ------------------------------------- */
+
+.art\:border-radius\:r-01 {
+    /* art:border-radius:r-01  */
+    border-radius: 1rem;
+}
+
+/* ------------------------------------- border full solid: ------------------------------------ */
+
+.art\:border-full\:solid\:black-01\:s-01 {
+    /* .art:border-full:solid:black-01:s-01 */
+    border: solid var(--black-01) 0.5px;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/TabMenu/tabMenu.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+.tabMenu_icon___W7iU {
+    width: 2rem;
+    height: auto;
+}
+
+.tabMenu_painel__SDMWU {
+    background-color: transparent;
+
+    position: absolute;
+    margin-top: 11rem;
+    width: 95%;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.tabMenu_painelContent__j3QD5 {
+    width: 20%;
+    max-width: 40rem;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    align-items: center;
+    
+}
+
+@media (max-width: 800px) {
+    .tabMenu_painelContent__j3QD5 {
+        width: 100%;
+    }
+}
 /*!********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/globals.css ***!
   \********************************************************************************************************************************************************************************************************************************************************************/
@@ -654,9 +775,7 @@ html::-webkit-scrollbar {
 
 body {
     width: 100%;
-
     display: flex;
-    /* gap: 20px; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -666,13 +785,31 @@ ul,ol,li {
     list-style: none;
 }
 
-.art-bg\:blur-01 {
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.art\:bg\:blur-01 {
     background: hsla(0, 0%, 94%, .16);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, .1);
     backdrop-filter: blur(12.3px);
     -webkit-backdrop-filter: blur(12.3px);
     border: 1px solid hsla(0, 0%, 94%, .25);
+}
+
+.art\:btn\:no-style {
+    /* art:btn:no-style */
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: transparent;
+    cursor: pointer;
 }
 /*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/Header/header.module.css ***!
