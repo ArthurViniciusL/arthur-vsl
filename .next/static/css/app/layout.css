@@ -1,3 +1,44 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/TabMenu/tabMenu.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+.tabMenu_icon___W7iU {
+    width: 2rem;
+    height: auto;
+}
+
+.tabMenu_painel__SDMWU {
+    background-color: transparent;
+
+    position: absolute;
+    margin-top: 11rem;
+    width: 95%;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.tabMenu_painelContent__j3QD5 {
+    width: 20%;
+    max-width: 40rem;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    align-items: center;
+    
+}
+
+@media (max-width: 800px) {
+    .tabMenu_painelContent__j3QD5 {
+        width: 100%;
+    }
+}
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/modules/background/bg-color.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -456,33 +497,33 @@
     border-radius: 1.2rem;
 }
 
-.art-border-full\:solid-0\.5\:white-01 {
-    /* border:solid-0.5:full:white-01 */
+.art-border-solid\:full\:0\.5\:white-01 {
+    /* art-border-solid:full:0.5:white-01 */
     border: solid 0.5px var(--white-01);
 }
 
-.art-border-full\:solid-0\.5\:white-02 {
-    /* border:solid-0.5:full:white-02 */
+.art-border-solid\:full\:0\.5\:white-02 {
+    /* art-border-solid:full:0.5:white-02 */
     border: solid 0.5px var(--white-02);
 }
 
-.art-border-full\:solid-0\.5\:white-03 {
-    /* border:solid-0.5:full:white-03 */
+.art-border-solid\:full\:0\.5\:white-03 {
+    /* art-border-solid:full:0.5:white-03 */
     border: solid 0.5px var(--white-03);
 }
 
-.art-border-full\:solid-0\.5\:black-01 {
-    /* border:solid-0.5:full:black-01 */
+.art-border-solid\:full\:0\.5\:black-01 {
+    /* art-border-solid:full:0.5:black-01 */
     border: solid 0.5px var(--black-01);
 }
 
-.art-border-full\:solid-0\.5\:black-02 {
-    /* border:solid-0.5:full:black-02 */
+.art-border-solid\:full\:0\.5\:black-02 {
+    /* art-border-solid:full:0.5:black-02 */
     border: solid 0.5px var(--black-02);
 }
 
-.art-border-full\:solid-0\.5\:black-03 {
-    /* border:solid-0.5:full:black-03 */
+.art-border-solid\:full\:0\.5\:black-03 {
+    /* art-border-solid:full:0.5:black-03 */
     border: solid 0.5px var(--black-03);
 }
 
@@ -499,6 +540,7 @@ button {
     padding: 10px;
     border: none;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .art-btn\:small {
@@ -620,6 +662,10 @@ body {
     justify-content: center;
 }
 
+ul,ol,li {
+    list-style: none;
+}
+
 .art-bg\:blur-01 {
     background: hsla(0, 0%, 94%, .16);
     border-radius: 16px;
@@ -664,12 +710,5 @@ body {
 
 .header_logo__q5OoG {
     width: 2.5rem;
-    height: auto;
-}
-/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/TabMenu/tabMenu.module.css ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************/
-.tabMenu_icon___W7iU {
-    width: 2rem;
     height: auto;
 }

@@ -2,3 +2,36 @@
     width: 2rem;
     height: auto;
 }
+
+.painel {
+    background-color: transparent;
+
+    position: absolute;
+    margin-top: 11rem;
+    width: 95%;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.painelContent {
+    width: 20%;
+    max-width: 40rem;
+    height: fit-content;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    align-items: center;
+    
+}
+
+@media (max-width: 800px) {
+    .painelContent {
+        width: 100%;
+    }
+}

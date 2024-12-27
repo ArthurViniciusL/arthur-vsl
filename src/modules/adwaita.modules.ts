@@ -7,6 +7,7 @@
 /* import ArthurLogo from '@/assets/icons/logo-marca.svg'; */
 
 import dockBottom from "@/assets/icons/Adwaita/dock-bottom-symbolic.svg";
+import dockTop from "@/assets/icons/Adwaita/dock-top-symbolic.svg"
 
 // Light mode:
 
@@ -14,7 +15,8 @@ import dockBottom from "@/assets/icons/Adwaita/dock-bottom-symbolic.svg";
 // Dark Mode:
 
 const Adwaita = {
-    dockBottom
+    dockBottom,
+    dockTop
    /*  ImgProfile,
     VideoProfile,
     VideoProfileMobile,
