@@ -74,36 +74,36 @@
 }
 
 
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/modules/font/ft-color.css ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************/
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/modules/font/font-color.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
 /* Font colors:*/
 
-.art-ft-color\:white-01 {
+.art-font-color\:white-01 {
     color: var(--white-01);
 }
 
-.art-ft-color\:white-02 {
+.art-font-color\:white-02 {
     color: var(--white-02);
 }
 
-.art-ft-color\:white-03 {
+.art-font-color\:white-03 {
     color: var(--white-03);
 }
 
-.art-ft-color\:black-01 {
+.art-font-color\:black-01 {
     color: var(--black-01);
 }
 
-.art-ft-color\:black-02 {
+.art-font-color\:black-02 {
     color: var(--black-02);
 }
 
-.art-ft-color\:black-03 {
+.art-font-color\:black-03 {
     color: var(--black-03);
 }
 
-.art-ft-color\:yellow-01 {
+.art-font-color\:yellow-01 {
     color: var(--yellow-01);
 }
 
@@ -356,83 +356,83 @@
     background-color: rgba(var(--red-rgba) 0.5);
 }
 
-/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/modules/hovers/ft-hover.css ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/modules/hovers/font-hover.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************/
 /* Fonts hover: */
 
-.hover\:art-ft-color\:white-01:hover {
+.hover\:art-font-color\:white-01:hover {
     /* hover:ft-color:white-01 */
     color: var(--white-01);
 }
 
-.hover\:art-ft-color\:white-02:hover {
+.hover\:art-font-color\:white-02:hover {
     /* hover:ft-color:white-02 */
     color: var(--white-02);
 }
 
-.hover\:art-ft-color\:white-03:hover {
+.hover\:art-font-color\:white-03:hover {
     /* hover:ft-color:white-02 */
     color: var(--white-03);
 }
 
-.hover\:art-ft-color\:black-01:hover {
+.hover\:art-font-color\:black-01:hover {
     color: var(--black-01);
 }
 
-.hover\:art-ft-color\:black-02:hover {
+.hover\:art-font-color\:black-02:hover {
     color: var(--black-02);
 }
 
-.hover\:art-ft-color\:black-03:hover {
+.hover\:art-font-color\:black-03:hover {
     color: var(--black-03);
 }
 
-.hover\:art-ft-color\:yellow-01:hover {
+.hover\:art-font-color\:yellow-01:hover {
     color: var(--yellow-01);
 }
 
-.hover\:art-ft-color\:yellow-02:hover {
+.hover\:art-font-color\:yellow-02:hover {
     color: var(--yellow-02);
 }
 
-.hover\:art-ft-color\:yellow-03:hover {
+.hover\:art-font-color\:yellow-03:hover {
     color: var(--yellow-03);
 }
 
-.hover\:art-ft-color\:green-01:hover {
+.hover\:art-font-color\:green-01:hover {
     color: var(--green-01);
 }
 
-.hover\:art-ft-color\:green-02:hover {
+.hover\:art-font-color\:green-02:hover {
     color: var(--green-02);
 }
 
-.hover\:art-ft-color\:green-03:hover {
+.hover\:art-font-color\:green-03:hover {
     color: var(--green-03);
 }
 
-.hover\:art-ft-color\:blue-01:hover {
+.hover\:art-font-color\:blue-01:hover {
     color: var(--blue-01);
 }
 
-.hover\:art-ft-color\:blue-02:hover {
+.hover\:art-font-color\:blue-02:hover {
     color: var(--blue-02);
 }
 
-.hover\:art-ft-color\:blue-03:hover {
+.hover\:art-font-color\:blue-03:hover {
     color: var(--blue-03);
 }
 
-.hover\:art-ft-color\:red-01:hover {
+.hover\:art-font-color\:red-01:hover {
     color: var(--red-01);
 }
 
-.hover\:art-ft-color\:red-02:hover {
+.hover\:art-font-color\:red-02:hover {
     color: var(--red-02);
 }
 
-.hover\:art-ft-color\:red-03:hover {
+.hover\:art-font-color\:red-03:hover {
     color: var(--red-03);
 }
 
@@ -621,11 +621,12 @@ body {
 }
 
 .art-bg\:blur-01 {
-    background: rgba(255, 255, 255, 0.16);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(11.5px);
-    -webkit-backdrop-filter: blur(11.5px);
-    border: 1px solid rgba(255, 255, 255, 0.37);
+    background: hsla(0, 0%, 94%, .16);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .1);
+    backdrop-filter: blur(12.3px);
+    -webkit-backdrop-filter: blur(12.3px);
+    border: 1px solid hsla(0, 0%, 94%, .25);
 }
 /*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/Header/header.module.css ***!
@@ -651,7 +652,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
 }
 
 .header_content__a_3sy {
