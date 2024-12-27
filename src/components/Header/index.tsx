@@ -7,14 +7,17 @@ export function Header() {
     const title = "Página_nome";
     return (
         <div className={`${styles.box}`}>
-            <header className={`${styles.header} bg:art-blur-01`}>
+            <header className={`${styles.header}
+            art-bg:blur-01
+            art-border-radius:full:radius-02
+            `}>
                 <div className={`${styles.content}`}>
                     <Image src={artLogo} alt="" className={`${styles.logo}`} />
 
                     {title}
 
                     <TabMenu />
-        </div>
+                </div>
             </header >
         </div >
     )

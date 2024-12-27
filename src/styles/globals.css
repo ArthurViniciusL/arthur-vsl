@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("art/art.css");
+@import url("art-css/art.css");
 
 html {
     width: 100dvw;
@@ -34,7 +34,7 @@ body {
     justify-content: center;
 }
 
-.bg\:art-blur-01 {
+.art-bg\:blur-01 {
     background: rgba(255, 255, 255, 0.16);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(11.5px);

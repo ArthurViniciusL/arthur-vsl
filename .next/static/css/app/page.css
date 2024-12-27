@@ -1,7 +1,61 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/ImageProfile/porfile.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************/
+.porfile_desktop__w8T57 {
+    width: 100%;
+    max-width: 18rem;
+}
+
+.porfile_mobile__55nd_ {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .porfile_desktop__w8T57 {
+        display: none;
+    }
+
+    .porfile_mobile__55nd_ {
+        display: flex;
+
+        width: 100%;
+        max-width: 8rem;
+    }
+}
 /*!************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/home/home.module.css ***!
   \************************************************************************************************************************************************************************************************************************************************************************/
 .home_box__iR0Ny {
     width: 90%;
     max-width: 70rem;
+}
+
+.home_content__HGh3K {
+    width: 100%;
+    height: 80dvh;
+
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+
+    align-items: center;
+}
+
+.home_textArea__gfLnV {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+}
+
+@media (max-width: 800px) {
+    .home_content__HGh3K {
+        flex-direction: column;
+    }
+
+    .home_textArea__gfLnV {
+        display: flex;
+        align-items: center;
+    }
 }

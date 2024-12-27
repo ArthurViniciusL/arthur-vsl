@@ -1,8 +1,12 @@
 .box {
     width: 90%;
     max-width: 60rem;
+    /*     
+    height: 60%;
+    min-height: 5rem; 
+    */
     height: 5rem;
-    margin-top: 20px;   
+    margin-top: 20px;
 }
 
 .header {
@@ -11,12 +15,10 @@
     height: 4rem;
     max-height: 4rem;
     position: fixed;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    border-radius: 20px;
     background-color: red;
 }
 

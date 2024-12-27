@@ -1,16 +1,24 @@
-// import styles from "./porfile.module.css";
-
-// import desktop from "@/assets/videos/arthur_profile.mp4"
-
-/* import desktop from "@/assets/videos/arthur_profile.mp4"; */
+import styles from './porfile.module.css';
 
 export function ImageProfile() {
     return (
         <>
-        olá
-            <video width="500" controls>
-                {/* <source src="../../../assets/videos/arthur_profile.mp4" type="video/mp4" /> */}
-                <source src="/videos/arthur_profile.mp4" type="video/mp4" />
+            <video className={`${styles.desktop} art-border-radius:full:radius-02`}
+                controls={false}
+                autoPlay
+                loop
+                muted
+            >
+                <source src="videos/arthur_profile.mp4" type="video/mp4" />
+            </video>
+
+            <video className={`${styles.mobile} art-border-radius:full:radius-02`}
+                controls={false}
+                autoPlay
+                loop
+                muted
+            >
+                <source src="videos/arthur_profile_mobile.mp4" type="video/mp4" />
             </video>
         </>
     );

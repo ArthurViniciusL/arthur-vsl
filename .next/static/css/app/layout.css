@@ -1,472 +1,499 @@
-/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art/src/modules/background/bg-color.css ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************/
-.bg\:art-white-01 {
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/modules/background/bg-color.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+.art-bg\:white-01 {
     background-color: var(--white-01);
 }
 
-.bg\:art-white-02 {
+.art-bg\art-bg\:white-02 {
     background-color: var(--white-02);
 }
 
-.bg\:art-white-03 {
+.art-bg\:white-03 {
     background-color: var(--white-03);
 }
 
-.bg\:art-black-01 {
+.art-bg\:black-01 {
     background-color: var(--black-01);
 }
 
-.bg\:art-black-02 {
+.art-bg\:black-02 {
     background-color: var(--black-02);
 }
 
-.bg\:art-black-03 {
+.art-bg\:black-03 {
     background-color: var(--black-03);
 }
 
-.bg\:art-yellow-01 {
+.art-bg\:yellow-01 {
     background-color: var(--yellow-01);
 }
 
-.bg\:art-yellow-02 {
+.art-bg\:yellow-02 {
     background-color: var(--yellow-02);
 }
 
-.bg\:art-yellow-03 {
+.art-bg\:yellow-03 {
     background-color: var(--yellow-03);
 }
 
-.bg\:art-green-01 {
+.art-bg\:green-01 {
     background-color: var(--green-01);
 }
 
-.bg\:art-green-02 {
+.art-bg\:green-02 {
     background-color: var(--green-02);
 }
 
-.bg\:art-green-03 {
+.art-bg\:green-03 {
     background-color: var(--green-02);
 }
 
-.bg\:art-blue-01 {
+.art-bg\:blue-01 {
     background-color: var(--blue-01);
 }
 
-.bg\:art-blue-02 {
+.art-bg\:blue-02 {
     background-color: var(--blue-02);
 }
 
-.bg\:art-blue-03 {
+.art-bg\:blue-03 {
     background-color: var(--blue-03);
 }
 
-.bg\:art-red-01 {
+.art-bg\:red-01 {
     background-color: var(--red-01);
 }
 
-.bg\:art-red-02 {
+.art-bg\:red-02 {
     background-color: var(--red-02);
 }
 
-.bg\:art-red-03 {
+.art-bg\:red-03 {
     background-color: var(--red-03);
 }
 
 
-/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art/src/modules/font/ft-color.css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/modules/font/ft-color.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
 /* Font colors:*/
 
-.ft\:color\:art-white-01 {
+.art-ft-color\:white-01 {
     color: var(--white-01);
 }
 
-.ft\:color\:art-white-02 {
+.art-ft-color\:white-02 {
     color: var(--white-02);
 }
 
-.ft\:color\:art-white-03 {
+.art-ft-color\:white-03 {
     color: var(--white-03);
 }
 
-.ft\:color\:art-black-01 {
+.art-ft-color\:black-01 {
     color: var(--black-01);
 }
 
-.ft\:color\:art-black-02 {
+.art-ft-color\:black-02 {
     color: var(--black-02);
 }
 
-.ft\:color\:art-black-03 {
+.art-ft-color\:black-03 {
     color: var(--black-03);
 }
 
-.ft\:color\:art-yellow-01 {
+.art-ft-color\:yellow-01 {
     color: var(--yellow-01);
 }
 
-/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art/src/modules/hovers/bg-hover.css ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/modules/font/font-size.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************/
+.art-font-size\:title {
+    /* .art-font-size:title */
+    font-size: 2.5rem;
+}
+
+.art-font-size\:subtitle {
+    /* .art-font-size:subtitle */
+    font-size: 1.5rem;
+}
+
+.art-font-size\:normal {
+    /* .art-font-size:subtitle */
+    font-size: 1.2rem;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/modules/hovers/bg-hover.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
 /* bg hovers:*/
 
-.hover\:bg\:art-black-01:hover {
+.hover\:art-bg\:black-01:hover {
     background-color: var(--black-01);
 }
 
-.hover\:bg\:art-black-02:hover {
+.hover\:art-bg\:black-02:hover {
     background-color: var(--black-02);
 }
 
-.hover\:bg\:art-black-03:hover {
+.hover\:art-bg\:black-03:hover {
     background-color: var(--black-03);
 }
 
-.hover\:bg\:art-white-01:hover {
+.hover\:art-bg\:white-01:hover {
     background-color: var(--white-01);
 }
 
-.hover\:bg\:art-white-02:hover {
+.hover\:art-bg\:white-02:hover {
     background-color: var(--white-02);
 }
 
-.hover\:bg\:art-white-03:hover {
+.hover\:art-bg\:white-03:hover {
     background-color: var(--white-03);
 }
 
-.hover\:bg\:art-yellow-01:hover {
+.hover\:art-bg\:yellow-01:hover {
     background-color: var(--yellow-01);
 }
 
-.hover\:bg\:art-yellow-02:hover {
+.hover\:art-bg\:yellow-02:hover {
     background-color: var(--yellow-02);
 }
 
-.hover\:bg\:art-yellow-03:hover {
+.hover\:art-bg\:yellow-03:hover {
     background-color: var(--yellow-03);
 }
 
-.hover\:bg\:art-green-01:hover {
+.hover\:art-bg\:green-01:hover {
     background-color: var(--green-01);
 }
 
-.hover\:bg\:art-green-02:hover {
+.hover\:art-bg\:green-02:hover {
     background-color: var(--green-02);
 }
 
-.hover\:bg\:art-green-03:hover {
+.hover\:art-bg\:green-03:hover {
     background-color: var(--green-03);
 }
 
-.hover\:bg\:art-blue-01:hover {
+.hover\:art-bg\:blue-01:hover {
     background-color: var(--blue-01);
 }
 
-.hover\:bg\:art-blue-03:hover {
+.hover\:art-bg\:blue-03:hover {
     background-color: var(--blue-03);
 }
 
-.hover\:bg\:art-blue-03:hover {
+.hover\:art-bg\:blue-03:hover {
     background-color: var(--blue-03);
 }
 
-.hover\:bg\:art-red-01:hover {
+.hover\:art-bg\:red-01:hover {
     background-color: var(--red-01);
 }
 
-.hover\:bg\:art-red-02:hover {
+.hover\:art-bg\:red-02:hover {
     background-color: var(--red-02);
 }
 
-.hover\:bg\:art-red-03:hover {
+.hover\:art-bg\:red-03:hover {
     background-color: var(--red-03);
 }
 
-.hover\:bg\:art-white\:10\%:hover {
+.hover\:art-bg\:white\:10\%:hover {
     /* hover:art-white:10% */
     background-color: rgba(var(--white-rgba) 0.1);
 }
 
-.hover\:bg\:art-white\:20\%:hover {
+.hover\:art-bg\:white\:20\%:hover {
     /* hover:art-white:10% */
     background-color: rgba(var(--white-rgba) 0.2);
 }
 
-.hover\:bg\:art-white\:30\%:hover {
+.hover\:art-bg\:white\:30\%:hover {
     /* hover:art-white:30% */
     background-color: rgba(var(--white-rgba) 0.3);
 }
 
-.hover\:bg\:art-white\:40\%:hover {
+.hover\:art-bg\:white\:40\%:hover {
     /* hover:art-white:40% */
     background-color: rgba(var(--white-rgba) 0.4);
 }
 
-.hover\:bg\:art-white\:50\%:hover {
+.hover\:art-bg\:white\:50\%:hover {
     /* hover:art-white:50% */
     background-color: rgba(var(--white-rgba) 0.5);
 }
 
-.hover\:bg\:art-white\:10\% {
+.hover\:art-bg\:white\:10\% {
     /* hover:art-white:10% */
     background-color: rgba(var(--white-rgba) 0.1);
 }
 
-.hover\:bg\:art-white\:20\% {
+.hover\:art-bg\:white\:20\% {
     /* hover:art-white:20% */
     background-color: rgba(var(--white-rgba), 0.2);
 }
 
-.hover\:bg\:art-white\:30\% {
+.hover\:art-bg\:white\:30\% {
     /* hover:art-white:30% */
     background-color: rgba(var(--white-rgba), 0.3);
 }
 
-.hover\:bg\:art-white\:40\% {
+.hover\:art-bg\:white\:40\% {
     /* hover:art-white:40% */
     background-color: rgba(var(--white-rgba), 0.4);
 }
 
-.hover\:bg\:art-white\:50\% {
+.hover\:art-bg\:white\:50\% {
     /* hover:art-white:50% */
     background-color: rgba(var(--white-rgba), 0.5);
 }
 
-.hover\:bg\:art-black\:10\% {
+.hover\:art-bg\:black\:10\% {
     /* hover:art-white:10% */
     background-color: rgba(var(--black-rgba) 0.1);
 }
 
-.hover\:bg\:art-black\:20\% {
+.hover\:art-bg\:black\:20\% {
     /* hover:art-white:10% */
     background-color: rgba(var(--black-rgba) 0.2);
 }
 
-.hover\:bg\:art-black\:30\% {
+.hover\:art-bg\:black\:30\% {
     /* hover:art-white:10% */
     background-color: rgba(var(--black-rgba) 0.3);
 }
 
-.hover\:bg\:art-black\:40\% {
+.hover\:art-bg\:black\:40\% {
     /* hover:art-white:10% */
     background-color: rgba(var(--black-rgba) 0.4);
 }
 
-.hover\:bg\:art-black\:50\% {
+.hover\:art-bg\:black\:50\% {
     /* hover:art-white:10% */
     background-color: rgba(var(--black-rgba) 0.5);
 }
 
-.hover\:bg\:art-yellow\:10\% {
+.hover\:art-bg\:yellow\:10\% {
     background-color: rgba(var(--yellow-rgba), 0.1);
 }
 
-.hover\:bg\:art-yellow\:20\% {
+.hover\:art-bg\:yellow\:20\% {
     background-color: rgba(var(--yellow-rgba), 0.2);
 }
 
-.hover\:bg\:art-yellow\:30\% {
+.hover\:art-bg\:yellow\:30\% {
     background-color: rgba(var(--yellow-rgba), 0.3);
 }
 
-.hover\:bg\:art-yellow\:40\% {
+.hover\:art-bg\:yellow\:40\% {
     background-color: rgba(var(--yellow-rgba), 0.4);
 }
 
-.hover\:bg\:art-yellow\:50\% {
+.hover\:art-bg\:yellow\:50\% {
     background-color: rgba(var(--yellow-rgba), 0.5);
 }
 
-.hover\:bg\:art-green\:10\% {
+.hover\:art-bg\:green\:10\% {
     background-color: rgba(var(--green-rgba), 0.1);
 }
 
-.hover\:bg\:art-green\:20\% {
+.hover\:art-bg\:green\:20\% {
     background-color: rgba(var(--green-rgba), 0.2);
 }
 
-.hover\:bg\:art-green\:30\% {
+.hover\:art-bg\:green\:30\% {
     background-color: rgba(var(--green-rgba), 0.3);
 }
 
-.hover\:bg\:art-green\:40\% {
+.hover\:art-bg\:green\:40\% {
     background-color: rgba(var(--green-rgba), 0.4);
 }
 
-.hover\:bg\:art-green\:50\% {
+.hover\:art-bg\:green\:50\% {
     background-color: rgba(var(--green-rgba), 0.5);
 }
 
-.hover\:bg\:art-blue\:10\% {
+.hover\:art-bg\:blue\:10\% {
     background-color: rgba(var(--blue-rgba), 0.1);
 }
 
-.hover\:bg\:art-blue\:20\% {
+.hover\:art-bg\:blue\:20\% {
     background-color: rgba(var(--blue-rgba), 0.2);
 }
 
-.hover\:bg\:art-blue\:30\% {
+.hover\:art-bg\:blue\:30\% {
     background-color: rgba(var(--blue-rgba), 0.3);
 }
 
-.hover\:bg\:art-blue\:40\% {
+.hover\:art-bg\:blue\:40\% {
     background-color: rgba(var(--blue-rgba), 0.4);
 }
 
-.hover\:bg\:art-blue\:50\% {
+.hover\:art-bg\:blue\:50\% {
     background-color: rgba(var(--blue-rgba), 0.5);
 }
 
-.hover\:bg\:art-red\:10\% {
+.hover\:art-bg\:red\:10\% {
     background-color: rgba(var(--red-rgba) 0.1);
 }
 
-.hover\:bg\:art-red\:20\% {
+.hover\:art-bg\:red\:20\% {
     background-color: rgba(var(--red-rgba) 0.2);
 }
 
-.hover\:bg\:art-red\:30\% {
+.hover\:art-bg\:red\:30\% {
     background-color: rgba(var(--red-rgba) 0.3);
 }
 
-.hover\:bg\:art-red\:40\% {
+.hover\:art-bg\:red\:40\% {
     background-color: rgba(var(--red-rgba) 0.4);
 }
 
-.hover\:bg\:art-red\:50\% {
+.hover\:art-bg\:red\:50\% {
     background-color: rgba(var(--red-rgba) 0.5);
 }
 
-/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art/src/modules/hovers/ft-hover.css ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************/
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/modules/hovers/ft-hover.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
 /* Fonts hover: */
 
-.hover\:ft\:color\:art-white-01:hover {
-    /* hover:ft:color:art-white-01 */
+.hover\:art-ft-color\:white-01:hover {
+    /* hover:ft-color:white-01 */
     color: var(--white-01);
 }
 
-.hover\:ft\:color\:art-white-02:hover {
-    /* hover:ft:color:art-white-02 */
+.hover\:art-ft-color\:white-02:hover {
+    /* hover:ft-color:white-02 */
     color: var(--white-02);
 }
 
-.hover\:ft\:color\:art-white-03:hover {
-    /* hover:ft:color:art-white-02 */
+.hover\:art-ft-color\:white-03:hover {
+    /* hover:ft-color:white-02 */
     color: var(--white-03);
 }
 
-.hover\:ft\:color\:art-black-01:hover {
+.hover\:art-ft-color\:black-01:hover {
     color: var(--black-01);
 }
 
-.hover\:ft\:color\:art-black-02:hover {
+.hover\:art-ft-color\:black-02:hover {
     color: var(--black-02);
 }
 
-.hover\:ft\:color\:art-black-03:hover {
+.hover\:art-ft-color\:black-03:hover {
     color: var(--black-03);
 }
 
-.hover\:ft\:color\:art-yellow-01:hover {
+.hover\:art-ft-color\:yellow-01:hover {
     color: var(--yellow-01);
 }
 
-.hover\:ft\:color\:art-yellow-02:hover {
+.hover\:art-ft-color\:yellow-02:hover {
     color: var(--yellow-02);
 }
 
-.hover\:ft\:color\:art-yellow-03:hover {
+.hover\:art-ft-color\:yellow-03:hover {
     color: var(--yellow-03);
 }
 
-.hover\:ft\:color\:art-green-01:hover {
+.hover\:art-ft-color\:green-01:hover {
     color: var(--green-01);
 }
 
-.hover\:ft\:color\:art-green-02:hover {
+.hover\:art-ft-color\:green-02:hover {
     color: var(--green-02);
 }
 
-.hover\:ft\:color\:art-green-03:hover {
+.hover\:art-ft-color\:green-03:hover {
     color: var(--green-03);
 }
 
-.hover\:ft\:color\:art-blue-01:hover {
+.hover\:art-ft-color\:blue-01:hover {
     color: var(--blue-01);
 }
 
-.hover\:ft\:color\:art-blue-02:hover {
+.hover\:art-ft-color\:blue-02:hover {
     color: var(--blue-02);
 }
 
-.hover\:ft\:color\:art-blue-03:hover {
+.hover\:art-ft-color\:blue-03:hover {
     color: var(--blue-03);
 }
 
-.hover\:ft\:color\:art-red-01:hover {
+.hover\:art-ft-color\:red-01:hover {
     color: var(--red-01);
 }
 
-.hover\:ft\:color\:art-red-02:hover {
+.hover\:art-ft-color\:red-02:hover {
     color: var(--red-02);
 }
 
-.hover\:ft\:color\:art-red-03:hover {
+.hover\:art-ft-color\:red-03:hover {
     color: var(--red-03);
 }
 
 
-/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art/src/modules/border/border.css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/modules/border/border.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
 /* Borders */
 
-/* .border\:art-radius-04 {
+/* .border\:radius-04 {
     border-radius: 0.9rem;
 } */
 
-.border-full\:solid-0\.5\:art-white-01 {
-    /* border:solid-0.5:full:art-white-01 */
+.art-border-radius\:full\:radius-01 {
+    /* art-border-radius:full:radius-01 */
+    border-radius: 1rem;
+}
+
+.art-border-radius\:full\:radius-02 {
+    /* art-border-radius:full:radius-02 */
+    border-radius: 1.2rem;
+}
+
+.art-border-full\:solid-0\.5\:white-01 {
+    /* border:solid-0.5:full:white-01 */
     border: solid 0.5px var(--white-01);
 }
 
-.border-full\:solid-0\.5\:art-white-02 {
-    /* border:solid-0.5:full:art-white-02 */
+.art-border-full\:solid-0\.5\:white-02 {
+    /* border:solid-0.5:full:white-02 */
     border: solid 0.5px var(--white-02);
 }
 
-.border-full\:solid-0\.5\:art-white-03 {
-    /* border:solid-0.5:full:art-white-03 */
+.art-border-full\:solid-0\.5\:white-03 {
+    /* border:solid-0.5:full:white-03 */
     border: solid 0.5px var(--white-03);
 }
 
-.border-full\:solid-0\.5\:art-black-01 {
-    /* border:solid-0.5:full:art-black-01 */
+.art-border-full\:solid-0\.5\:black-01 {
+    /* border:solid-0.5:full:black-01 */
     border: solid 0.5px var(--black-01);
 }
 
-.border-full\:solid-0\.5\:art-black-02 {
-    /* border:solid-0.5:full:art-black-02 */
+.art-border-full\:solid-0\.5\:black-02 {
+    /* border:solid-0.5:full:black-02 */
     border: solid 0.5px var(--black-02);
 }
 
-.border-full\:solid-0\.5\:art-black-03 {
-    /* border:solid-0.5:full:art-black-03 */
+.art-border-full\:solid-0\.5\:black-03 {
+    /* border:solid-0.5:full:black-03 */
     border: solid 0.5px var(--black-03);
 }
 
 /* 
-border-style:art-solid:full
-border-color:art-black-01
-border-width:art-0.5
+border-style:solid:full
+border-color:black-01
+border-width:0.5
 */
-/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art/src/modules/button/button.css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/modules/button/button.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
 button {
     border-radius: 10px;
     padding: 10px;
@@ -474,23 +501,23 @@ button {
     cursor: pointer;
 }
 
-.btn\:art-small {
+.art-btn\:small {
 
     cursor: pointer;
 }
 
-.btn\:art-medium {
+.art-btn\:medium {
 
     cursor: pointer;
 }
 
-/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art/src/modules/art-modules.css ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/modules/art-modules.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************/
 
-/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art/src/art-main.css ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/src/art-main.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
 /*@import url('modules/art-modules.css');*/
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
@@ -551,9 +578,9 @@ button {
         --txt-black-01: #FFFFFF;
     }
 }
-/*!********************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art/art.css ***!
-  \********************************************************************************************************************************************************************************************************************************************************************/
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/art-css/art.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
 
 /*!********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/globals.css ***!
@@ -593,7 +620,7 @@ body {
     justify-content: center;
 }
 
-.bg\:art-blur-01 {
+.art-bg\:blur-01 {
     background: rgba(255, 255, 255, 0.16);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(11.5px);
@@ -606,8 +633,12 @@ body {
 .header_box__7ZXBX {
     width: 90%;
     max-width: 60rem;
+    /*     
+    height: 60%;
+    min-height: 5rem; 
+    */
     height: 5rem;
-    margin-top: 20px;   
+    margin-top: 20px;
 }
 
 .header_header__iAHWV {
@@ -616,12 +647,10 @@ body {
     height: 4rem;
     max-height: 4rem;
     position: fixed;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    border-radius: 20px;
     background-color: red;
 }
 
