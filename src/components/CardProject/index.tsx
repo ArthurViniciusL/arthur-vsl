@@ -16,7 +16,7 @@ export function CardProject() {
                     art:border-size:s-01
                     art:border-color:white-03
 
-                    art:hover:bg:white-03
+                    art:hover:bg:white-02
                     art:border-radius:r-01
                     art:p-01
                     `}>
@@ -44,7 +44,7 @@ export function CardProject() {
                     art:border-size:s-01
                     art:border-color:white-03
 
-                    art:hover:bg:white-03
+                    art:hover:bg:white-02
                     art:border-radius:r-01
                     art:p-01
                     `}>
@@ -70,7 +70,7 @@ export function CardProject() {
                     art:border-size:s-01
                     art:border-color:white-03
 
-                    art:hover:bg:white-03
+                    art:hover:bg:white-02
                     art:border-radius:r-01
                     art:p-01
                     `}>
@@ -96,7 +96,7 @@ export function CardProject() {
                     art:border-size:s-01
                     art:border-color:white-03
 
-                    art:hover:bg:white-03
+                    art:hover:bg:white-02
                     art:border-radius:r-01
                     art:p-01
                     `}>

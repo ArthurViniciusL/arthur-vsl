@@ -887,3 +887,23 @@ a {
     width: 2.5rem;
     height: auto;
 }
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/Footer/footer.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.footer_footer__ysJQv {
+    width: 100%;
+    height: 6dvh;
+    margin-top: 3rem;
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer_content__PiOOR {
+    width: 96%;
+    height: 95%;
+    
+    display: flex;
+    align-items: center;
+}

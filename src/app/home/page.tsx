@@ -30,7 +30,7 @@ export default function Home() {
             <span className="art:line:white-03"></span>
 
             <section className={`${styles.content} ${styles.contentProject}`}>
-                <h1 className="art:font-size:title art:font-color:yellow-01">
+                <h1 className="art:font-size:title art:font-color:yellow-02">
                     Meu projetos:
                 </h1>
                 <CardProject />
@@ -39,6 +39,7 @@ export default function Home() {
                     Veja main
                 </button>
             </section>
+            
         </main>
     );
 }
