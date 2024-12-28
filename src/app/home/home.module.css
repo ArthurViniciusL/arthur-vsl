@@ -1,18 +1,30 @@
 .box {
     width: 90%;
     max-width: 70rem;
+
+    margin-top: 2rem;
+
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
 }
 
 .content {
     width: 100%;
-    height: 80dvh;
+    height: auto;
+    /* height: 80dvh; */
 
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
     gap: 20px;
+    
+    /* align-items: center; */
+     align-items: flex-start;
+}
 
-    align-items: center;
+.contentProject {
+    flex-direction: column;
 }
 
 .textArea {
@@ -25,6 +37,7 @@
 @media (max-width: 800px) {
     .content {
         flex-direction: column;
+        align-items: center;
     }
 
     .textArea {
