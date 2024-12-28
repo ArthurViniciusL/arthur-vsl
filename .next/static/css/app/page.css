@@ -28,18 +28,30 @@
 .home_box__iR0Ny {
     width: 90%;
     max-width: 70rem;
+
+    margin-top: 2rem;
+
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
 }
 
 .home_content__HGh3K {
     width: 100%;
-    height: 80dvh;
+    height: auto;
+    /* height: 80dvh; */
 
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
     gap: 20px;
+    
+    /* align-items: center; */
+     align-items: flex-start;
+}
 
-    align-items: center;
+.home_contentProject__6lmRm {
+    flex-direction: column;
 }
 
 .home_textArea__gfLnV {
@@ -52,6 +64,7 @@
 @media (max-width: 800px) {
     .home_content__HGh3K {
         flex-direction: column;
+        align-items: center;
     }
 
     .home_textArea__gfLnV {
@@ -70,7 +83,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 25px;
-
+    
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -104,12 +118,48 @@
     background: linear-gradient(137.23deg, #5527CF 3.6%, #D840A4 51.3%, #E4B26B 100%);
 }
 
-.social-media_github__i49PL:hover, .social-media_linkedin__LA93w:hover, .social-media_email__de439:hover, .social-media_instagram__95rph:hover {
-    background: var(--white-03);
-}
-
 @media (max-width:800px) {
     .social-media_box__q_G_c {
         justify-content: center;
     }
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/CardProject/card-project.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
+.card-project_box____ZDo {
+    display: flex;
+    gap: 1rem;
+    
+    justify-content: flex-start;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-project_card__t96ZC {
+    width: 45%;
+    height: 10rem;
+    max-width: 100rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    
+    justify-content: flex-start;
+}
+
+.card-project_textArea__CHWyr {
+    overflow: hidden;
+    align-content: safe;
+}
+
+@media (max-width: 800px) {
+
+    .card-project_box____ZDo {
+        justify-content: center;
+    }
+
+    .card-project_card__t96ZC {
+        width: 80%;
+    }
+    
 }

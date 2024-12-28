@@ -15,5 +15,6 @@ export {
     Github as GitHub,
     Linkedin as LinkedIn,
     Mail as EMail,
-    Instagram as Instagram
+    Instagram as Instagram,
+    Link2 as CurrentLink
 } from "lucide-react";

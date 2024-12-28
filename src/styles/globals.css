@@ -40,23 +40,13 @@ a {
     text-decoration: none;
 }
 
-button {
-    cursor: pointer;
+.art\:p-01 {
+    padding: 1rem;
 }
 
-.art\:bg\:blur-01 {
-    background: hsla(0, 0%, 94%, .16);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, .1);
-    backdrop-filter: blur(12.3px);
-    -webkit-backdrop-filter: blur(12.3px);
-    border: 1px solid hsla(0, 0%, 94%, .25);
-}
-
-.art\:btn\:no-style {
-    /* art:btn:no-style */
-    width: fit-content;
-    height: fit-content;
-    background-color: transparent;
-    cursor: pointer;
+.art\:line\:white-03 {
+    width: 100%;
+    height: 0.1rem;
+    border-radius: 2rem;
+    background: var(--white-03);
 }

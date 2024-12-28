@@ -12,14 +12,14 @@ export default function Home() {
                     <h2 className="art:font-size:subtitle-01">
                         Sobre mim
                     </h2>
-                    <p className="art:font-size:normal">
+                    <p className="art:font-size:normal-02">
                         Olá! Meu nome é Arthur, sou desenvolvedor web full-stack, um cinéfilo nas horas vagas e paraibano de coração.
                     </p>
-                    <p className="art:font-size:normal">
+                    <p className="art:font-size:normal-02">
                         Atualmente, estou no sétimo período da graduação em Sistemas de Informação, onde descobri minha paixão por criar e aprimorar produtos por meio de soluções criativas. Nos últimos anos, acumulei experiência no desenvolvimento de software ao me envolver em diversos projetos acadêmicos.
                     </p>
 
-                    <p className="art:font-size:normal">
+                    <p className="art:font-size:normal-02">
                         Durante minha jornada na universidade, tive a oportunidade de desempenhar múltiplos papéis, desde desenvolvedor front-end até designer de UI/UX, Scrum Master e QA. Essas experiências não apenas fortaleceram minhas habilidades técnicas, mas também me permitiram explorar diferentes aspectos do desenvolvimento de software.
                     </p>
 
@@ -27,9 +27,11 @@ export default function Home() {
                 </div>
             </section>
 
+            <span className="art:line:white-03"></span>
+
             <section className={`${styles.content} ${styles.contentProject}`}>
-                <h1 className="art:font-size:title">
-                    Meu projetos
+                <h1 className="art:font-size:title art:font-color:yellow-01">
+                    Meu projetos:
                 </h1>
                 <CardProject />
 
