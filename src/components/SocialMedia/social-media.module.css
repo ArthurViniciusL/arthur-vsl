@@ -40,10 +40,6 @@
     background: linear-gradient(137.23deg, #5527CF 3.6%, #D840A4 51.3%, #E4B26B 100%);
 }
 
-.github:hover, .linkedin:hover, .email:hover, .instagram:hover {
-    background: var(--white-03);
-}
-
 @media (max-width:800px) {
     .box {
         justify-content: center;
