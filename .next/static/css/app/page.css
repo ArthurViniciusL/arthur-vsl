@@ -32,8 +32,11 @@
     margin-top: 2rem;
 
     display: flex;
-    gap: 3rem;
+    /* gap: 3rem; */
+    gap: 5rem;
     flex-direction: column;
+
+
 }
 
 .home_content__HGh3K {
@@ -45,9 +48,9 @@
     flex-direction: row;
     /* flex-wrap: wrap; */
     gap: 20px;
-    
+
     /* align-items: center; */
-     align-items: flex-start;
+    align-items: flex-start;
 }
 
 .home_contentProject__6lmRm {
@@ -62,6 +65,9 @@
 }
 
 @media (max-width: 800px) {
+    .home_box__iR0Ny {
+        gap: 3rem
+    }
     .home_content__HGh3K {
         flex-direction: column;
         align-items: center;
