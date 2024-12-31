@@ -2,7 +2,7 @@
 
 const AppRoutes = {
     home: '/',
-    projects: '/pages/Projects',
+    projects: 'https://github.com/ArthurViniciusL?tab=repositories',
     post: (id:number) => `/rotaDoPost/${id}`
 }
 
