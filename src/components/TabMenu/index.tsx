@@ -1,9 +1,13 @@
 "use client";
 
 import styles from "./tabMenu.module.css"
-import Adwaita from "@/modules/adwaita.modules";
+import Adwaita from "@/components/Adwaita/adwaita.modules";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { HomeIcon } from "../Adwaita/Home";
+import { Button } from "../Button";
+import AppRoutes from "@/app.routes";
+import { ProjectIcon } from "../Adwaita/Project";
 
 
 export function TabMenu() {
@@ -54,24 +58,36 @@ export function TabMenu() {
                             art:border-size:s-01
                             art:border-style:solid
                             art:border-color:white-03
-                            `}
-                    >
-                        <li>
-                            Item
-                        </li>
-                        <li>
-                            Item
-                        </li>
-                        <li>
-                            Item
-                        </li>
-                        <li>
-                            Item
-                        </li>
-                        <li>
-                            Item
+                            art:shadow:center
+                            `}>
+
+                        <li className="art:border-style:solid art:border-color:white-02 art:border-size:b-02 art:hover:border:remove">
+                            <a href={AppRoutes.home}>
+                                <button className="
+                                art:btn:medium
+                                art:bg:white-01
+                                art:font-color:black-01
+                                art:hover:bg:white-02
+                                ">
+                                    <HomeIcon size={20} />
+                                    Início
+                                </button>
+                            </a>
                         </li>
 
+                        <li className="art:border-style:solid art:border-color:white-02 art:border-size:b-02 art:hover:border:remove">
+                            <a href={AppRoutes.projects}>
+                                <button className="
+                                art:btn:medium
+                                art:bg:white-01
+                                art:font-color:black-01
+                                art:hover:bg:white-02
+                                ">
+                                    <ProjectIcon size={20} />
+                                    Projetos
+                                </button>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </>
