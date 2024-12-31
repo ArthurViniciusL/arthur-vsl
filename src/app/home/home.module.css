@@ -37,6 +37,13 @@
     text-align: justify;
 }
 
+.boxVerMais {
+    width: 99%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
 @media (max-width: 800px) {
     .box {
         gap: 3rem
@@ -49,5 +56,9 @@
     .textArea {
         display: flex;
         align-items: center;
+    }
+
+    .boxVerMais {
+        justify-content: center;
     }
 }
