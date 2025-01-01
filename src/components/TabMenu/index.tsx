@@ -31,10 +31,12 @@ export function TabMenu() {
     };
 
     useEffect(() => {
-        const handleClick = (event: MouseEvent) => {
+        const handleClick = (event:any) => {
+
+            console.log(event)
 
         }
-        document.addEventListener('click', handleClick);
+        document.body.addEventListener('click', handleClick);
 
         // document.removeEventListener('click', handleClick);
 
@@ -91,7 +93,7 @@ export function TabMenu() {
                         </li>
 
                         <li className="art:border-style:solid art:border-color:white-02 art:border-size:b-02 art:hover:border:remove">
-                            <a href={AppRoutes.projects}>
+                            <a href="/documents/Arthur_Vinicius_CV.pdf" download="Arthur_Vinicius_CV">
                                 <button className="
                                 art:btn:medium
                                 art:bg:white-01
