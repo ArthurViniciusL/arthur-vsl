@@ -4,7 +4,6 @@ import { SocialMedia } from "@/components/SocialMedia";
 import { CardProject } from "@/components/CardProject";
 import { Link } from "@/components/Link";
 import AppRoutes from "@/app.routes";
-import { Button } from "@/components/Button";
 
 export default function Home() {
     return (

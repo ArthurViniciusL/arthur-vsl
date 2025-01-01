@@ -17,10 +17,18 @@
     --white-03: #EBEBEB;
     --white-rgba: 255, 255, 255;
 
+    --fix-white-01: #FFFFFF;
+    --fix-white-02: #F6F5F4;
+    --fix-white-03: #EBEBEB;
+
     --black-01: #000000;
     --black-02: #131416;
     --black-03: #4A4B4D;
     --black-rgba: 0, 0, 0;
+
+    --fix-black-01: #000000;
+    --fix-black-02: #131416;
+    --fix-black-03: #4A4B4D;
 
     --yellow-01: #FFDE83;
     --yellow-02: #FFBD08;
@@ -577,7 +585,21 @@
     /* art:font-color:red-01 */
     color: var(--red-03);
 }
-/* ------------------------------------- text decoration: ------------------------------------- */
+
+.art\:no-dark\:\(font-color\:white-01\) {
+    /* art:no-dark:(font-color:white-01) */
+    color: var(--fix-white-01);
+}
+
+.art\:no-dark\:\(font-color\:white-02\) {
+    /* art:no-dark:(font-color:white-02) */
+    color: var(--fix-white-02);
+}
+
+.art\:no-dark\:\(font-color\:white-03\) {
+    /* art:no-dark:(font-color:white-03) */
+    color: var(--fix-white-03);
+}/* ------------------------------------- text decoration: ------------------------------------- */
 
 .art\:underline {
     text-decoration: underline;
@@ -714,7 +736,8 @@
 
 .art\:hover\:border\:remove:hover {
     /* art:hover:border:remove */
-    border-width: 0px 0px 0px 0px;
+    /* border-width: 0px 0px 0px 0px; */
+    border-color: transparent;
 }
 /* ------------------------------------- fonts color hovers: ------------------------------------- */
 
@@ -841,7 +864,7 @@
     height: auto;
 }
 
-.tabMenu_painel__SDMWU {
+.tabMenu_box__9NlCt {
     background-color: transparent;
 
     position: absolute;
@@ -851,26 +874,25 @@
 
     display: flex;
     justify-content: flex-end;
-
-    
 }
 
-.tabMenu_painelContent__j3QD5 {
+.tabMenu_painel__SDMWU {
     width: 20%;
     max-width: 40rem;
     height: -moz-fit-content;
     height: fit-content;
+    /* height: 14rem; */
     padding: 2rem;
     
     display: flex;
     flex-direction: column;
     gap: 20px;
     
-    align-items: center;
+    align-items: center;   
 }
 
 @media (max-width: 800px) {
-    .tabMenu_painelContent__j3QD5 {
+    .tabMenu_painel__SDMWU {
         width: 100%;
     }
 }
@@ -920,10 +942,29 @@ a {
     text-decoration: none;
 }
 
-.art\:no-dark\:\{font-color\:white-01\} {
-    /* art:no-dark:{font-color:white-01} */
-    color: #FFFFFF;
+
+.art\:show-on-light-mode {
+    /* art:show-on-light-mode */
+    display: flex;
 }
+
+.art\:show-on-dark-mode {
+    /* art:show-on-dark-mode */
+    display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .art\:show-on-light-mode {
+        /* art:show-on-light-mode */
+        display: none;
+    }
+    
+    .art\:show-on-dark-mode {
+        /* art:show-on-dark-mode */
+        display: flex;
+    }
+}
+
 /*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/Header/header.module.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************/

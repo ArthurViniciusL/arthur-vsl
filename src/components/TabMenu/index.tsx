@@ -8,6 +8,7 @@ import { HomeIcon } from "../Adwaita/Home";
 import { Button } from "../Button";
 import AppRoutes from "@/app.routes";
 import { ProjectIcon } from "../Adwaita/Project";
+import { Document } from "../Adwaita/Document";
 
 
 export function TabMenu() {
@@ -47,12 +48,12 @@ export function TabMenu() {
                     <Image src={Adwaita.dockTop} alt="icone do menu de links no site" className={`${styles.icon}`} />
                 </button>
 
-                <div className={`${styles.painel} `}>
+                <div className={`${styles.box} `}>
                     <ul
                         onMouseEnter={() => setMouseOutMenu(false)}
                         onMouseLeave={() => setMouseOutMenu(true)}
                         className={`
-                            ${styles.painelContent}
+                            ${styles.painel}
                             art:bg:white-01
                             art:border-radius:r-01
                             art:border-size:s-01
@@ -85,6 +86,20 @@ export function TabMenu() {
                                 ">
                                     <ProjectIcon size={20} />
                                     Projetos
+                                </button>
+                            </a>
+                        </li>
+
+                        <li className="art:border-style:solid art:border-color:white-02 art:border-size:b-02 art:hover:border:remove">
+                            <a href={AppRoutes.projects}>
+                                <button className="
+                                art:btn:medium
+                                art:bg:white-01
+                                art:font-color:black-01
+                                art:hover:bg:white-02
+                                ">
+                                    <Document size={20} />
+                                    Meu currículo
                                 </button>
                             </a>
                         </li>

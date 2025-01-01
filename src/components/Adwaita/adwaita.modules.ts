@@ -12,10 +12,12 @@ import dockTop from "@/assets/icons/Adwaita/dock-top-symbolic.svg";
 // Light mode:
 import homeLight from "@/assets/icons/Adwaita/light-mode/user-home-symbolic.svg";
 import projectLight from "@/assets/icons/Adwaita/light-mode/shapes-large-symbolic.svg";
+import documentLight from "@/assets/icons/Adwaita/light-mode/rich-text-symbolic.svg";
 
 // Dark Mode:
 import homeDark from "@/assets/icons/Adwaita/dark-mode/user-home-symbolic.svg";
 import projectDark from "@/assets/icons/Adwaita/dark-mode/shapes-large-symbolic.svg";
+import documentDark from "@/assets/icons/Adwaita/dark-mode/rich-text-symbolic.svg";
 
 const Adwaita = {
     dockBottom,
@@ -23,24 +25,9 @@ const Adwaita = {
     homeLight,
     homeDark,
     projectLight,
-    projectDark
-    /*  ImgProfile,
-     VideoProfile,
-     VideoProfileMobile,
-     DashIconOn,
-     DashIconOff,
- 
-     HomeIconLight,
-     ProjectsIconLight,
-     MyLinksLight,
-     CvIconLight,
- 
-     HomeIconDark,
-     ProjectsIconDark,
-     MyLinksDark,
-     CvIconDark,
- 
-     videoShortly */
+    projectDark,
+    documentLight,
+    documentDark
 };
 
 export default Adwaita;

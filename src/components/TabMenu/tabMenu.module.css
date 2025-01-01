@@ -3,7 +3,7 @@
     height: auto;
 }
 
-.painel {
+.box {
     background-color: transparent;
 
     position: absolute;
@@ -13,25 +13,24 @@
 
     display: flex;
     justify-content: flex-end;
-
-    
 }
 
-.painelContent {
+.painel {
     width: 20%;
     max-width: 40rem;
     height: fit-content;
+    /* height: 14rem; */
     padding: 2rem;
     
     display: flex;
     flex-direction: column;
     gap: 20px;
     
-    align-items: center;
+    align-items: center;   
 }
 
 @media (max-width: 800px) {
-    .painelContent {
+    .painel {
         width: 100%;
     }
 }
