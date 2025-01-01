@@ -7,6 +7,7 @@ import Image from "next/image";
 
 export function ProjectIcon({ className, size }: AdwaitaProps) {
 
+    /* tentar implementar o próximo com classes css */
 
     let dark: boolean = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     const [isDark, setIsDark] = useState<boolean>(dark);
