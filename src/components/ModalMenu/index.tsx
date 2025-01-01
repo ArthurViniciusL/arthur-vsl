@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./tabMenu.module.css"
+import styles from "./modalMenu.module.css"
 import Adwaita from "@/components/Adwaita/adwaita.modules";
 import Image from "next/image";
 import { useEffect, useState } from "react";

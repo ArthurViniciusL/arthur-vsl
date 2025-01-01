@@ -856,15 +856,15 @@
     padding: 1rem;
 }
 
-/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/TabMenu/tabMenu.module.css ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************/
-.tabMenu_icon___W7iU {
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/ModalMenu/modalMenu.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.modalMenu_icon__mVCwt {
     width: 2rem;
     height: auto;
 }
 
-.tabMenu_box__9NlCt {
+.modalMenu_box__VHT8q {
     background-color: transparent;
 
     position: absolute;
@@ -876,7 +876,7 @@
     justify-content: flex-end;
 }
 
-.tabMenu_painel__SDMWU {
+.modalMenu_painel__BiAb4 {
     width: 20%;
     max-width: 40rem;
     height: -moz-fit-content;
@@ -892,7 +892,7 @@
 }
 
 @media (max-width: 800px) {
-    .tabMenu_painel__SDMWU {
+    .modalMenu_painel__BiAb4 {
         width: 100%;
     }
 }
