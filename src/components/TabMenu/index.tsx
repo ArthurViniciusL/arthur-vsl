@@ -18,29 +18,32 @@ export function TabMenu() {
 
     function handleTabMenu() {
         if (mouseOutMenu) {
-            setTabMenu(!tabMenu)
+            setTabMenu(!tabMenu);
         }
-    };
+    }
 
     function handleMouseEnter() {
-
-    };
+        setMouseOutMenu(false);
+    }
 
     function handleMouseLeave() {
-
-    };
+        setMouseOutMenu(true);
+    }
 
     useEffect(() => {
-        const handleClick = (event:any) => {
-
-            console.log(event)
-
+        const handleClick = (event: any) => {
+            setTabMenu(false);
         }
-        document.body.addEventListener('click', handleClick);
 
-        // document.removeEventListener('click', handleClick);
+        if (tabMenu && mouseOutMenu) {
+            document.addEventListener('click', handleClick);
+        }
 
-    }, [])
+        return () => {
+            document.removeEventListener('click', handleClick);
+        }
+
+    }, [tabMenu, mouseOutMenu])
 
 
     if (tabMenu) {
@@ -52,8 +55,8 @@ export function TabMenu() {
 
                 <div className={`${styles.box} `}>
                     <ul
-                        onMouseEnter={() => setMouseOutMenu(false)}
-                        onMouseLeave={() => setMouseOutMenu(true)}
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
                         className={`
                             ${styles.painel}
                             art:bg:white-01
