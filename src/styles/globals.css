@@ -32,7 +32,9 @@ body {
     justify-content: center;
 }
 
-ul,ol,li {
+ul,
+ol,
+li {
     list-style: none;
 }
 
@@ -40,13 +42,3 @@ a {
     text-decoration: none;
 }
 
-.art\:p-01 {
-    padding: 1rem;
-}
-
-.art\:line\:white-03 {
-    width: 100%;
-    height: 0.1rem;
-    border-radius: 2rem;
-    background: var(--white-03);
-}

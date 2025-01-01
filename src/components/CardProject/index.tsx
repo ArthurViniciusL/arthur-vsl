@@ -18,7 +18,7 @@ export function CardProject() {
 
                     art:hover:bg:white-02
                     art:border-radius:r-01
-                    art:p-01
+                    art:p-02
                     `}>
                     <h2 className="art:font-size:subtitle-02">
                         Card 01
@@ -46,7 +46,7 @@ export function CardProject() {
 
                     art:hover:bg:white-02
                     art:border-radius:r-01
-                    art:p-01
+                    art:p-02
                     `}>
                     <h2 className="art:font-size:subtitle-02">
                         Card 02
@@ -72,7 +72,7 @@ export function CardProject() {
 
                     art:hover:bg:white-02
                     art:border-radius:r-01
-                    art:p-01
+                    art:p-02
                     `}>
                     <h2 className="art:font-size:subtitle-02">
                         Card 03
@@ -98,7 +98,7 @@ export function CardProject() {
 
                     art:hover:bg:white-02
                     art:border-radius:r-01
-                    art:p-01
+                    art:p-02
                     `}>
                     <h2 className="art:font-size:subtitle-02">
                         Card 04

@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useEffect, useState } from "react";
 import { ThemeContext } from "./ThemeContext";
-import AppAssets from "../modules/adwaita.modules";
+import AppAssets from "../components/Adwaita/adwaita.modules";
 
 export const IconThemeContext = createContext<any>({});
 

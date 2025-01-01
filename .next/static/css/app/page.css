@@ -64,6 +64,13 @@
     text-align: justify;
 }
 
+.home_boxVerMais__ieabT {
+    width: 99%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
 @media (max-width: 800px) {
     .home_box__iR0Ny {
         gap: 3rem
@@ -76,6 +83,10 @@
     .home_textArea__gfLnV {
         display: flex;
         align-items: center;
+    }
+
+    .home_boxVerMais__ieabT {
+        justify-content: center;
     }
 }
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
