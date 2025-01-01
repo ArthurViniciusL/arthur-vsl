@@ -11,7 +11,7 @@ import { ProjectIcon } from "../Adwaita/Project";
 import { Document } from "../Adwaita/Document";
 
 
-export function TabMenu() {
+export function ModalMenu() {
 
     const [tabMenu, setTabMenu] = useState<boolean>(false);
     const [mouseOutMenu, setMouseOutMenu] = useState<boolean>(true);

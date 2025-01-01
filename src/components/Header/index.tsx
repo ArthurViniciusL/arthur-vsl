@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./header.module.css";
 import artLogo from "@/assets/icons/logo-marca.svg"
-import { TabMenu } from "../TabMenu";
+import { ModalMenu } from "../ModalMenu";
 
 export function Header() {
     const title = "Página_nome";
@@ -20,7 +20,7 @@ export function Header() {
 
                     {title}
 
-                    <TabMenu />
+                    <ModalMenu />
                 </div>
             </header >
         </div >
