@@ -12,7 +12,7 @@ export function SocialMedia() {
                         ${styles.github}
                         art:border-radius:r-01
                         art:hover:bg:white-03
-                        art:no-dark:(font-color:white-01)
+                        art:no-dark:font-color:white-01
                         art:hover:font-color:black-01
                         `}
                         href="https://github.com/ArthurViniciusL"
@@ -28,7 +28,7 @@ export function SocialMedia() {
                         ${styles.linkedin}
                         art:border-radius:r-01
                         art:hover:bg:white-03
-                        art:no-dark:(font-color:white-01)
+                        art:no-dark:font-color:white-01
                         art:hover:font-color:black-01
                         `}
                         href="https://www.linkedin.com/in/arthur-vin%C3%ADcius-79a8441b6/"
@@ -44,7 +44,7 @@ export function SocialMedia() {
                         ${styles.email}
                         art:border-radius:r-01
                         art:hover:bg:white-03
-                        art:no-dark:(font-color:white-01)
+                        art:no-dark:font-color:white-01
                         art:hover:font-color:black-01
                         `}
                         href="mailto:arthur.vsl.contato@gmail.com"
@@ -60,7 +60,7 @@ export function SocialMedia() {
                         ${styles.instagram}
                         art:border-radius:r-01
                         art:hover:bg:white-03
-                        art:no-dark:(font-color:white-01)
+                        art:no-dark:font-color:white-01
                         art:hover:font-color:black-01
                         `}
                         href="https://www.instagram.com/arthur.vsl/?next=%2F"

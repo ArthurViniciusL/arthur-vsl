@@ -40,7 +40,7 @@ export default function Home() {
                 <span className={styles.boxVerMais}>
                     <Link className="
                         art:bg:yellow:20%
-                        art:hover:font-color:black-01
+                        art:hover:bg:yellow:40%
                         art:font-color:yellow-02
                     "
                         href={AppRoutes.projects} newTab={true}>
