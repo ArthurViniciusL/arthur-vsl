@@ -11,17 +11,17 @@ export default function Home() {
             <section className={`${styles.content}`}>
                 <ImageProfile />
                 <div className={`${styles.textArea}`}>
-                    <h2 className="art:font-size:subtitle-01">
+                    <h2 className="art:ft:subtitle-01">
                         Sobre mim
                     </h2>
-                    <p className="art:font-size:normal-02">
+                    <p className="art:ft:normal-02">
                         Olá! Meu nome é Arthur, sou desenvolvedor web full-stack, um cinéfilo nas horas vagas e paraibano de coração.
                     </p>
-                    <p className="art:font-size:normal-02">
+                    <p className="art:ft:normal-02">
                         Atualmente, estou no sétimo período da graduação em Sistemas de Informação, onde descobri minha paixão por criar e aprimorar produtos por meio de soluções criativas. Nos últimos anos, acumulei experiência no desenvolvimento de software ao me envolver em diversos projetos acadêmicos.
                     </p>
 
-                    <p className="art:font-size:normal-02">
+                    <p className="art:ft:normal-02">
                         Durante minha jornada na universidade, tive a oportunidade de desempenhar múltiplos papéis, desde desenvolvedor front-end até designer de UI/UX, Scrum Master e QA. Essas experiências não apenas fortaleceram minhas habilidades técnicas, mas também me permitiram explorar diferentes aspectos do desenvolvimento de software.
                     </p>
 
@@ -32,7 +32,7 @@ export default function Home() {
             <span className="art:line:white-03"></span>
 
             <section className={`${styles.content} ${styles.contentProject}`}>
-                <h1 className="art:font-size:title art:font-color:yellow-02">
+                <h1 className="art:ft:title art:ft:yellow-02">
                     Meu projetos:
                 </h1>
                 <CardProject />
@@ -41,7 +41,7 @@ export default function Home() {
                     <Link className="
                         art:bg:yellow:20%
                         art:hover:bg:yellow:40%
-                        art:font-color:yellow-02
+                        art:ft:yellow-02
                     "
                         href={AppRoutes.projects} newTab={true}>
                         Ver mais

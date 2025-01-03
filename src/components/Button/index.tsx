@@ -15,9 +15,9 @@ export function Button({ onClick, className, children }: ButtonProps) {
                     ${styles.button}
                     art:cursor:pointer
                     art:p-01
-                    art:border-radius:r-01
-                    art:font-size:normal-01
-                    art:font-color:black-01
+                    art:border:r-02
+                    art:ft:normal-01
+                    art:ft:black-01
                     art:bg:white-02
                     
                     art:bg:font-color:white-01

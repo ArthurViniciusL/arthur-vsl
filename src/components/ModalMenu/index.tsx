@@ -60,19 +60,19 @@ export function ModalMenu() {
                         className={`
                             ${styles.painel}
                             art:bg:white-01
-                            art:border-radius:r-01
-                            art:border-size:s-01
-                            art:border-style:solid
-                            art:border-color:white-03
+                            art:border:r-02
+                            art:border:s-01
+                            art:border:solid
+                            art:border:white-03
                             art:shadow:center
                             `}>
 
-                        <li className="art:border-style:solid art:border-color:white-02 art:border-size:b-02 art:hover:border:remove">
+                        <li className="art:border:solid art:border:white-02 art:border-b:s-02 art:hover:border:remove">
                             <a href={AppRoutes.home}>
                                 <button className="
                                 art:btn:medium
                                 art:bg:white-01
-                                art:font-color:black-01
+                                art:ft:black-01
                                 art:hover:bg:white-02
                                 ">
                                     <HomeIcon size={20} />
@@ -81,12 +81,12 @@ export function ModalMenu() {
                             </a>
                         </li>
 
-                        <li className="art:border-style:solid art:border-color:white-02 art:border-size:b-02 art:hover:border:remove">
+                        <li className="art:border:solid art:border:white-02 art:border-b:s-02 art:hover:border:remove">
                             <a href={AppRoutes.projects}>
                                 <button className="
                                 art:btn:medium
                                 art:bg:white-01
-                                art:font-color:black-01
+                                art:ft:black-01
                                 art:hover:bg:white-02
                                 ">
                                     <ProjectIcon size={20} />
@@ -95,12 +95,12 @@ export function ModalMenu() {
                             </a>
                         </li>
 
-                        <li className="art:border-style:solid art:border-color:white-02 art:border-size:b-02 art:hover:border:remove">
+                        <li className="art:border:solid art:border:white-02 art:border-b:s-02 art:hover:border:remove">
                             <a href="/documents/Arthur_Vinicius_CV.pdf" download="Arthur_Vinicius_CV">
                                 <button className="
                                 art:btn:medium
                                 art:bg:white-01
-                                art:font-color:black-01
+                                art:ft:black-01
                                 art:hover:bg:white-02
                                 ">
                                     <Document size={20} />

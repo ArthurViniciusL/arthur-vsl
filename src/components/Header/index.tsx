@@ -9,10 +9,10 @@ export function Header() {
         <div className={`${styles.box}`}>
             <header className={`${styles.header}
               art:bg:blur-01
-              art:border-radius:r-01
-              art:border-size:s-01
-              art:border-style:solid
-              art:border-color:white-03
+              art:border:r-02
+              art:border:s-01
+              art:border:solid
+              art:border:white-03
               art:shadow:center
             `}>
                 <div className={`${styles.content}`}>

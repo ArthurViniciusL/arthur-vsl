@@ -33,7 +33,7 @@ export function CardProject() {
         },
         {
             title: 'Eve',
-            description: 'A Eve é um gerenciador de arquivos em baseado em nuvem feito para praticar docker na cadeira de Desenvolvimento de Sistemas de Informação',
+            description: 'A Eve é um gerenciador de arquivos baseado em nuvem feito para praticar docker na cadeira de Desenvolvimento de Sistemas de Informação',
             link: 'https://github.com/ArthurViniciusL/EVE',
             stacks: ['javascript', 'react.js','spring boot', 'css', 'docker']
         },
@@ -51,21 +51,21 @@ export function CardProject() {
                 {
                     projects.map((project: any, index: number) => (
                         <li key={index} className={`${styles.content} art:cursor:pointer
-                                    art:font-size:normal-01
+                                    art:ft:normal-01
                                     art:bg:white-01
                                     
-                                    art:border-style:solid
-                                    art:border-size:s-01
-                                    art:border-color:white-03
+                                    art:border:solid
+                                    art:border:s-01
+                                    art:border:white-03
                                     
                                     art:hover:bg:white-02
-                                    art:border-radius:r-01
+                                    art:border:r-02
                                     art:p-02
                             `}>
                             <a href={project.link} target="_blank" className={`${styles.card}`}>
-                                <h2 className={`${styles.cardTitle} art:font-size:subtitle-02`}>
+                                <h2 className={`${styles.cardTitle} art:ft:subtitle-02`}>
                                     {project.title}
-                                    <CurrentLink className="art:font-color:blue-02" width={15} />
+                                    <CurrentLink className="art:ft:blue-02" width={15} />
                                 </h2>
                                 <div className={styles.textArea}>
                                     <p className="">

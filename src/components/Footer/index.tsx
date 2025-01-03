@@ -5,7 +5,7 @@ export function Footer() {
         <>
             <footer className={`${styles.footer} art:bg:white-03`}>
                 <div className={styles.content}>
-                    <p className="art:font-size:normal-01">
+                    <p className="art:ft:normal-01">
                         © 2025 Arthur Lucena. Todos os direitos reservados.
                     </p>
                 </div>

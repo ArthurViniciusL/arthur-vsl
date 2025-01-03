@@ -10,9 +10,9 @@ export function SocialMedia() {
                     <a className={`
                         ${styles.content}
                         ${styles.github}
-                        art:border-radius:r-01
+                        art:border:r-02
                         art:hover:bg:white-03
-                        art:no-dark:font-color:white-01
+                        art:no-dark:ft:white-01
                         art:hover:font-color:black-01
                         `}
                         href="https://github.com/ArthurViniciusL"
@@ -26,9 +26,9 @@ export function SocialMedia() {
                     <a className={`
                         ${styles.content}
                         ${styles.linkedin}
-                        art:border-radius:r-01
+                        art:border:r-02
                         art:hover:bg:white-03
-                        art:no-dark:font-color:white-01
+                        art:no-dark:ft:white-01
                         art:hover:font-color:black-01
                         `}
                         href="https://www.linkedin.com/in/arthur-vin%C3%ADcius-79a8441b6/"
@@ -42,9 +42,9 @@ export function SocialMedia() {
                     <a className={`
                         ${styles.content}
                         ${styles.email}
-                        art:border-radius:r-01
+                        art:border:r-02
                         art:hover:bg:white-03
-                        art:no-dark:font-color:white-01
+                        art:no-dark:ft:white-01
                         art:hover:font-color:black-01
                         `}
                         href="mailto:arthur.vsl.contato@gmail.com"
@@ -58,9 +58,9 @@ export function SocialMedia() {
                     <a className={`
                         ${styles.content}
                         ${styles.instagram}
-                        art:border-radius:r-01
+                        art:border:r-02
                         art:hover:bg:white-03
-                        art:no-dark:font-color:white-01
+                        art:no-dark:ft:white-01
                         art:hover:font-color:black-01
                         `}
                         href="https://www.instagram.com/arthur.vsl/?next=%2F"
