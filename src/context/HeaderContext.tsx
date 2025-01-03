@@ -10,14 +10,14 @@ interface HeaderProviderProps {
 
 export function HeaderProvider({ children }: HeaderProviderProps) {
 
-    const [title, setTitle] = useState<string>('');
+    const [title, setTitle] = useState<string>('Início');
 
-    function setPageTitle(page_title:string):any {
-        setTitle(page_title)
-    }
+    // setPageTitle(page_title:string):any {
+    //    setTitle(page_title)
+    // }
 
     return (
-        <HeaderContext.Provider value={{ title, setPageTitle}}>
+        <HeaderContext.Provider value={{ title, setTitle}}>
             {children}
         </HeaderContext.Provider>
     );

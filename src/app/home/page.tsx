@@ -1,11 +1,22 @@
+"use client";
+
 import { ImageProfile } from "@/components/ImageProfile";
 import styles from "./home.module.css"
 import { SocialMedia } from "@/components/SocialMedia";
 import { CardProject } from "@/components/CardProject";
 import { Link } from "@/components/Link";
 import AppRoutes from "@/app.routes";
+import { useHeader } from "@/hooks/useHeader";
+import { useEffect } from "react";
 
 export default function Home() {
+
+    const { setTitle } = useHeader();
+
+    useEffect(() => {
+        setTitle("Início")
+    }, []);
+
     return (
         <main className={`${styles.box}`}>
             <section className={`${styles.content}`}>
