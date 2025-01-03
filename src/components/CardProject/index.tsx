@@ -6,7 +6,8 @@ import { useEffect, useState } from "react";
 
 export function CardProject() {
 
-    const [windowSize, setWindowSize] = useState<number>(window.innerWidth);
+    // const innerWidth = window.innerWidth
+    const [windowSize, setWindowSize] = useState<number>(0);
 
     const sliceDescription: number = windowSize <= 500 ? 12 : windowSize <= 1100 ? 24 : 34;
 

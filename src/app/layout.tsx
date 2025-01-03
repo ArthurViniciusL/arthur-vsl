@@ -17,10 +17,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className="art:bg:white-01 art:ft:black-01">
       <body>
-        <HeaderProvider>
-          <Header />
+        {/* <HeaderProvider> */}
           {children}
-        </HeaderProvider>
+        {/* </HeaderProvider> */}
         <Footer />
       </body>
     </html>

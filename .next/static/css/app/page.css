@@ -1,27 +1,3 @@
-/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/ImageProfile/porfile.module.css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************/
-.porfile_desktop__w8T57 {
-    width: 100%;
-    max-width: 18rem;
-}
-
-.porfile_mobile__55nd_ {
-    display: none;
-}
-
-@media (max-width: 800px) {
-    .porfile_desktop__w8T57 {
-        display: none;
-    }
-
-    .porfile_mobile__55nd_ {
-        display: flex;
-
-        width: 100%;
-        max-width: 8rem;
-    }
-}
 /*!************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/home/home.module.css ***!
   \************************************************************************************************************************************************************************************************************************************************************************/
@@ -90,57 +66,6 @@
     }
 }
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/SocialMedia/social-media.module.css ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************/
-.social-media_box__q_G_c {
-    width: 100%;
-    /* max-width: 25rem; */
-    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 25px;
-    
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.social-media_content__bY3fM {
-    width: 1.4rem;
-    height: 1.3rem;
-    padding: 1.4rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.social-media_github__i49PL {
-    background: linear-gradient(180deg, #3A3A3A 0%, #000000 100%);
-}
-
-.social-media_linkedin__LA93w {
-    background: linear-gradient(180deg, #278DF4 0%, #0A66C2 100%);
-}
-
-.social-media_email__de439 {
-    background: linear-gradient(144.56deg, #FF9184 15.33%, #CD2215 87.06%);
-
-}
-
-.social-media_instagram__95rph {
-    background: linear-gradient(137.23deg, #5527CF 3.6%, #D840A4 51.3%, #E4B26B 100%);
-}
-
-@media (max-width:800px) {
-    .social-media_box__q_G_c {
-        justify-content: center;
-    }
-}
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/CardProject/card-project.module.css ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************************/
 .card-project_box____ZDo {
@@ -201,4 +126,157 @@
         width: 80%;
     }
 
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/ImageProfile/porfile.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************/
+.porfile_desktop__w8T57 {
+    width: 100%;
+    max-width: 18rem;
+}
+
+.porfile_mobile__55nd_ {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .porfile_desktop__w8T57 {
+        display: none;
+    }
+
+    .porfile_mobile__55nd_ {
+        display: flex;
+
+        width: 100%;
+        max-width: 8rem;
+    }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/Header/header.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.header_box__7ZXBX {
+    width: 90%;
+    max-width: 60rem;
+    /*     
+    height: 60%;
+    min-height: 5rem; 
+    */
+    height: 7rem;
+    margin-top: 20px;
+}
+
+.header_header__iAHWV {
+    width: 90%;
+    max-width: 60rem;
+    height: 4rem;
+    max-height: 4rem;
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_content__a_3sy {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header_logo__q5OoG {
+    width: 2.5rem;
+    height: auto;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/ModalMenu/modalMenu.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.modalMenu_icon__mVCwt {
+    width: 2rem;
+    height: auto;
+}
+
+.modalMenu_box__VHT8q {
+    background-color: transparent;
+
+    position: absolute;
+    margin-top: 11rem;
+    width: 95%;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modalMenu_painel__BiAb4 {
+    width: 20%;
+    max-width: 40rem;
+    height: -moz-fit-content;
+    height: fit-content;
+    /* height: 14rem; */
+    padding: 2rem;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    align-items: center;   
+}
+
+@media (max-width: 800px) {
+    .modalMenu_painel__BiAb4 {
+        width: 100%;
+    }
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/SocialMedia/social-media.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
+.social-media_box__q_G_c {
+    width: 100%;
+    /* max-width: 25rem; */
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.social-media_content__bY3fM {
+    width: 1.4rem;
+    height: 1.3rem;
+    padding: 1.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.social-media_github__i49PL {
+    background: linear-gradient(180deg, #3A3A3A 0%, #000000 100%);
+}
+
+.social-media_linkedin__LA93w {
+    background: linear-gradient(180deg, #278DF4 0%, #0A66C2 100%);
+}
+
+.social-media_email__de439 {
+    background: linear-gradient(144.56deg, #FF9184 15.33%, #CD2215 87.06%);
+
+}
+
+.social-media_instagram__95rph {
+    background: linear-gradient(137.23deg, #5527CF 3.6%, #D840A4 51.3%, #E4B26B 100%);
+}
+
+@media (max-width:800px) {
+    .social-media_box__q_G_c {
+        justify-content: center;
+    }
 }
