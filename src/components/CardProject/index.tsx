@@ -30,7 +30,7 @@ export function CardProject() {
         {
             title: 'Improve Next App',
             description: 'Script de automatização que simplifica as etapas iniciais de configuração em projetos Next.js. Ele foi desenvolvido para ajudar tanto usuários de Linux quanto desenvolvedores de Next.js a economizar tempo e garantir consistência na estruturação e configuração de novos projetos. A solução é ideal para quem busca agilidade no desenvolvimento, eliminando tarefas repetitivas e otimizando o processo de criação',
-            link: 'https://github.com/ArthurViniciusL/config-my-debian',
+            link: 'https://github.com/ArthurViniciusL/improve-next-app',
             stacks: ['shell', 'linux']
         },
         {
