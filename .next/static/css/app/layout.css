@@ -563,10 +563,10 @@
 
 .art\:font-color\:blue-02 {
     /* art:font-color:blue-02 */
-    color: var(--blue-03);
+    color: var(--blue-02);
 }
 
-.art\:font-color\:blue-3 {
+.art\:font-color\:blue-03 {
     /* art:font-color:blue-03 */
     color: var(--blue-03);
 }
@@ -586,20 +586,21 @@
     color: var(--red-03);
 }
 
-.art\:no-dark\:\(font-color\:white-01\) {
-    /* art:no-dark:(font-color:white-01) */
+.art\:no-dark\:font-color\:white-01 {
+    /* art:no-dark:font-color:white-01 */
     color: var(--fix-white-01);
 }
 
-.art\:no-dark\:\(font-color\:white-02\) {
-    /* art:no-dark:(font-color:white-02) */
+.art\:no-dark\:font-color\:white-02 {
+    /* art:no-dark:font-color:white-02 */
     color: var(--fix-white-02);
 }
 
-.art\:no-dark\:\(font-color\:white-03\) {
-    /* art:no-dark:(font-color:white-03) */
+.art\:no-dark\:font-color\:white-03 {
+    /* art:no-dark:font-color:white-03 */
     color: var(--fix-white-03);
-}/* ------------------------------------- text decoration: ------------------------------------- */
+}
+/* ------------------------------------- text decoration: ------------------------------------- */
 
 .art\:underline {
     text-decoration: underline;
@@ -633,6 +634,22 @@
 .art\:font-size\:subtitle-02 {
     /* art:font-size:subtitle-02 */
     font-size: 1.5rem;
+}
+/* ------------------------------------- font weight: ------------------------------------- */
+
+.art\:font-style\:bold-01 {
+    /* art:font-style:bold-01 */
+    font-weight: 500;
+}
+
+.art\:font-style\:bold-02 {
+    /* art:font-style:bold-02 */
+    font-weight: 600;
+}
+
+.art\:font-style\:bold-03 {
+    /* art:font-style:bold-03 */
+    font-weight: 700;
 }
 /* ------------------------------------- background color hovers: ------------------------------------- */
 
@@ -901,6 +918,18 @@
   \********************************************************************************************************************************************************************************************************************************************************************/
 @charset "UTF-8";
 
+:root {
+    --purple-01: #E9C6FF;
+    --purple-02: #D48FFF;
+    --purple-03: #BF57FF;
+    --purple-rgba: 191, 87, 255;
+
+    --orange-01: #FFDCBE;
+    --orange-02: #FFBB7F;
+    --orange-03: #FF993F;
+    --orange-rgba: 255, 153, 63;
+}
+
 html {
     width: 100dvw;
     flex: 1 1;
@@ -939,6 +968,7 @@ li {
 }
 
 a {
+    color: inherit;
     text-decoration: none;
 }
 
@@ -958,13 +988,133 @@ a {
         /* art:show-on-light-mode */
         display: none;
     }
-    
+
     .art\:show-on-dark-mode {
         /* art:show-on-dark-mode */
         display: flex;
     }
 }
 
+.art\:w\:fit-content {
+    /* art:w:fit-content */
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.art\:font-color\:purple-01 {
+    /* art:font-color:purple-01 */
+    color: var(--purple-01);
+}
+
+.art\:font-color\:purple-02 {
+    /* art:font-color:purple-02 */
+    color: var(--purple-02);
+}
+
+.art\:font-color\:purple-03 {
+    /* art:font-color:purple-03 */
+    color: var(--purple-03);
+}
+
+.art\:bg\:purple-01 {
+    /* art:bg:purple-01 */
+    background: var(--purple-01);
+}
+
+.art\:bg\:purple-02 {
+    /* art:bg:purple-02 */
+    background: var(--purple-02);
+}
+
+.art\:bg\:purple-03 {
+    /* art:bg:purple-03 */
+    background: var(--purple-03);
+}
+
+.art\:bg\:purple\:10\% {
+    /* art:bg:purple:10% */
+    background: rgba(var(--purple-rgba), 0.1);
+}
+
+.art\:bg\:purple\:20\% {
+    /* art:bg:purple:20% */
+    background: rgba(var(--purple-rgba), 0.2);
+}
+
+.art\:bg\:purple\:30\% {
+    /* art:bg:purple:30% */
+    background: rgba(var(--purple-rgba), 0.3);
+}
+
+.art\:bg\:purple\:40\% {
+    /* art:bg:purple:40% */
+    background: rgba(var(--purple-rgba), 0.4);
+}
+
+.art\:bg\:purple\:50\% {
+    /* art:bg:purple:50% */
+    background: rgba(var(--purple-rgba), 0.5);
+}
+
+.art\:font-color\:orange-01 {
+    /* art:font-color:orange-01 */
+    color: var(--orange-01);
+}
+
+.art\:font-color\:orange-02 {
+    /* art:font-color:orange-02 */
+    color: var(--orange-02);
+}
+
+.art\:font-color\:orange-03 {
+    /* art:font-color:orange-03 */
+    color: var(--orange-03);
+}
+
+.art\:bg\:orange-01 {
+    /* art:bg:orange-01 */
+    background: var(--orange-01);
+}
+
+.art\:bg\:orange-02 {
+    /* art:bg:orange-02 */
+    background: var(--orange-02);
+}
+
+.art\:bg\:orange-03 {
+    /* art:bg:orange-03 */
+    background: var(--orange-03);
+}
+
+.art\:bg\:orange\:10\% {
+    /* art:bg:orange:10% */
+    background: rgba(var(--orange-rgba), 0.1);
+}
+
+.art\:bg\:orange\:20\% {
+    /* art:bg:orange:20% */
+    background: rgba(var(--orange-rgba), 0.2);
+}
+
+.art\:bg\:orange\:30\% {
+    /* art:bg:orange:30% */
+    background: rgba(var(--orange-rgba), 0.3);
+}
+
+.art\:bg\:orange\:40\% {
+    /* art:bg:orange:40% */
+    background: rgba(var(--orange-rgba), 0.4);
+}
+
+.art\:bg\:orange\:50\% {
+    /* art:bg:orange:50% */
+    background: rgba(var(--orange-rgba), 0.5);
+}
+
+.art\:hover\:bg\:yellow\:40\%:hover {
+    /* art:hover:bg:yellow:40% */
+    background: rgba(var(--yellow-rgba), 0.4);
+}
 /*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/Header/header.module.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************/

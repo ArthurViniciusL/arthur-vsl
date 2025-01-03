@@ -35,7 +35,7 @@ export function CardProject() {
             title: 'Eve',
             description: 'A Eve é um gerenciador de arquivos em baseado em nuvem feito para praticar docker na cadeira de Desenvolvimento de Sistemas de Informação',
             link: 'https://github.com/ArthurViniciusL/EVE',
-            stacks: ['javascript', 'react.js','spring boot' , 'css']
+            stacks: ['javascript', 'react.js','spring boot', 'css', 'docker']
         },
         {
             title: 'Art CSS',
