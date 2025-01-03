@@ -5,11 +5,12 @@ import { StackTag } from "../StackTag";
 import { useEffect, useState } from "react";
 
 export function CardProject() {
-
-    // const innerWidth = window.innerWidth
+    
     const [windowSize, setWindowSize] = useState<number>(0);
 
-    const sliceDescription: number = windowSize <= 500 ? 12 : windowSize <= 1100 ? 24 : 34;
+    const sliceDescription: number = windowSize <= 500 ? 12 : windowSize <= 1100 ? 24 : 30;
+
+    console.log(sliceDescription)
 
     useEffect(() => {
         function handleWindow() {
@@ -34,7 +35,7 @@ export function CardProject() {
         },
         {
             title: 'Eve',
-            description: 'A Eve é um gerenciador de arquivos baseado em nuvem feito para praticar docker na cadeira de Desenvolvimento de Sistemas de Informação',
+            description: 'Eve é um gerenciador de arquivos baseado em nuvem desenvolvido para praticar docker e kubernets',
             link: 'https://github.com/ArthurViniciusL/EVE',
             stacks: ['javascript', 'react.js','spring boot', 'css', 'docker']
         },
@@ -68,7 +69,7 @@ export function CardProject() {
                                     {project.title}
                                     <CurrentLink className="art:ft:blue-02" width={15} />
                                 </h2>
-                                <div className={styles.textArea}>
+                                <div className={`${styles.textArea}`}>
                                     <p className="">
                                         {
                                             project.description.length > 200

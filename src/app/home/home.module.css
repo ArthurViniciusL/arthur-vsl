@@ -5,7 +5,6 @@
     margin-top: 2rem;
 
     display: flex;
-    /* gap: 3rem; */
     gap: 5rem;
     flex-direction: column;
 
@@ -15,14 +14,11 @@
 .content {
     width: 100%;
     height: auto;
-    /* height: 80dvh; */
 
     display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
     gap: 20px;
+    flex-direction: row;
 
-    /* align-items: center; */
     align-items: flex-start;
 }
 
@@ -56,6 +52,7 @@
     .textArea {
         display: flex;
         align-items: center;
+        text-align: center;
     }
 
     .boxVerMais {

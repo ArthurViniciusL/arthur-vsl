@@ -17,11 +17,10 @@
 .card {
     /* width: 45%; */
     width: 100%;
-    height: 12rem;
+    /* height: 12rem; */
     display: flex;
     gap: 1rem;
     flex-direction: column;
-
     justify-content: flex-start;
 }
 
@@ -33,15 +32,19 @@
 }
 
 .textArea {
-    height: 10rem;
+    height: 5rem;
     overflow: hidden;
     align-content: safe;
     text-align: justify;
+    padding: 0.5rem;
+    display: flex;
+    align-items: flex-start;
 }
 
 .stakTagContent {
-    display: inherit;
-    gap: 0.5rem;
+    display: flex;
+    gap: 1rem;
+    row-gap: 2rem;
     flex-wrap: wrap;
     flex-direction: row;
 }
@@ -54,6 +57,10 @@
 
     .content {
         width: 80%;
+    }
+
+    .textArea {
+        align-items: center;
     }
 
 }
