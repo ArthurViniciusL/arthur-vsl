@@ -22,7 +22,7 @@ export default function Home() {
             <Header title='Início' />
             <main className={`${styles.box}`}>
                 <section className={`${styles.content}`}>
-                    <ImageProfile load={false} />
+                    <ImageProfile load={true} />
                     <div className={`${styles.textArea}`}>
                         <h2 className="art:ft:subtitle-01">
                             Sobre mim
