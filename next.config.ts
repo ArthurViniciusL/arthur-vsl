@@ -1,5 +1,5 @@
 const nextConfig = {
-  webpack(config) {
+  webpack(config:any) {
     config.module.rules.push({
       test: /\.mp4$/,
       type: 'asset/resource',

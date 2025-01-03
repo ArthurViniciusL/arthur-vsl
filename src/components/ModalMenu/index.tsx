@@ -96,7 +96,7 @@ export function ModalMenu() {
                         </li>
 
                         <li className="art:border:solid art:border:white-02 art:border-b:s-02 art:hover:border:remove">
-                            <a href="/documents/Arthur_Vinicius_CV.pdf" download="Arthur_Vinicius_CV">
+                            <a href="/documents/Arthur_Vinicius_CV.pdf" download="Arthur_Lucena_CV">
                                 <button className="
                                 art:btn:medium
                                 art:bg:white-01
