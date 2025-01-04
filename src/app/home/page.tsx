@@ -1,7 +1,6 @@
 // "use client";
 
 import styles from "./home.module.css";
-import RootLayout from "../layout";
 import { ImageProfile } from "@/components/ImageProfile";
 import { SocialMedia } from "@/components/SocialMedia";
 import { CardProject } from "@/components/CardProject";
@@ -22,7 +21,7 @@ export default function Home() {
             <Header title='Início' />
             <main className={`${styles.box}`}>
                 <section className={`${styles.content}`}>
-                    <ImageProfile load={true} />
+                    <ImageProfile />
                     <div className={`${styles.textArea}`}>
                         <h2 className="art:ft:subtitle-01">
                             Sobre mim

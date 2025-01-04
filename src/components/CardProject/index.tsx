@@ -3,29 +3,19 @@ import styles from "./card-project.module.css";
 import { CurrentLink } from "@/modules/app.modules";
 import { StackTag } from "../StackTag";
 import { useEffect, useState } from "react";
+import { useWindow } from "@/hooks/useWindow";
 
 export function CardProject() {
-    
-    const [windowSize, setWindowSize] = useState<number>(0);
 
-    const sliceDescription: number = windowSize <= 500 ? 12 : windowSize <= 1100 ? 24 : 30;
-
-    console.log(sliceDescription)
-
-    useEffect(() => {
-        function handleWindow() {
-            setWindowSize(window.innerWidth);
-        }
-
-        window.addEventListener('resize', handleWindow);
-    }, [windowSize])
+    const window = useWindow();
+    const sliceDescription: number = window <= 500 ? 12 : window <= 1100 ? 24 : 30;
 
     const projects = [
         {
             title: '@Arthur.vsl',
             description: 'Este site! Um reflexo da minha paixão pela construção de sofwares, meu compromisso com a qualidade do código e seu constante aprendizado e aprimoramento nas tecnologias mais recentes. Aqui, você encontrará uma combinação de projetos acadêmicos, experiências práticas e visões sobre o futuro do desenvolvimento de software.',
             link: 'https://github.com/ArthurViniciusL/arthur-vsl',
-            stacks: ['typescript','next.js', 'css', 'art css']
+            stacks: ['typescript', 'next.js', 'css', 'art css']
         },
         {
             title: 'Improve Next App',
@@ -37,7 +27,7 @@ export function CardProject() {
             title: 'Eve',
             description: 'Eve é um gerenciador de arquivos baseado em nuvem desenvolvido para praticar docker e kubernets',
             link: 'https://github.com/ArthurViniciusL/EVE',
-            stacks: ['javascript', 'react.js','spring boot', 'css', 'docker']
+            stacks: ['javascript', 'react.js', 'spring boot', 'css', 'docker']
         },
         {
             title: 'Art CSS',
