@@ -10,8 +10,6 @@ export function CardProject() {
 
     const sliceDescription: number = windowSize <= 500 ? 12 : windowSize <= 1100 ? 24 : 30;
 
-    console.log(sliceDescription)
-
     useEffect(() => {
         function handleWindow() {
             setWindowSize(window.innerWidth);

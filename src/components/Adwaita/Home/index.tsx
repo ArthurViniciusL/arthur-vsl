@@ -11,7 +11,7 @@ export interface AdwaitaProps {
 
 export function HomeIcon({ className, size }: AdwaitaProps) {
     
-    let dark: boolean = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const dark: boolean = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     const [isDark, setIsDark] = useState<boolean>(dark);
 
     useEffect(() => {

@@ -1,12 +1,31 @@
+"use client";
+
 import Image from "next/image";
 import Adwaita from "../adwaita.modules";
 import { AdwaitaProps } from "../Home";
+import { useEffect, useState } from "react";
 
 export function Document({ className, size }: AdwaitaProps) {
+
+    const dark:boolean = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const [isDark, setIsDark] = useState<boolean>(dark);
+
+    useEffect(() => {
+        const darkTheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function handleDarkTheme(event: any) {
+            setIsDark(event.matches)
+        }
+
+        darkTheme.addEventListener('change', handleDarkTheme)
+
+    }, [isDark]);
+
+    const icon = isDark ? Adwaita.documentDark : Adwaita.documentLight;
+
     return (
         <>
-            <Image className={`${className} art:show-on-light-mode`} width={size} src={Adwaita.documentLight} alt="icone de documento" />
-            <Image className={`${className} art:show-on-dark-mode`} width={size} src={Adwaita.documentDark} alt="icone de documento" />
+            <Image className={`${className}`} width={size} src={icon} alt="icone de documento" />
         </>
     )
 }
