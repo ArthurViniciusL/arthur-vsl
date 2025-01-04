@@ -55,30 +55,6 @@ a {
     text-decoration: none;
 }
 
-
-.art\:show-on-light-mode {
-    /* art:show-on-light-mode */
-    display: flex;
-}
-
-.art\:show-on-dark-mode {
-    /* art:show-on-dark-mode */
-    display: none;
-}
-
-@media (prefers-color-scheme: dark) {
-    .art\:show-on-light-mode {
-        /* art:show-on-light-mode */
-        display: none;
-    }
-
-    .art\:show-on-dark-mode {
-        /* art:show-on-dark-mode */
-        display: flex;
-    }
-}
-
-.art\:w\:fit-content {
-    /* art:w:fit-content */
-    width: fit-content;
+.art\:cursor\:pointer {
+    cursor: pointer;
 }

@@ -4,12 +4,13 @@ import Image from "next/image";
 import styles from "./header.module.css";
 import artLogo from "@/assets/icons/logo-marca.svg"
 import { ModalMenu } from "../ModalMenu";
+import AppRoutes from "@/app.routes";
 
 interface HeaderProps {
     title: string;
 }
 
-export function Header({title}:HeaderProps) {
+export function Header({ title }: HeaderProps) {
 
     /* Essa é uma implementação menos sofisticada para o Header,
     * mas ainda é válida pois o Header só possue o 'title' como
@@ -31,7 +32,9 @@ export function Header({title}:HeaderProps) {
               art:shadow:center
             `}>
                     <div className={`${styles.content}`}>
-                        <Image src={artLogo} alt="logo do site" className={`${styles.logo}`} width={10} />
+                        <a href={AppRoutes.home} className="">
+                            <Image src={artLogo} alt="logo do site" className={`${styles.logo}`} width={10} />
+                        </a>
 
                         <h1 className="art:ft:black-01 art:ft:normal-02 art:ft:bold-03">
                             {title}
