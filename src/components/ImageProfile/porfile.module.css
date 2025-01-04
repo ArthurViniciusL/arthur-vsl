@@ -7,11 +7,6 @@
     display: none;
 }
 
-.shape {
-    width: 90.1rem;
-    height: 20rem;
-}
-
 @media (max-width: 800px) {
     .desktop {
         display: none;
@@ -24,8 +19,4 @@
         max-width: 8rem;
     }
 
-    .shape {
-        width: 10rem;
-        height: 10rem;
-    }
 }
