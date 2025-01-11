@@ -18,8 +18,8 @@ export default function Home() {
 
     return (
         <>
-            <Header title='Início' />
-            <main className={`${styles.box}`}>
+            
+            {/* <div className={`${styles.box}`}> */}
                 <section className={`${styles.content}`}>
                     <ImageProfile />
                     <div className={`${styles.textArea}`}>
@@ -60,7 +60,7 @@ export default function Home() {
                         </Link>
                     </span>
                 </section>
-            </main>
+            {/* </div> */}
         </>
     );
 }
