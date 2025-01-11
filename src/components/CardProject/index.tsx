@@ -43,7 +43,7 @@ export function CardProject() {
                 {
                     projects.map((project: any, index: number) => (
                         <li key={index} className={`${styles.content} art:cursor:pointer
-                                    art:ft:normal-01
+                                    art:font:normal-01
                                     art:bg:white-01
                                     
                                     art:border:solid
@@ -55,9 +55,9 @@ export function CardProject() {
                                     art:p-02
                             `}>
                             <a href={project.link} target="_blank" className={`${styles.card}`}>
-                                <h2 className={`${styles.cardTitle} art:ft:subtitle-02`}>
+                                <h2 className={`${styles.cardTitle} art:font:subtitle-02`}>
                                     {project.title}
-                                    <CurrentLink className="art:ft:blue-02" width={15} />
+                                    <CurrentLink className="art:font:blue-02" width={15} />
                                 </h2>
                                 <div className={`${styles.textArea}`}>
                                     <p className="">
