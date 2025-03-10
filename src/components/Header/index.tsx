@@ -36,7 +36,7 @@ export function Header({ title }: HeaderProps) {
                             <Image src={artLogo} alt="logo do site" className={`${styles.logo}`} width={10} />
                         </a>
 
-                        <h1 className="art:ft:black-01 art:ft:normal-02 art:ft:bold-03">
+                        <h1 className="art:font:black-01 art:font:normal-02 art:font:bold">
                             {title}
                         </h1>
 
