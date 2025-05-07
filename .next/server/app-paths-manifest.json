@@ -1,13 +1,6 @@
 {
-<<<<<<< HEAD
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/_not-found/page": "app/_not-found/page.js",
-<<<<<<< HEAD
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/home/page": "app/home/page.js",
-=======
->>>>>>> develop
-=======
-  "/favicon.ico/route": "app/favicon.ico/route.js",
->>>>>>> develop
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/home/page": "app/home/page.js"
 }
