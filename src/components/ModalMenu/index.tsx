@@ -53,7 +53,7 @@ export function ModalMenu() {
                     <Image src={Adwaita.dockTop} alt="icone do menu de links no site" className={`${styles.icon}`} />
                 </button>
 
-                <div className={`${styles.box} `}>
+                <div className={`${styles.box}`}>
                     <ul
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
@@ -75,7 +75,7 @@ export function ModalMenu() {
                                 art:hover:bg:white-02
                                 ">
                             <a href={AppRoutes.home}>
-                                <button className="art:bg:none art:w:full art:flex art:gap:base art:align-items:center art:justify-content:center">
+                                <button className="art:font:black-02 art:bg:none art:w:full art:flex art:gap:base art:align-items:center art:justify-content:center">
                                     <HomeIcon size={20} />
                                     Início
                                 </button>
@@ -90,7 +90,7 @@ export function ModalMenu() {
                                 art:hover:bg:white-02
                                 ">
                             <a href={AppRoutes.projects}>
-                                <button className="art:bg:none art:w:full art:flex art:gap:base art:align-items:center art:justify-content:center">
+                                <button className="art:font:black-02 art:bg:none art:w:full art:flex art:gap:base art:align-items:center art:justify-content:center">
                                     <ProjectIcon size={20} />
                                     Projetos
                                 </button>
@@ -105,7 +105,7 @@ export function ModalMenu() {
                                 art:hover:bg:white-02
                                 ">
                             <a href="/documents/art_cv.pdf" download="Arthur_Lucena_CV">
-                                <button className="art:bg:none art:w:full art:flex art:gap:base art:align-items:center art:justify-content:center">
+                                <button className="art:font:black-02 art:bg:none art:w:full art:flex art:gap:base art:align-items:center art:justify-content:center">
                                     <Document size={20} />
                                     Meu currículo
                                 </button>
