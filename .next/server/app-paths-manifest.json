@@ -1,15 +1,4 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-<<<<<<< HEAD
-<<<<<<< HEAD
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/home/page": "app/home/page.js",
-=======
->>>>>>> develop
   "/page": "app/page.js"
-=======
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js",
-  "/home/page": "app/home/page.js"
->>>>>>> develop
 }
