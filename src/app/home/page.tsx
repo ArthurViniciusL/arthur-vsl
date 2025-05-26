@@ -23,11 +23,7 @@ export default function Home() {
                 <section className={`${styles.content}`}>
                     <ImageProfile />
                     <div className={`${styles.textArea}`}>
-<<<<<<< HEAD
-                        <h2 className="art:font:xl">
-=======
                         <h2 className="art:font:3xl">
->>>>>>> origin/develop
                             Sobre mim
                         </h2>
                         <p className="art:font:base">
