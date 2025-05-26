@@ -31,13 +31,13 @@ interface StackTagProps {
 
 export function StackTag({ name }: StackTagProps) {
 
-    const artCss = 'art:w:fit-content art:font-style:semibold art:border:r-02 art:p-01'
+    const artCss = 'art:w:fit-content art:font-style:semibold art:border-rd:base art:p:sm '
 
     switch (name.toLocaleLowerCase()) {
 
         case 'shell':
             return (
-                <span className={`${artCss} art:font:green-02 art:bg:green:20%`}>
+                <span className={`${artCss} art:font:green-01 art:bg:green:20%`}>
                     {name}
                 </span >
             );
@@ -65,7 +65,7 @@ export function StackTag({ name }: StackTagProps) {
 
         case 'spring boot':
             return (
-                <span className={`${artCss} art:font:green-03 art:bg:green:30%`}>
+                <span className={`${artCss} art:font:green-01 art:bg:green:30%`}>
                     {name}
                 </span >
             );

@@ -45,16 +45,14 @@ export function CardProject() {
                         <li key={index} className={`${styles.content} art:cursor:pointer
                                     art:font:normal-01
                                     art:bg:white-01
-                                    
                                     art:border:solid
-                                    art:border:s-01
+                                    art:border:thin
                                     art:border:white-03
-                                    
                                     art:hover:bg:white-02
-                                    art:border:r-02
-                                    art:p-02
+                                    art:border-rd:base
+                                    art:p:base
                             `}>
-                            <a href={project.link} target="_blank" className={`${styles.card}`}>
+                            <a href={project.link} target="_blank" className={`${styles.card} `}>
                                 <h2 className={`${styles.cardTitle} art:font:subtitle-02`}>
                                     {project.title}
                                     <CurrentLink className="art:font:blue-02" width={15} />

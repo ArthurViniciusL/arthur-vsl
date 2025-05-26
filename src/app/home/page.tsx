@@ -23,17 +23,17 @@ export default function Home() {
                 <section className={`${styles.content}`}>
                     <ImageProfile />
                     <div className={`${styles.textArea}`}>
-                        <h2 className="art:font:subtitle-01">
+                        <h2 className="art:font:xl">
                             Sobre mim
                         </h2>
-                        <p className="art:font:normal-02">
+                        <p className="art:font:base">
                             Olá! Meu nome é Arthur, sou desenvolvedor web full-stack, um cinéfilo nas horas vagas e paraibano de coração.
                         </p>
-                        <p className="art:font:normal-02">
+                        <p className="art:font:base">
                             Atualmente, estou no sétimo período da graduação em Sistemas de Informação, onde descobri minha paixão por criar e aprimorar produtos por meio de soluções criativas. Nos últimos anos, acumulei experiência no desenvolvimento de software ao me envolver em diversos projetos acadêmicos.
                         </p>
 
-                        <p className="art:font:normal-02">
+                        <p className="art:font:base">
                             Durante minha jornada na universidade, tive a oportunidade de desempenhar múltiplos papéis, desde desenvolvedor front-end até designer de UI/UX, Scrum Master e QA. Essas experiências não apenas fortaleceram minhas habilidades técnicas, mas também me permitiram explorar diferentes aspectos do desenvolvimento de software.
                         </p>
 
@@ -44,16 +44,18 @@ export default function Home() {
                 <span className="art:line:white-03"></span>
 
                 <section className={`${styles.content} ${styles.contentProject}`}>
-                    <h1 className="art:font:title art:font:yellow-02">
+                    <h1 className="art:font:2xl art:font:yellow-02">
                         Meu projetos:
                     </h1>
                     <CardProject />
 
                     <span className={styles.boxVerMais}>
                         <Link className="
+                        art:p:sm
+                        art:border-rd:lg
                         art:bg:yellow:20%
-                        art:hover:bg:yellow:40%
-                        art:font:yellow-02
+                        art:hover:bg:yellow:30%
+                        art:font:yellow-01
                         "
                             href={AppRoutes.projects} newTab={true}>
                             Ver mais

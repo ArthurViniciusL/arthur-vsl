@@ -25,10 +25,11 @@ export function Header({ title }: HeaderProps) {
             <div className={`${styles.box}`}>
                 <header className={`${styles.header}
               art:bg:blur-01
-              art:border:r-02
-              art:border:s-01
+              art:border-rd:base
+              art:border:thin
               art:border:solid
               art:border:white-03
+              art:bg:white-01
               art:shadow:center
             `}>
                     <div className={`${styles.content}`}>
@@ -36,7 +37,7 @@ export function Header({ title }: HeaderProps) {
                             <Image src={artLogo} alt="logo do site" className={`${styles.logo}`} width={10} />
                         </a>
 
-                        <h1 className="art:font:black-01 art:font:normal-02 art:font:bold">
+                        <h1 className="art:font:black-01 art:font:lg art:font:bold">
                             {title}
                         </h1>
 
