@@ -49,7 +49,7 @@ export function ModalMenu() {
     if (tabMenu) {
         return (
             <>
-                <button className="art:btn:no-style" onClick={handleTabMenu}>
+                <button className="art:bg:none" onClick={handleTabMenu}>
                     <Image src={Adwaita.dockTop} alt="icone do menu de links no site" className={`${styles.icon}`} />
                 </button>
 
@@ -60,49 +60,52 @@ export function ModalMenu() {
                         className={`
                             ${styles.painel}
                             art:bg:white-01
-                            art:border:r-02
-                            art:border:s-01
+                            art:border-rd:base
+                            art:border:thin
                             art:border:solid
                             art:border:white-03
                             art:shadow:center
                             `}>
 
-                        <li className="art:border:solid art:border:white-02 art:border-b:s-02 art:hover:border:remove">
-                            <a href={AppRoutes.home}>
-                                <button className="
-                                art:btn:medium
+                        <li className="art:w:full art:border:white-02 art:border-b:solid art:border:thin art:hover:border:none
+                                art:p:base
+                                art:border-rd:base
                                 art:bg:white-01
-                                art:ft:black-01
+                                art:font:black-01
                                 art:hover:bg:white-02
                                 ">
+                            <a href={AppRoutes.home}>
+                                <button className="art:bg:none art:w:full art:flex art:gap:base art:align-items:center art:justify-content:center">
                                     <HomeIcon size={20} />
                                     Início
                                 </button>
                             </a>
                         </li>
 
-                        <li className="art:border:solid art:border:white-02 art:border-b:s-02 art:hover:border:remove">
-                            <a href={AppRoutes.projects}>
-                                <button className="
-                                art:btn:medium
+                        <li className="art:w:full art:border:white-02 art:border-b:solid art:border:thin art:hover:border:none
+                                art:p:base
+                                art:border-rd:base
                                 art:bg:white-01
-                                art:ft:black-01
+                                art:font:black-01
                                 art:hover:bg:white-02
                                 ">
+                            <a href={AppRoutes.projects}>
+                                <button className="art:bg:none art:w:full art:flex art:gap:base art:align-items:center art:justify-content:center">
                                     <ProjectIcon size={20} />
                                     Projetos
                                 </button>
                             </a>
                         </li>
 
-                        <li className="art:border:solid art:border:white-02 art:border-b:s-02 art:hover:border:remove">
-                            <a href="/documents/Arthur_Vinicius_CV.pdf" download="Arthur_Lucena_CV">
-                                <button className="
-                                art:btn:medium
+                        <li className="art:w:full art:border:white-02 art:border-b:solid art:border:thin art:hover:border:none
+                                art:p:base
+                                art:border-rd:base
                                 art:bg:white-01
-                                art:ft:black-01
+                                art:font:black-01
                                 art:hover:bg:white-02
                                 ">
+                            <a href="/documents/art_cv.pdf" download="Arthur_Lucena_CV">
+                                <button className="art:bg:none art:w:full art:flex art:gap:base art:align-items:center art:justify-content:center">
                                     <Document size={20} />
                                     Meu currículo
                                 </button>
@@ -117,7 +120,7 @@ export function ModalMenu() {
     else {
         return (
             <>
-                <button onClick={handleTabMenu} className="art:btn:no-style">
+                <button onClick={handleTabMenu} className="art:bg:none">
                     <Image src={Adwaita.dockBottom} alt="icone do menu de links no site" className={`${styles.icon}`} />
                 </button>
             </>

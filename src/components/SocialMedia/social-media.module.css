@@ -9,11 +9,11 @@
     
     justify-content: flex-end;
     align-items: center;
+
+
 }
 
 .content {
-    width: 1.4rem;
-    height: 1.3rem;
     padding: 1.4rem;
 
     display: flex;

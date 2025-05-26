@@ -15,11 +15,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br" className="art:bg:white-01 art:ft:black-01">
+    <html lang="pt-br" className="art:bg:white-01 art:font:black-01">
       <body>
-        {/* <HeaderProvider> */}
+        <Header title='Início' />
+        <main>
+          {/* <HeaderProvider> */}
           {children}
-        {/* </HeaderProvider> */}
+          {/* </HeaderProvider> */}
+        </main>
         <Footer />
       </body>
     </html>

@@ -12,8 +12,8 @@ export function Link({ className, href, newTab, children }: LinkProps) {
             <a className={`
                 ${className}
                 art:cursor:pointer
-                art:ft:normal-01
-                art:ft:black-01
+                art:font:normal-01
+                art:font:black-01
                 art:border:r-02
                 art:bg:white-02
                 art:hover:bg:white-03

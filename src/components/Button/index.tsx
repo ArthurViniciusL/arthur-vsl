@@ -16,8 +16,8 @@ export function Button({ onClick, className, children }: ButtonProps) {
                     art:cursor:pointer
                     art:p-01
                     art:border:r-02
-                    art:ft:normal-01
-                    art:ft:black-01
+                    art:font:normal-01
+                    art:font:black-01
                     art:bg:white-02
                     
                     art:bg:font-color:white-01
