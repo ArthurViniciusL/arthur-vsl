@@ -1,0 +1,48 @@
+.box {
+    width: 100%;
+    /* max-width: 25rem; */
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    
+    justify-content: flex-end;
+    align-items: center;
+
+
+}
+
+.content {
+    padding: 1.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.github {
+    background: linear-gradient(180deg, #3A3A3A 0%, #000000 100%);
+}
+
+.linkedin {
+    background: linear-gradient(180deg, #278DF4 0%, #0A66C2 100%);
+}
+
+.email {
+    background: linear-gradient(144.56deg, #FF9184 15.33%, #CD2215 87.06%);
+
+}
+
+.instagram {
+    background: linear-gradient(137.23deg, #5527CF 3.6%, #D840A4 51.3%, #E4B26B 100%);
+}
+
+@media (max-width:800px) {
+    .box {
+        justify-content: center;
+    }
+}
