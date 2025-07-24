@@ -32,7 +32,7 @@ export function SocialMedia() {
                         art:no-dark:font:white-01
                         art:hover:font:black-01
                         `}
-                        href="https://www.linkedin.com/in/arthur-vin%C3%ADcius-79a8441b6/"
+                        href="https://www.linkedin.com/in/arthur-lucena-79a8441b6/"
                         target="_blank"
                     >
                         <LinkedIn />
