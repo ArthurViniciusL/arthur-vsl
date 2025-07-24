@@ -4,7 +4,7 @@ export function ImageProfile() {
 
     return (
         <>
-            <video className={`${styles.desktop} art:border:r-02`}
+            <video className={`${styles.desktop} art:border-rd:base`}
                 controls={false}
                 autoPlay
                 loop
@@ -13,7 +13,7 @@ export function ImageProfile() {
                 <source src="videos/arthur_profile.mp4" type="video/mp4" />
             </video>
 
-            <video className={`${styles.mobile} art:border:r-02`}
+            <video className={`${styles.mobile} art:border-rd:base`}
                 controls={false}
                 autoPlay
                 loop
