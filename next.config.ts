@@ -1,14 +1,16 @@
 const nextConfig = {
-  webpack(config:any) {
+  webpack(config: any) {
     config.module.rules.push({
       test: /\.mp4$/,
-      type: 'asset/resource',
+      type: "asset/resource",
       generator: {
-        filename: 'static/media/[name].[hash][ext]',
+        filename: "static/media/[name].[hash][ext]",
       },
     });
     return config;
   },
 };
 
-module.exports = nextConfig;
+// module.exports = nextConfig;
+
+export default nextConfig;
