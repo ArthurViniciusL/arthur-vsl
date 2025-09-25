@@ -2,7 +2,6 @@ import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { HeaderProvider } from "@/context/HeaderContext";
 
 export const metadata: Metadata = {
   title: "@Arthur.vsl",
@@ -17,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className="art:bg:white-01 art:font:black-01">
       <body>
-        <Header title='Início' />
+        <Header title="Início" />
         <main>
           {/* <HeaderProvider> */}
           {children}
