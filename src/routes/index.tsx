@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
-import '@/App.css'
+import '@/styles/global.css'
+import { Button } from '@/components/ui/button'
 
 export const Route = createFileRoute('/')({
   component: Home,
@@ -8,8 +9,12 @@ export const Route = createFileRoute('/')({
 function Home() {
   return (
     <>
-      <div>Hello "/"!</div>
-      <Link to='/about'>Clique aqui</Link>
+      <main className='w-full flex flex-col gap-1 items-center justify-center'>
+        <div className='font-normal text-red-500'>Hello "/"!</div>
+        <Button variant={'to-black'}>
+          <Link to='/about'>Clique aqui</Link>
+        </Button>
+      </main>
     </>
   )
 }
