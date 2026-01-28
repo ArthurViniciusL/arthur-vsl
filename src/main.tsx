@@ -8,6 +8,7 @@ import { RouterProvider, createRouter } from '@tanstack/react-router'
 import { routeTree } from './routeTree.gen.ts'
 
 import reportWebVitals from './reportWebVitals.ts'
+import Header from './components/layout/header/index.tsx'
 
 // Create a new router instance
 const router = createRouter({
@@ -32,6 +33,7 @@ if (rootElement && !rootElement.innerHTML) {
   const root = ReactDOM.createRoot(rootElement)
   root.render(
     <StrictMode>
+      <Header />
       <RouterProvider router={router} />
     </StrictMode>,
   )
