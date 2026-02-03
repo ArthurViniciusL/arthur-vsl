@@ -5,7 +5,6 @@ import { Me } from './atom/Me';
 import { useIsScrolling } from '@/utils/hooks/useIsScrolling';
 import { IcAboutMe } from '@/utils/modules/icons';
 import { useTheme } from '@/utils/hooks/useTheme';
-import { useEffect, useState } from 'react';
 
 interface IHeaderProps extends React.ComponentProps<'header'> { }
 
