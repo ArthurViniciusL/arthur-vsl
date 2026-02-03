@@ -5,16 +5,11 @@ export function useIsScrolling() {
 
     useEffect(() => {
         const handleScroll = () => {
-            // Se o scroll vertical for maior que 0, está scrollando/fora do topo
             if (window.scrollY > 0) {
                 setIsScrolling(true);
             } else {
                 setIsScrolling(false);
             }
-
-            /* Dica: Você também pode simplificar para uma única linha:
-               setIsScrolling(window.scrollY > 0);
-            */
         };
 
         window.addEventListener('scroll', handleScroll);
