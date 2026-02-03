@@ -4,10 +4,10 @@ export function Me() {
     return (
         <>
             <div className='flex flex-col gap-1.5'>
-                <h1 className='text-2xl font-semibold'>
+                <P className='text-2xl font-semibold'>
                     Arthur Lucena
-                </h1>
-                <P className='text-sm text-zinc-500'>
+                </P>
+                <P className='text-sm border-zinc-300 dark:border-zinc-800'>
                     full-stack developer
                 </P>
             </div>

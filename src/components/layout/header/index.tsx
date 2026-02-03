@@ -4,23 +4,26 @@ import { cn } from '@/lib/utils';
 import { Me } from './atom/Me';
 import { useIsScrolling } from '@/utils/hooks/useIsScrolling';
 import { IcAboutMe } from '@/utils/modules/icons';
+import { useTheme } from '@/utils/hooks/useTheme';
+import { useEffect, useState } from 'react';
 
 interface IHeaderProps extends React.ComponentProps<'header'> { }
 
 export default function Header({ className, ...props }: IHeaderProps) {
 
+    const { theme } = useTheme();
     const { isScrolling } = useIsScrolling();
 
     const blurPatterner = cn(
-        'bg-white/10 backdrop-blur-xs py-2 px-4 rounded-4xl transition-all duration-500 ease-in-out border border-transparent',
-        isScrolling && 'border-zinc-300'
+        'py-2 px-4 rounded-4xl transition-all duration-500 ease-in-out border border-transparent',
+        isScrolling && 'border-border bg-white/10 backdrop-blur-xs '
     )
 
     const buttons = [
         {
             href: '',
             label: 'Sobre',
-            icon: <IcAboutMe/>
+            icon: <IcAboutMe />
         },
         {
             href: '',
@@ -36,10 +39,10 @@ export default function Header({ className, ...props }: IHeaderProps) {
 
     return (
         <>
-            <header className={
+            <header data-theme={theme} className={
                 cn(
-                    'sticky top-0 w-full md:w-7xl p-2 flex flex-row justify-between items-center transition-all duration-200 ease-in-out',
-                    !isScrolling && 'border-b border-zinc-300',
+                    'sticky top-0 w-full md:w-7xl p-2 flex flex-row justify-between items-center transition-all duration-300 ease-in-out border-b border-transparent',
+                    !isScrolling && 'border-border',
                     className
                 )
             } {...props}>

@@ -13,10 +13,23 @@ function Home() {
     <>
       <Main className=''>
         <div className='font-normal text-red-500'>Hello "/"!</div>
+
         <Button variant={'to-art'}>
           <Link to='/about'>Clique aqui</Link>
         </Button>
-        <AboutMe/>
+
+        <section className='w-full h-fit bg-green-500 '>
+          <AboutMe />
+        </section>
+        <section className='w-full h-fit bg-green-500 '>
+          <AboutMe />
+        </section>
+        <section className='w-full h-fit bg-green-500 '>
+          <AboutMe />
+        </section>
+        <section className='w-full h-fit bg-green-500 '>
+          <AboutMe />
+        </section>
       </Main>
     </>
   )
