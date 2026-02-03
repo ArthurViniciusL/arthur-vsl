@@ -2,7 +2,7 @@ import { createFileRoute, Link } from '@tanstack/react-router'
 import '@/styles/global.css'
 import { Button } from '@/components/ui/button'
 import Main from '@/components/layout/main'
-import AboutMe from '@/components/app/aboutMe'
+import AboutMe from '@/components/app/home/aboutMe'
 
 export const Route = createFileRoute('/')({
   component: Home,
