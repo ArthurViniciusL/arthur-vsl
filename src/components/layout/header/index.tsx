@@ -1,12 +1,12 @@
 import ProfilePicture from '@/components/layout/header/atom/ProfilePicture/pictureProfile';
-import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { Me } from './atom/Me';
 import { useIsScrolling } from '@/utils/hooks/useIsScrolling';
-import { IcAboutMe } from '@/utils/modules/icons';
+import { IcAboutMe, IcDevSetup, IcProjects } from '@/utils/modules/icons';
 import { useTheme } from '@/utils/hooks/useTheme';
 import { useIsMobile } from '@/utils/hooks/useIsMobile';
 import ToggleTheme from '@/components/toggleTheme';
+import { Button } from '@/components/ui/button';
 
 interface IHeaderProps extends React.ComponentProps<'header'> { }
 
@@ -30,12 +30,12 @@ export default function Header({ className, ...props }: IHeaderProps) {
         {
             href: '',
             label: 'Projetos',
-            icon: '',
+            icon: <IcProjects />,
         },
         {
             href: '',
             label: 'Dev Setup',
-            icon: ''
+            icon: <IcDevSetup />,
         }
     ];
 
@@ -59,7 +59,7 @@ export default function Header({ className, ...props }: IHeaderProps) {
                         <ul className={cn('flex flex-row gap-2 justify-center items-center')}>
                             {buttons.map((button, index) => (
                                 <li key={index}>
-                                    <Button variant={'to-art'} className='text-lg'>
+                                    <Button variant={'app'}>
                                         {button.icon}
                                         {button.label}
                                     </Button>

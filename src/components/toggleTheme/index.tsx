@@ -1,7 +1,7 @@
 import { useTheme } from "@/utils/hooks/useTheme";
-import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
 import { IcDarkMode, IcLightMode } from "@/utils/modules/icons";
+import { Button } from "../ui/button";
 export default function ToggleTheme() {
     const { isDark, setTheme } = useTheme();
 
@@ -16,13 +16,13 @@ export default function ToggleTheme() {
     return (
         <>
             <Button
-                variant={'ghost'}
+                size={'icon-lg'}
                 onClick={handleTheme}
                 className={cn(
-                    'w-10 h-10 rounded-xl border hover:border-border transition-all duration-300 ease-in',
+                    'w-10 h-10 cursor-pointer flex justify-center items-center rounded-xl border hover:border-border transition-all duration-300 ease-in',
                     isDark
-                        ? 'bg-blue-400/30 text-blue-400 border-blue-400'
-                        : ' bg-yellow-400/30 text-yellow-400 border-yellow-400'
+                        ? 'bg-blue-500/20 text-blue-500 border-blue-500 hover:bg-blue-500/30'
+                        : ' bg-yellow-500/20 text-yellow-500 border-yellow-500 hover:bg-yellow-500/30'
                 )}
             >
                 {
