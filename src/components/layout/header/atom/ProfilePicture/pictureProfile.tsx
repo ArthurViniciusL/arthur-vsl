@@ -13,7 +13,7 @@ export default function ProfilePicture() {
   return (
     <>
       {!isMobile &&
-        <div className='w-20 h-20 flex justify-center items-center bg-white dark:bg-black border border-zinc-300 rounded-2xl overflow-hidden'>
+        <div className='w-20 h-20 flex justify-center items-center bg-zinc-100 dark:bg-zinc-900 border border-border rounded-2xl overflow-hidden'>
           {image}
         </div>
       }

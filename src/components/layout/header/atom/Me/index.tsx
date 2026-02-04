@@ -7,7 +7,7 @@ export function Me() {
                 <P className='text-2xl font-semibold'>
                     Arthur Lucena
                 </P>
-                <P className='text-sm border-zinc-300 dark:border-zinc-800'>
+                <P className='text-sm text-zinc-600 dark:text-zinc-400'>
                     full-stack developer
                 </P>
             </div>
