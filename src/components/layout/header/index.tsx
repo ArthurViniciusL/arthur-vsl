@@ -5,7 +5,6 @@ import { Me } from './atom/Me';
 import { useIsScrolling } from '@/utils/hooks/useIsScrolling';
 import { IcAboutMe } from '@/utils/modules/icons';
 import { useTheme } from '@/utils/hooks/useTheme';
-import { useMemo } from 'react';
 import { useIsMobile } from '@/utils/hooks/useIsMobile';
 import ToggleTheme from '@/components/toggleTheme';
 
@@ -22,25 +21,23 @@ export default function Header({ className, ...props }: IHeaderProps) {
         isScrolling && 'border-border bg-white/10 backdrop-blur-xs'
     )
 
-    const buttons = useMemo(() => {
-        return [
-            {
-                href: '',
-                label: 'Sobre',
-                icon: <IcAboutMe />
-            },
-            {
-                href: '',
-                label: 'Projetos',
-                icon: '',
-            },
-            {
-                href: '',
-                label: 'Dev Setup',
-                icon: ''
-            }
-        ]
-    }, []);
+    const buttons = [
+        {
+            href: '',
+            label: 'Sobre',
+            icon: <IcAboutMe />
+        },
+        {
+            href: '',
+            label: 'Projetos',
+            icon: '',
+        },
+        {
+            href: '',
+            label: 'Dev Setup',
+            icon: ''
+        }
+    ];
 
     return (
         <>
@@ -59,7 +56,7 @@ export default function Header({ className, ...props }: IHeaderProps) {
                     {isMobile ?
                         <></>
                         :
-                        <ul className={cn('flex flex-row gap-2')}>
+                        <ul className={cn('flex flex-row gap-2 justify-center items-center')}>
                             {buttons.map((button, index) => (
                                 <li key={index}>
                                     <Button variant={'to-art'} className='text-lg'>

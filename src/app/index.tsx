@@ -18,16 +18,16 @@ function Home() {
           <Link to='/about'>Clique aqui</Link>
         </Button>
 
-        <section className='w-full h-fit bg-green-500 '>
+        <section className='w-full h-fit border border-green-500 '>
           <AboutMe />
         </section>
-        <section className='w-full h-fit bg-green-500 '>
+        <section className='w-full h-fit border border-green-500 '>
           <AboutMe />
         </section>
-        <section className='w-full h-fit bg-green-500 '>
+        <section className='w-full h-fit border border-green-500 '>
           <AboutMe />
         </section>
-        <section className='w-full h-fit bg-green-500 '>
+        <section className='w-full h-fit border border-green-500 '>
           <AboutMe />
         </section>
       </Main>
