@@ -7,6 +7,7 @@ import { useTheme } from '@/utils/hooks/useTheme';
 import { useIsMobile } from '@/utils/hooks/useIsMobile';
 import ToggleTheme from '@/components/toggleTheme';
 import { Button } from '@/components/ui/button';
+import NavMenu from '@/components/navMenu';
 
 interface IHeaderProps extends React.ComponentProps<'header'> { }
 
@@ -53,9 +54,7 @@ export default function Header({ className, ...props }: IHeaderProps) {
                     <Me />
                 </div>
                 <div className={cn('flex flex-row gap-2', blurPatterner)}>
-                    {isMobile ?
-                        <></>
-                        :
+                    {!isMobile &&
                         <ul className={cn('flex flex-row gap-2 justify-center items-center')}>
                             {buttons.map((button, index) => (
                                 <li key={index}>
@@ -67,7 +66,9 @@ export default function Header({ className, ...props }: IHeaderProps) {
                             ))}
                         </ul>
                     }
-                    <ToggleTheme />
+                    <NavMenu buttons={buttons}>
+                        <ToggleTheme />
+                    </NavMenu>
                 </div>
             </header >
         </>
