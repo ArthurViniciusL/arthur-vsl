@@ -5,12 +5,15 @@ import { Me } from './atom/Me';
 import { useIsScrolling } from '@/utils/hooks/useIsScrolling';
 import { IcAboutMe } from '@/utils/modules/icons';
 import { useTheme } from '@/utils/hooks/useTheme';
+import { useMemo } from 'react';
+import { useIsMobile } from '@/utils/hooks/useIsMobile';
 
 interface IHeaderProps extends React.ComponentProps<'header'> { }
 
 export default function Header({ className, ...props }: IHeaderProps) {
 
     const { theme } = useTheme();
+    const { isMobile } = useIsMobile();
     const { isScrolling } = useIsScrolling();
 
     const blurPatterner = cn(
@@ -18,23 +21,25 @@ export default function Header({ className, ...props }: IHeaderProps) {
         isScrolling && 'border-border bg-white/10 backdrop-blur-xs '
     )
 
-    const buttons = [
-        {
-            href: '',
-            label: 'Sobre',
-            icon: <IcAboutMe />
-        },
-        {
-            href: '',
-            label: 'Projetos',
-            icon: '',
-        },
-        {
-            href: '',
-            label: 'Dev Setup',
-            icon: ''
-        }
-    ]
+    const buttons = useMemo(() => {
+        return [
+            {
+                href: '',
+                label: 'Sobre',
+                icon: <IcAboutMe />
+            },
+            {
+                href: '',
+                label: 'Projetos',
+                icon: '',
+            },
+            {
+                href: '',
+                label: 'Dev Setup',
+                icon: ''
+            }
+        ]
+    }, []);
 
     return (
         <>
@@ -49,17 +54,21 @@ export default function Header({ className, ...props }: IHeaderProps) {
                     <ProfilePicture />
                     <Me />
                 </div>
-                <ul className={cn('flex flex-row gap-2', blurPatterner)}>
-                    {buttons.map((button, index) => (
-                        <li key={index}>
-                            <Button variant={'to-art'} className='text-lg'>
-                                {button.icon}
-                                {button.label}
-                            </Button>
-                        </li>
-                    ))}
-                </ul>
-            </header>
+                {isMobile ?
+                    <></>
+                    :
+                    <ul className={cn('flex flex-row gap-2', blurPatterner)}>
+                        {buttons.map((button, index) => (
+                            <li key={index}>
+                                <Button variant={'to-art'} className='text-lg'>
+                                    {button.icon}
+                                    {button.label}
+                                </Button>
+                            </li>
+                        ))}
+                    </ul>
+                }
+            </header >
         </>
     );
 }

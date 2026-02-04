@@ -1,12 +1,22 @@
-import image from '@/assets/images/profile_picture.png';
+import img from '@/assets/images/profile_picture.png';
+import { useIsMobile } from '@/utils/hooks/useIsMobile';
+import { useMemo } from 'react';
 
 
 export default function ProfilePicture() {
+  const { isMobile } = useIsMobile();
+
+  const image = useMemo(() => {
+    return <img src={img} className='w-auto h-full' />
+  }, []);
+
   return (
     <>
-      <div className='w-20 h-20 flex justify-center items-center bg-white dark:bg-black border border-zinc-300 rounded-2xl overflow-hidden'>
-        <img src={image} className='w-auto h-full' />
-      </div>
+      {!isMobile &&
+        <div className='w-20 h-20 flex justify-center items-center bg-white dark:bg-black border border-zinc-300 rounded-2xl overflow-hidden'>
+          {image}
+        </div>
+      }
     </>
   );
 }
