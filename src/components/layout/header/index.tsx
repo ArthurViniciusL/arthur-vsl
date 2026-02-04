@@ -7,6 +7,7 @@ import { IcAboutMe } from '@/utils/modules/icons';
 import { useTheme } from '@/utils/hooks/useTheme';
 import { useMemo } from 'react';
 import { useIsMobile } from '@/utils/hooks/useIsMobile';
+import ToggleTheme from '@/components/toggleTheme';
 
 interface IHeaderProps extends React.ComponentProps<'header'> { }
 
@@ -18,7 +19,7 @@ export default function Header({ className, ...props }: IHeaderProps) {
 
     const blurPatterner = cn(
         'py-2 px-4 rounded-4xl transition-all duration-500 ease-in-out border border-transparent',
-        isScrolling && 'border-border bg-white/10 backdrop-blur-xs '
+        isScrolling && 'border-border bg-white/10 backdrop-blur-xs'
     )
 
     const buttons = useMemo(() => {
@@ -54,20 +55,23 @@ export default function Header({ className, ...props }: IHeaderProps) {
                     <ProfilePicture />
                     <Me />
                 </div>
-                {isMobile ?
-                    <></>
-                    :
-                    <ul className={cn('flex flex-row gap-2', blurPatterner)}>
-                        {buttons.map((button, index) => (
-                            <li key={index}>
-                                <Button variant={'to-art'} className='text-lg'>
-                                    {button.icon}
-                                    {button.label}
-                                </Button>
-                            </li>
-                        ))}
-                    </ul>
-                }
+                <div className={cn('flex flex-row gap-2', blurPatterner)}>
+                    {isMobile ?
+                        <></>
+                        :
+                        <ul className={cn('flex flex-row gap-2')}>
+                            {buttons.map((button, index) => (
+                                <li key={index}>
+                                    <Button variant={'to-art'} className='text-lg'>
+                                        {button.icon}
+                                        {button.label}
+                                    </Button>
+                                </li>
+                            ))}
+                        </ul>
+                    }
+                    <ToggleTheme />
+                </div>
             </header >
         </>
     );
