@@ -3,13 +3,12 @@ import { cn } from "@/lib/utils";
 import { IcDarkMode, IcLightMode } from "@/utils/modules/icons";
 import { Button } from "../ui/button";
 import TooltipApp from "../tooltip";
-import { toast } from "sonner";
 export default function ToggleTheme() {
     const { isDark, setTheme } = useTheme();
 
     function handleTheme() {
 
-        let msg = ` Tema ${!isDark ? 'escuro' : 'claro' }  habilitado`
+        // let msg = ` Tema ${!isDark ? 'escuro' : 'claro' }  habilitado`;
 
         if (isDark) {
             setTheme('light');            
@@ -17,14 +16,14 @@ export default function ToggleTheme() {
             setTheme('dark');
         }
 
-        toast.info(
-            msg, {
-            position: "bottom-right",
-            style: {
-                width: 'fit-content',
-                height: 'fit-content',
-            }
-        });
+        // toast.info(
+        //     msg, {
+        //     position: "bottom-right",
+        //     style: {
+        //         width: 'fit-content',
+        //         height: 'fit-content',
+        //     }
+        // });
     }
 
     const tooltipMsg = `Mudar para o tema ${!isDark ? 'escuro' : 'claro'}`;
