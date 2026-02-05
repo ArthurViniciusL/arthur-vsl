@@ -10,6 +10,7 @@ import { routeTree } from './routeTree.gen.ts'
 import reportWebVitals from './reportWebVitals.ts'
 import Header from './components/layout/header/index.tsx'
 import { ThemeProvider } from './utils/context/themeContext.tsx'
+import { TooltipProvider } from './components/ui/tooltip.tsx'
 
 // Create a new router instance
 const router = createRouter({
@@ -35,8 +36,10 @@ if (rootElement && !rootElement.innerHTML) {
   root.render(
     <StrictMode>
       <ThemeProvider>
-        <Header />
-        <RouterProvider router={router} />
+        <TooltipProvider>
+          <Header />
+          <RouterProvider router={router} />
+        </TooltipProvider>
       </ThemeProvider>
     </StrictMode>,
   )
