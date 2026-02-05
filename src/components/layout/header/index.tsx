@@ -8,12 +8,14 @@ import { MobileMenu } from './atom/MobileMenu/indext';
 import ToggleTheme from '@/components/toggleTheme';
 import Menu from './atom/Menu';
 import { PAGE_MENUS } from '@/utils/consts/pageMenus';
+import { useIsMobile } from '@/utils/hooks/useIsMobile';
 
 
 interface IHeaderProps extends React.ComponentProps<'header'> { }
 
 export default function Header({ className, ...props }: IHeaderProps) {
 
+    const { isMobile } = useIsMobile();
     const { theme } = useTheme();
     const { isScrolling } = useIsScrolling();
 
@@ -44,7 +46,10 @@ export default function Header({ className, ...props }: IHeaderProps) {
                 )
             } {...props}>
                 <div className={cn('flex flex-row gap-2 items-center', blurPatterner)}>
-                    <ProfilePicture />
+                    {
+                        !isMobile
+                        && <ProfilePicture />
+                    }
                     <Me />
                 </div>
                 <div className={cn('flex flex-row gap-4', blurPatterner)}>

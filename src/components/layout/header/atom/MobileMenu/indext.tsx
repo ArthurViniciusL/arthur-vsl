@@ -3,13 +3,12 @@ import {
     Sheet,
     SheetContent,
     SheetHeader,
-    SheetTitle,
     SheetTrigger
 } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import { useIsMobile } from '@/utils/hooks/useIsMobile';
 import { PanelRightOpen, X } from 'lucide-react';
-import { useState } from 'react';
+import ProfilePicture from '../ProfilePicture/pictureProfile';
 
 interface MobileMenuProps {
     children?: React.ReactNode;
@@ -42,7 +41,8 @@ export function MobileMenu({ content }: MobileMenuProps) {
                     </SheetTrigger>
                     <SheetContent showCloseButton={false}>
                         <SheetHeader className='flex flex-row justify-between'>
-                            <SheetTitle>Menus</SheetTitle>
+                            <ProfilePicture />
+                            {/* <SheetTitle>Menus</SheetTitle> */}
                             <SheetTrigger>
                                 <Button variant="destructive" size={'icon'}>
                                     <X />
