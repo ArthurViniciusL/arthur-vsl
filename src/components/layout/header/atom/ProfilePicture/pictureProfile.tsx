@@ -1,12 +1,6 @@
 import img from '@/assets/images/profile_picture.png';
+import TooltipApp from '@/components/tooltip';
 import { useEffect, useMemo, useState } from 'react';
-
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-
 
 export default function ProfilePicture() {
 
@@ -44,16 +38,11 @@ export default function ProfilePicture() {
 
   return (
     <>
-      <div onMouseEnter={handleTrigger} onMouseLeave={handleTrigger} className='w-20 h-20 flex justify-center items-center bg-zinc-100 dark:bg-zinc-900 border border-border rounded-2xl overflow-hidden hover:w-28 hover:relative transition-all ease-in duration-100'>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            {image}
-          </TooltipTrigger>
-          <TooltipContent>
-            <p>{tooltipMsg.msg}</p>
-          </TooltipContent>
-        </Tooltip>
-      </div>
+      <TooltipApp msg={tooltipMsg.msg}>
+        <div onMouseEnter={handleTrigger} onMouseLeave={handleTrigger} className='w-18 h-18 flex justify-center items-center bg-zinc-100 dark:bg-zinc-900 border border-border rounded-2xl overflow-hidden hover:w-24 transition-all ease-in duration-100'>
+          {image}
+        </div >
+      </TooltipApp>
 
     </>
   );
