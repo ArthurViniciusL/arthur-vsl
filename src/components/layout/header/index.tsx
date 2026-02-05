@@ -40,7 +40,7 @@ export default function Header({ className, ...props }: IHeaderProps) {
         <>
             <header data-theme={theme} className={
                 cn(
-                    'sticky top-0 w-full md:w-7xl p-2 flex flex-row justify-between items-center transition-all duration-300 ease-in-out border-b border-transparent',
+                    'sticky top-0 w-full md:max-w-7xl p-2 flex flex-row justify-between items-center transition-all duration-300 ease-in-out border-b border-transparent',
                     !isScrolling && 'border-border',
                     className
                 )

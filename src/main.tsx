@@ -11,6 +11,7 @@ import reportWebVitals from './reportWebVitals.ts'
 import Header from './components/layout/header/index.tsx'
 import { ThemeProvider } from './utils/context/themeContext.tsx'
 import { TooltipProvider } from './components/ui/tooltip.tsx'
+import { Toaster } from 'sonner'
 
 // Create a new router instance
 const router = createRouter({
@@ -40,6 +41,7 @@ if (rootElement && !rootElement.innerHTML) {
           <Header />
           <RouterProvider router={router} />
         </TooltipProvider>
+        <Toaster theme='system' />
       </ThemeProvider>
     </StrictMode>,
   )

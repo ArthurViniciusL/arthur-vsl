@@ -9,6 +9,7 @@ import { cn } from '@/lib/utils';
 import { useIsMobile } from '@/utils/hooks/useIsMobile';
 import { PanelRightOpen, X } from 'lucide-react';
 import ProfilePicture from '../ProfilePicture/pictureProfile';
+import { Me } from '../Me';
 
 interface MobileMenuProps {
     children?: React.ReactNode;
@@ -40,9 +41,11 @@ export function MobileMenu({ content }: MobileMenuProps) {
                         </button>
                     </SheetTrigger>
                     <SheetContent showCloseButton={false}>
-                        <SheetHeader className='flex flex-row justify-between'>
-                            <ProfilePicture />
-                            {/* <SheetTitle>Menus</SheetTitle> */}
+                        <SheetHeader className='flex flex-row items-start justify-between'>
+                            <div className='flex flex-col gap-2'>
+                                <ProfilePicture />
+                                <Me/>
+                            </div>
                             <SheetTrigger>
                                 <Button variant="destructive" size={'icon'}>
                                     <X />
