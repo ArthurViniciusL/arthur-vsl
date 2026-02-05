@@ -1,0 +1,12 @@
+[
+    {
+        "header": {
+            "description": "desenvolvedor full-stack",
+            "button": {
+                "about_me": "Sobre",
+                "projects": "Projetos",
+                "dev_setup": "Dev setup"
+            }
+        }
+    }
+]

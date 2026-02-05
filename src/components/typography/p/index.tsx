@@ -9,7 +9,7 @@ export default function P({ className, children, ...props }: IPProps) {
 
     return (
         <>
-            <p data-theme={theme} className={cn("text-foreground dark:text-white text-lg", className)} {...props}>
+            <p data-theme={theme} className={cn("text-black dark:text-white text-lg", className)} {...props}>
                 {children}
             </p>
         </>

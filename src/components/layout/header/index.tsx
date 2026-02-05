@@ -2,19 +2,19 @@ import ProfilePicture from '@/components/layout/header/atom/ProfilePicture/pictu
 import { cn } from '@/lib/utils';
 import { Me } from './atom/Me';
 import { useIsScrolling } from '@/utils/hooks/useIsScrolling';
-import { IcAboutMe, IcDevSetup, IcProjects } from '@/utils/modules/icons';
 import { useTheme } from '@/utils/hooks/useTheme';
-import { useIsMobile } from '@/utils/hooks/useIsMobile';
-import ToggleTheme from '@/components/toggleTheme';
 import { Button } from '@/components/ui/button';
-import NavMenu from '@/components/navMenu';
+import { MobileMenu } from './atom/MobileMenu/indext';
+import ToggleTheme from '@/components/toggleTheme';
+import Menu from './atom/Menu';
+import { PAGE_MENUS } from '@/utils/consts/pageMenus';
+
 
 interface IHeaderProps extends React.ComponentProps<'header'> { }
 
 export default function Header({ className, ...props }: IHeaderProps) {
 
     const { theme } = useTheme();
-    const { isMobile } = useIsMobile();
     const { isScrolling } = useIsScrolling();
 
     const blurPatterner = cn(
@@ -22,23 +22,17 @@ export default function Header({ className, ...props }: IHeaderProps) {
         isScrolling && 'border-border bg-white/10 backdrop-blur-xs'
     )
 
-    const buttons = [
-        {
-            href: '',
-            label: 'Sobre',
-            icon: <IcAboutMe />
-        },
-        {
-            href: '',
-            label: 'Projetos',
-            icon: <IcProjects />,
-        },
-        {
-            href: '',
-            label: 'Dev Setup',
-            icon: <IcDevSetup />,
-        }
-    ];
+
+    const content = PAGE_MENUS.map(
+        (button, index) => (
+            <li key={index}>
+                <Button variant={'app'}>
+                    {button.icon}
+                    {button.label}
+                </Button>
+            </li>
+        )
+    );
 
     return (
         <>
@@ -53,22 +47,10 @@ export default function Header({ className, ...props }: IHeaderProps) {
                     <ProfilePicture />
                     <Me />
                 </div>
-                <div className={cn('flex flex-row gap-2', blurPatterner)}>
-                    {!isMobile &&
-                        <ul className={cn('flex flex-row gap-2 justify-center items-center')}>
-                            {buttons.map((button, index) => (
-                                <li key={index}>
-                                    <Button variant={'app'}>
-                                        {button.icon}
-                                        {button.label}
-                                    </Button>
-                                </li>
-                            ))}
-                        </ul>
-                    }
-                    <NavMenu buttons={buttons}>
-                        <ToggleTheme />
-                    </NavMenu>
+                <div className={cn('flex flex-row gap-4', blurPatterner)}>
+                    <Menu content={content} />
+                    <ToggleTheme />
+                    <MobileMenu content={content} />
                 </div>
             </header >
         </>
