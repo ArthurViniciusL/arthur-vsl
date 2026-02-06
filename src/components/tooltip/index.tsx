@@ -7,16 +7,17 @@ import {
 interface TooltipProps {
     children: React.ReactNode,
     msg: string,
+    side?: 'top' | 'bottom' | 'left' | 'right'
 }
 
-export default function TooltipApp({ children, msg }:TooltipProps) {
+export default function TooltipApp({ children, msg, side }:TooltipProps) {
     return (
         <>
             <Tooltip>
                 <TooltipTrigger asChild>
                     {children}
                 </TooltipTrigger>
-                <TooltipContent>
+                <TooltipContent side={side}>
                     <p>{msg}</p>
                 </TooltipContent>
             </Tooltip>

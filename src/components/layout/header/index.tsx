@@ -21,7 +21,7 @@ export default function Header({ className, ...props }: IHeaderProps) {
 
     const blurPatterner = cn(
         'py-2 px-4 rounded-4xl transition-all duration-500 ease-in-out border border-transparent',
-        isScrolling && 'border-border bg-white/10 backdrop-blur-xs'
+        isScrolling && 'border-border bg-white/10 backdrop-blur-md'
     )
 
 

@@ -4,4 +4,9 @@ export {
     FileCodeCorner as IcDevSetup,
     MoonIcon as IcDarkMode,
     SunIcon as  IcLightMode,
+    Linkedin as IcLinkedin,
+    Github as IcGithub,
+    Inbox as IcMyEmail,
+    Volume as IcVolume,
+    Volume2 as IcVolume2,
 } from 'lucide-react';
