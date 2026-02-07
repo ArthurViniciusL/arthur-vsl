@@ -14,7 +14,7 @@ export const Route = createFileRoute('/')({
 function Home() {
   return (
     <>
-      <Main className='mt-'>
+      <Main>
         {/* <Button variant={'app'}>
           <Link to='/about'>Clique aqui</Link>
         </Button> */}
