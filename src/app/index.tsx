@@ -18,7 +18,7 @@ function Home() {
         {/* <Button variant={'app'}>
           <Link to='/about'>Clique aqui</Link>
         </Button> */}
-        <Section direction='col' className='border-b border-border pb-4 relative'>
+        <Section direction='col' className='border-b border-border pb-4'>
           <AboutMe />
           <MyLinks />
         </Section>
