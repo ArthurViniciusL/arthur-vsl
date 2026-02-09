@@ -10,8 +10,7 @@ export default function Main({ className, children, ...props }: IMainProps) {
 
     return (
         <>
-        {/* md:w-7xl */}
-            <main data-theme={theme} className={cn("md:max-w-7xl w-full h-full px-4 py-8 flex flex-col items-center gap-3", className)} {...props}>
+            <main data-theme={theme} className={cn("md:max-w-7xl w-full h-full mt-20 md:mt-24 px-4 py-8 flex flex-col items-center gap-3", className)} {...props}>
                 {children}
             </main>
         </>
