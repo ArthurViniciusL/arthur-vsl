@@ -7,6 +7,6 @@ export {
     Linkedin as IcLinkedin,
     Github as IcGithub,
     Inbox as IcMyEmail,
-    Volume as IcVolume,
+    VolumeX as IcVolume,
     Volume2 as IcVolume2,
 } from 'lucide-react';
