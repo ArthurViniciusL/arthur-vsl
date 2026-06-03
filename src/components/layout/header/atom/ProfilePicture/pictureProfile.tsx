@@ -1,19 +1,24 @@
 import img from '@/assets/images/profile_picture.png';
+import img_angry from "@/assets/images/profile_picture_angry.png";
 import TooltipApp from '@/components/tooltip';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, } from 'react';
 
 import './styles/shake.css';
+import { useTranslation } from '@/utils/hooks/useTranslation';
 
 export default function ProfilePicture() {
 
+  const { t } = useTranslation();
+
   const [tooltipMsg, setTooltipMsg] = useState({
-    msg: 'Olá!',
+    img: img,
+    msg: t('app.tooltip.msg.hello'),
     trigger: false,
   });
 
   const image = useMemo(() => {
-    return <img src={img} className='w-auto h-full' />
-  }, []);
+    return <img src={tooltipMsg.img} className='w-auto h-full' />
+  }, [tooltipMsg.img]);
 
   function handleTrigger() {
     setTooltipMsg((prev) => ({ ...prev, trigger: !prev.trigger }));
@@ -33,12 +38,14 @@ export default function ProfilePicture() {
     if (tooltipMsg.trigger) {
       const timeout = setTimeout(() => {
         body.classList.add('shake-active');
-        setMsg('Oxê! Tira o dedo da minha cara 😠');
+        setTooltipMsg((prev) => ({ ...prev, img: img_angry }));
+        setMsg(t('app.tooltip.msg.remove_the_finger'));
       }, 60000);
       return () => clearTimeout(timeout);
     }
 
-    setMsg('Olá!');
+    setTooltipMsg((prev) => ({ ...prev, img: img }));
+    setMsg(t('app.tooltip.msg.hello'));
     body.classList.remove('shake-active');
 
   }, [tooltipMsg.trigger]);
