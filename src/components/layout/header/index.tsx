@@ -9,6 +9,7 @@ import ToggleTheme from '@/components/toggleTheme';
 import Menu from './atom/Menu';
 import { PAGE_MENUS } from '@/utils/consts/pageMenus';
 import { useIsMobile } from '@/utils/hooks/useIsMobile';
+import ToggleLanguage from '@/components/toggleLanguage';
 
 
 interface IHeaderProps extends React.ComponentProps<'header'> { }
@@ -54,6 +55,7 @@ export default function Header({ className, ...props }: IHeaderProps) {
                 </div>
                 <div className={cn('flex flex-row gap-4', blurPatterner)}>
                     <Menu content={content} />
+                    <ToggleLanguage />
                     <ToggleTheme />
                     <MobileMenu content={content} />
                 </div>

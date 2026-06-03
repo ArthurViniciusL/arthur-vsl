@@ -11,6 +11,8 @@ import reportWebVitals from './reportWebVitals.ts'
 import Header from './components/layout/header/index.tsx'
 import { ThemeProvider } from './utils/context/themeContext.tsx'
 import { TooltipProvider } from './components/ui/tooltip.tsx'
+import { I18nextProvider } from 'react-i18next'
+import i18n from './locales/i18n'
 
 // Create a new router instance
 const router = createRouter({
@@ -35,12 +37,14 @@ if (rootElement && !rootElement.innerHTML) {
   const root = ReactDOM.createRoot(rootElement)
   root.render(
     <StrictMode>
-      <ThemeProvider>
-        <TooltipProvider>
-          <Header />
-          <RouterProvider router={router} />
-        </TooltipProvider>
-      </ThemeProvider>
+      <I18nextProvider i18n={i18n}>
+        <ThemeProvider>
+          <TooltipProvider>
+            <Header />
+            <RouterProvider router={router} />
+          </TooltipProvider>
+        </ThemeProvider>
+      </I18nextProvider>
     </StrictMode>,
   )
 }

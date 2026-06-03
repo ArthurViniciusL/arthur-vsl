@@ -3,15 +3,17 @@ import { cn } from "@/lib/utils";
 import { IcDarkMode, IcLightMode } from "@/utils/modules/icons";
 import { Button } from "../ui/button";
 import TooltipApp from "../tooltip";
+import { useTranslation } from "@/utils/hooks/useTranslation";
 export default function ToggleTheme() {
     const { isDark, setTheme } = useTheme();
+    const { t } = useTranslation();
 
     function handleTheme() {
 
         // let msg = ` Tema ${!isDark ? 'escuro' : 'claro' }  habilitado`;
 
         if (isDark) {
-            setTheme('light');            
+            setTheme('light');
         } else {
             setTheme('dark');
         }
@@ -26,7 +28,11 @@ export default function ToggleTheme() {
         // });
     }
 
-    const tooltipMsg = `Mudar para o tema ${!isDark ? 'escuro' : 'claro'}`;
+    // const tooltipMsg = `Mudar para o tema ${!isDark ? 'escuro' : 'claro'}`;
+
+    const tooltipMsg = !isDark
+        ? t('app.tooltip.md.switch_dark_theme')
+        : t('app.tooltip.md.switch_light_theme');
 
     return (
         <>

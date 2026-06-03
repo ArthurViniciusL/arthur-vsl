@@ -11,3 +11,5 @@ count.txt
 .vscode
 .env
 .env.*
+
+.hermes/*

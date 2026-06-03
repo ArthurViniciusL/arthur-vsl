@@ -1,6 +1,8 @@
 import P from "@/components/typography/p";
+import { useTranslation } from "@/utils/hooks/useTranslation";
 
 export function Me() {
+    const { t } = useTranslation();
     return (
         <>
             <div className='flex flex-col gap-1.5'>
@@ -8,7 +10,7 @@ export function Me() {
                     Arthur Lucena
                 </P>
                 <P className='text-sm text-zinc-600 dark:text-zinc-400'>
-                    full-stack developer
+                    {t('app.header.subtitle')}
                 </P>
             </div>
         </>

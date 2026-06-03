@@ -1,0 +1,21 @@
+import { DEFAULT_NS } from './consts'
+
+export const en = {
+  [DEFAULT_NS]: {
+
+    'app.tooltip.msg.hello': 'Hello!',
+    'app.tooltip.msg.remove_the_finger': 'Hey! Get your finger out of my face 😠',
+    'app.tooltip.md.switch_dark_theme': 'Switch to dark theme',
+    'app.tooltip.md.switch_light_theme': 'Switch to light theme',
+    'app.tooltip.msg.switch_language': 'Switch language to Portuguese 🇧🇷',
+
+    'app.header.subtitle': 'Backend Developer',
+
+    'app.header.btn.about': 'About',
+    'app.header.btn.projects': 'Projects',
+    'app.header.btn.dev_setup': 'Dev Setup',
+
+    'app.home.title.about_me': 'About me',
+    'app.home.description.about_me': 'Hello! My name is Arthur, I\'m a backend developer, a film buff in my spare time, and a Paraíba native at heart.I have a degree in Information Systems, and during my studies I found a space to explore collaborative projects that shaped my professional background and brought me closer to the philosophy of open- source software, which I still value today.Currently, I work as a developer and consultant at Else Consultoria, where I communicate daily in English with international teams to build and maintain solutions for the French company 3DSoft — a routine that combines agility, quality, and the conviction that technology and collaboration generate the best results.',
+  },
+}
