@@ -1,9 +1,12 @@
 import TooltipApp from "@/components/tooltip";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "@/utils/hooks/useTranslation";
 import { IcVolume, IcVolume2 } from "@/utils/modules/icons";
 import { useState } from "react";
 
 export default function SpeakAboutMe() {
+
+    const { t } = useTranslation();
 
     const [isPlay, setIsPlay] = useState<boolean>(false);
 
@@ -17,7 +20,7 @@ export default function SpeakAboutMe() {
 
     return (
         <>
-            <TooltipApp side='right' msg='Me ouvir'>
+            <TooltipApp side='right' msg={t('app.tooltip.msg.speak_about_me')}>
                 <button onClick={handlePlay} className={cn('cursor-pointer rounded-full flex items-center justify-center p-2 right-0 mt-2 transition-all ease-in duration-150', style)}>
                     {
                         isPlay

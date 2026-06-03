@@ -5,7 +5,6 @@ import Section from '@/components/layout/section';
 
 import '@/styles/global.css';
 import MyLinks from '@/components/app/home/MyLinks';
-import P from '@/components/typography/p';
 
 export const Route = createFileRoute('/')({
   component: Home,
@@ -23,9 +22,10 @@ function Home() {
           <MyLinks />
         </Section>
         <Section direction='col'>
-            <P>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet deleniti voluptate asperiores voluptatem autem provident, minus ipsum placeat, delectus repudiandae distinctio cumque a voluptas. Fuga dolorum tenetur ducimus debitis voluptate?
-            </P>
+          {/*TODO: Add my professional history*/}
+        </Section>
+        <Section direction='col'>
+          {/* TODO: Add my projects section */}
         </Section>
       </Main>
     </>

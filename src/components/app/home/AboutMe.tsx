@@ -3,10 +3,12 @@ import H1 from '@/components/typography/h1';
 import P from '@/components/typography/p';
 import SpeakAboutMe from './SpeakAboutMe/SpeakAboutMe';
 import { useTranslation } from '@/utils/hooks/useTranslation';
+import { usePeriodOfDay } from '@/utils/hooks/usePeriodOfDay';
 
 export default function AboutMe() {
 
     const { t } = useTranslation();
+    const { periodMsg } = usePeriodOfDay();
 
     return (
         <>
@@ -17,8 +19,8 @@ export default function AboutMe() {
                     </H1>
                     <SpeakAboutMe />
                 </Div>
-                <P>
-                    {t('app.home.description.about_me')}
+                <P style={{ whiteSpace: 'pre-line' }}>
+                    {t('app.home.description.about_me', { period_of_day: periodMsg })}
                 </P>
             </Div>
         </>

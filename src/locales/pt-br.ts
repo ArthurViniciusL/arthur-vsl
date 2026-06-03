@@ -8,6 +8,7 @@ export const ptBR = {
     'app.tooltip.md.switch_dark_theme': 'Mudar para o tema escuro',
     'app.tooltip.md.switch_light_theme': 'Mudar para o tema claro',
     'app.tooltip.msg.switch_language': 'Mudar o idioma para Inglês 🇺🇸',
+    'app.tooltip.msg.speak_about_me': 'Me ouvir',
 
     'app.header.subtitle': 'Desenvolvedor Backend',
 
@@ -15,7 +16,12 @@ export const ptBR = {
     'app.header.btn.projects': 'Projetos',
     'app.header.btn.dev_setup': 'Dev Setup',
 
+    'app.period.greeting.madrugada': 'Boa madrugada',
+    'app.period.greeting.dia': 'Bom dia',
+    'app.period.greeting.tarde': 'Boa tarde',
+    'app.period.greeting.noite': 'Boa noite',
+
     'app.home.title.about_me': 'Sobre mim',
-    'app.home.description.about_me': 'Olá! Meu nome é Arthur, sou desenvolvedor backend, cinéfilo nas horas vagas e paraibano de coração. Sou formado em Sistemas de Informação, encontrei na graduação um espaço para explorar projetos colaborativos que moldaram minha bagagem profissional e me aproximaram da filosofia do software livre, que carrego como valor até hoje. Atualmente atuo como desenvolvedor e consultor na Else Consultoria, onde me comunico em inglês diariamente com times internacionais para construir e manter soluções da empresa francesa 3DSoft — uma rotina que combina agilidade, qualidade e a convicção de que tecnologia e colaboração geram os melhores resultados.',
+    'app.home.description.about_me': 'Olá, bem vindo e {{period_of_day}}! \n\n Meu nome é Arthur, sou desenvolvedor backend, cinéfilo nas horas vagas e paraibano de coração. Sou formado em Sistemas de Informação, encontrei na graduação um espaço para explorar projetos colaborativos que moldaram minha bagagem profissional e me aproximaram da filosofia do software livre, que carrego como valor até hoje. \n\n Atualmente atuo como desenvolvedor e consultor na Else Consultoria, onde me comunico diariamente com times internacionais para construir e manter soluções da empresa francesa 3DSoft — uma rotina que combina agilidade, qualidade e a convicção de que tecnologia e colaboração geram os melhores resultados.',
   },
 }
