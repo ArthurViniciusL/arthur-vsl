@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 import {
     Tooltip,
     TooltipContent,
@@ -5,7 +7,7 @@ import {
 } from "@/components/ui/tooltip";
 
 interface TooltipProps {
-    children: React.ReactNode,
+    children: ReactNode,
     msg: string,
     side?: 'top' | 'bottom' | 'left' | 'right'
 }
@@ -22,5 +24,5 @@ export default function TooltipApp({ children, msg, side }:TooltipProps) {
                 </TooltipContent>
             </Tooltip>
         </>
-    )
+    );
 }

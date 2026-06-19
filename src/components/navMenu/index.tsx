@@ -1,14 +1,16 @@
-import { cn } from "@/lib/utils";
-import { Button } from "../ui/button";
 import { PanelRightClose, PanelRightOpen, X } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ComponentProps, type ReactNode } from "react";
+
+import { cn } from "@/lib/utils";
 import { useIsMobile } from "@/utils/hooks/useIsMobile";
 
-interface NavMenuProps extends React.ComponentProps<'aside'> {
+import { Button } from "../ui/button";
+
+interface NavMenuProps extends ComponentProps<'aside'> {
     buttons: {
         href: string;
         label: string;
-        icon: React.ReactNode;
+        icon: ReactNode;
     }[];
 }
 
@@ -31,7 +33,7 @@ export default function NavMenu({ className, buttons, children }: NavMenuProps) 
 
         document.body.style.overflow = panel.isOpen ? 'hidden' : 'auto';
 
-    }, [panel.isOpen])
+    }, [panel.isOpen]);
 
     return (
         <>

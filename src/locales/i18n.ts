@@ -1,9 +1,10 @@
-import i18n from 'i18next'
-import { initReactI18next } from 'react-i18next'
-import LanguageDetector from 'i18next-browser-languagedetector'
-import { DEFAULT_LOCALE, DEFAULT_NS } from './consts'
-import { ptBR } from './pt-br'
-import { en } from './en'
+import i18n from 'i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+import { initReactI18next } from 'react-i18next';
+
+import { DEFAULT_LOCALE, DEFAULT_NS } from './consts';
+import { en } from './en';
+import { ptBR } from './pt-br';
 
 i18n
   .use(LanguageDetector)
@@ -22,6 +23,6 @@ i18n
       order: ['navigator', 'localStorage', 'htmlTag'],
       caches: ['localStorage'],
     },
-  })
+  });
 
-export default i18n
+export default i18n;

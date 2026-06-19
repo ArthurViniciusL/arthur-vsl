@@ -1,3 +1,7 @@
+import type { ReactNode } from 'react';
+
+import { PanelRightOpen, X } from 'lucide-react';
+
 import { Button } from '@/components/ui/button';
 import {
     Sheet,
@@ -7,12 +11,12 @@ import {
 } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import { useIsMobile } from '@/utils/hooks/useIsMobile';
-import { PanelRightOpen, X } from 'lucide-react';
-import ProfilePicture from '../ProfilePicture/pictureProfile';
+
 import { Me } from '../Me';
+import ProfilePicture from '../ProfilePicture/pictureProfile';
 
 interface MobileMenuProps {
-    children?: React.ReactNode;
+    children?: ReactNode;
     content: any;
 }
 
@@ -59,5 +63,5 @@ export function MobileMenu({ content }: MobileMenuProps) {
                 </Sheet>
             }
         </>
-    )
+    );
 }

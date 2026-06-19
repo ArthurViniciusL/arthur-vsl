@@ -1,6 +1,8 @@
+import type { ITheme } from "../types/ITheme";
+import type { ReactNode } from "react";
+
 import { createContext } from "react";
 import { useEffect, useState } from "react";
-import type { ITheme } from "../types/ITheme";
 
 interface ThemeContextData {
     theme: ITheme;
@@ -9,7 +11,7 @@ interface ThemeContextData {
 }
 export const ThemeContext = createContext<ThemeContextData>({} as ThemeContextData);
 
-export function ThemeProvider({ children }: { children: React.ReactNode }) {
+export function ThemeProvider({ children }: { children: ReactNode }) {
 
     const [theme, setTheme] = useState<ITheme>('light');
     const isDark = theme === 'dark';
@@ -39,7 +41,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
         mediaQuery.addEventListener('change', handler);
         return () => mediaQuery.removeEventListener('change', handler);
     }, []);
-
 
     return (
         <ThemeContext.Provider value={{ theme, setTheme, isDark }}>

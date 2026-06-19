@@ -1,6 +1,7 @@
 import { useTranslation } from "@/utils/hooks/useTranslation";
-import { Button } from "../ui/button";
+
 import TooltipApp from "../tooltip";
+import { Button } from "../ui/button";
 
 export default function ToggleLanguage() {
     const { t, i18n } = useTranslation();

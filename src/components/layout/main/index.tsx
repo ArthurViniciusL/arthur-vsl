@@ -1,9 +1,9 @@
+import type { ComponentProps } from "react";
+
 import { cn } from "@/lib/utils";
 import { useTheme } from "@/utils/hooks/useTheme";
 
-interface IMainProps extends React.ComponentProps<"main"> { }
-
-
+interface IMainProps extends ComponentProps<"main"> { }
 
 export default function Main({ className, children, ...props }: IMainProps) {
     const { theme } = useTheme();

@@ -1,7 +1,8 @@
-import img from '@/assets/images/profile_picture.png';
-import img_angry from "@/assets/images/profile_picture_angry.png";
-import TooltipApp from '@/components/tooltip';
 import { useEffect, useMemo, useState, } from 'react';
+
+import img_angry from "@/assets/images/profile_picture_angry.png";
+import img from '@/assets/images/profile_picture.png';
+import TooltipApp from '@/components/tooltip';
 
 import './styles/shake.css';
 import { useTranslation } from '@/utils/hooks/useTranslation';
@@ -17,7 +18,7 @@ export default function ProfilePicture() {
   });
 
   const image = useMemo(() => {
-    return <img src={tooltipMsg.img} className='w-auto h-full' />
+    return <img src={tooltipMsg.img} className='w-auto h-full' />;
   }, [tooltipMsg.img]);
 
   function handleTrigger() {
@@ -26,7 +27,7 @@ export default function ProfilePicture() {
 
   useEffect(() => {
 
-    const body = document.body
+    const body = document.body;
 
     function setMsg(msg: string) {
       setTooltipMsg((prev) => ({
@@ -44,6 +45,7 @@ export default function ProfilePicture() {
       return () => clearTimeout(timeout);
     }
 
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- reset state when trigger deactivates
     setTooltipMsg((prev) => ({ ...prev, img: img }));
     setMsg(t('app.tooltip.msg.hello'));
     body.classList.remove('shake-active');

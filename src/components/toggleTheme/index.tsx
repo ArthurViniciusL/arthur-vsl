@@ -1,9 +1,10 @@
-import { useTheme } from "@/utils/hooks/useTheme";
 import { cn } from "@/lib/utils";
-import { IcDarkMode, IcLightMode } from "@/utils/modules/icons";
-import { Button } from "../ui/button";
-import TooltipApp from "../tooltip";
+import { useTheme } from "@/utils/hooks/useTheme";
 import { useTranslation } from "@/utils/hooks/useTranslation";
+import { IcDarkMode, IcLightMode } from "@/utils/modules/icons";
+
+import TooltipApp from "../tooltip";
+import { Button } from "../ui/button";
 export default function ToggleTheme() {
     const { isDark, setTheme } = useTheme();
     const { t } = useTranslation();
@@ -55,5 +56,5 @@ export default function ToggleTheme() {
                 </Button>
             </TooltipApp>
         </>
-    )
+    );
 }

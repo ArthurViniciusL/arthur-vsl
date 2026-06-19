@@ -1,16 +1,16 @@
 import { createFileRoute } from '@tanstack/react-router';
-import Main from '@/components/layout/main';
-import AboutMe from '@/components/app/home/AboutMe';
-import Section from '@/components/layout/section';
 
-import '@/styles/global.css';
+import AboutMe from '@/components/app/home/AboutMe';
 import MyLinks from '@/components/app/home/MyLinks';
-import { MyProjects } from '@/components/app/home/MyProjects';
 import MyProfessionalJourney from '@/components/app/home/MyProfessionalJourney';
+import '@/styles/global.css';
+import { MyProjects } from '@/components/app/home/MyProjects';
+import Main from '@/components/layout/main';
+import Section from '@/components/layout/section';
 
 export const Route = createFileRoute('/')({
   component: Home,
-})
+});
 
 function Home() {
   return (
@@ -32,5 +32,5 @@ function Home() {
         </Section>
       </Main>
     </>
-  )
+  );
 }

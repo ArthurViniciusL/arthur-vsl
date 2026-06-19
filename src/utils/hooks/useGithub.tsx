@@ -34,6 +34,7 @@ export function useGithub(): UseGithubResult {
     useEffect(() => {
         const controller = new AbortController();
 
+        // eslint-disable-next-line react-hooks/set-state-in-effect -- data fetching: loading state must be set in effect
         setState({ status: "loading" });
 
         axios

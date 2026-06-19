@@ -1,7 +1,9 @@
-import { cn } from "@/lib/utils"
+import type { ComponentProps } from "react";
+
+import { cn } from "@/lib/utils";
 import { useTheme } from "@/utils/hooks/useTheme";
 
-interface IPProps extends React.ComponentProps<"p"> { }
+interface IPProps extends ComponentProps<"p"> { }
 
 export default function P({ className, children, ...props }: IPProps) {
 

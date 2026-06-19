@@ -1,9 +1,10 @@
 import Div from '@/components/layout/div';
 import H1 from '@/components/typography/h1';
 import P from '@/components/typography/p';
-import SpeakAboutMe from './SpeakAboutMe/SpeakAboutMe';
-import { useTranslation } from '@/utils/hooks/useTranslation';
 import { usePeriodOfDay } from '@/utils/hooks/usePeriodOfDay';
+import { useTranslation } from '@/utils/hooks/useTranslation';
+
+import SpeakAboutMe from './SpeakAboutMe/SpeakAboutMe';
 
 export default function AboutMe() {
 

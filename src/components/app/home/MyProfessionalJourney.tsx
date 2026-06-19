@@ -7,5 +7,5 @@ export default function MyProfessionalJourney() {
         <>
             <H2>{t('app.home.subtitle.my_professional_history')}</H2>
         </>
-    )
+    );
 }

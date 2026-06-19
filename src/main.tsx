@@ -1,18 +1,17 @@
-import '@/styles/global.css'
+import '@/styles/global.css';
 
-import { StrictMode } from 'react'
-import ReactDOM from 'react-dom/client'
-import { RouterProvider, createRouter } from '@tanstack/react-router'
+import { RouterProvider, createRouter } from '@tanstack/react-router';
+import { StrictMode } from 'react';
+import ReactDOM from 'react-dom/client';
+import { I18nextProvider } from 'react-i18next';
 
+import Header from './components/layout/header/index.tsx';
+import { TooltipProvider } from './components/ui/tooltip.tsx';
+import i18n from './locales/i18n';
+import reportWebVitals from './reportWebVitals.ts';
 // Import the generated route tree
-import { routeTree } from './routeTree.gen.ts'
-
-import reportWebVitals from './reportWebVitals.ts'
-import Header from './components/layout/header/index.tsx'
-import { ThemeProvider } from './utils/context/themeContext.tsx'
-import { TooltipProvider } from './components/ui/tooltip.tsx'
-import { I18nextProvider } from 'react-i18next'
-import i18n from './locales/i18n'
+import { routeTree } from './routeTree.gen.ts';
+import { ThemeProvider } from './utils/context/themeContext.tsx';
 
 // Create a new router instance
 const router = createRouter({
@@ -22,7 +21,7 @@ const router = createRouter({
   scrollRestoration: true,
   defaultStructuralSharing: true,
   defaultPreloadStaleTime: 0,
-})
+});
 
 // Register the router instance for type safety
 declare module '@tanstack/react-router' {
@@ -32,9 +31,9 @@ declare module '@tanstack/react-router' {
 }
 
 // Render the app
-const rootElement = document.getElementById('app')
+const rootElement = document.getElementById('app');
 if (rootElement && !rootElement.innerHTML) {
-  const root = ReactDOM.createRoot(rootElement)
+  const root = ReactDOM.createRoot(rootElement);
   root.render(
     <StrictMode>
       <I18nextProvider i18n={i18n}>
@@ -46,10 +45,10 @@ if (rootElement && !rootElement.innerHTML) {
         </ThemeProvider>
       </I18nextProvider>
     </StrictMode>,
-  )
+  );
 }
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals()
+reportWebVitals();

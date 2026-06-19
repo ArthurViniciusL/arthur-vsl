@@ -1,27 +1,27 @@
-import { useTranslation } from '@/utils/hooks/useTranslation'
+import { useTranslation } from '@/utils/hooks/useTranslation';
 
 type Period = 'madrugada' | 'dia' | 'tarde' | 'noite'
 
 export function usePeriodOfDay() {
-    const { t } = useTranslation()
-    const hour = new Date().getHours()
+    const { t } = useTranslation();
+    const hour = new Date().getHours();
 
-    let period: Period
+    let period: Period;
     switch (true) {
         case hour < 6:
-            period = 'madrugada'
-            break
+            period = 'madrugada';
+            break;
         case hour < 12:
-            period = 'dia'
-            break
+            period = 'dia';
+            break;
         case hour < 18:
-            period = 'tarde'
-            break
+            period = 'tarde';
+            break;
         default:
-            period = 'noite'
+            period = 'noite';
     }
 
-    const periodMsg = t(`app.period.greeting.${period}`)
+    const periodMsg = t(`app.period.greeting.${period}`);
 
-    return { period, periodMsg }
+    return { period, periodMsg };
 }

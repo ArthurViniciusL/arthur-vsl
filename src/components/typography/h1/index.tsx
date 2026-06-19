@@ -1,6 +1,8 @@
+import type { ComponentProps } from "react";
+
 import { cn } from "@/lib/utils";
 
-interface IH1Props extends React.ComponentProps<'h1'> { }
+interface IH1Props extends ComponentProps<'h1'> { }
 
 export default function H1({ children, className }: IH1Props) {
     return (
@@ -9,5 +11,5 @@ export default function H1({ children, className }: IH1Props) {
                 {children}
             </h1>
         </>
-    )
+    );
 }

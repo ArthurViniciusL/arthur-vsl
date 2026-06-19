@@ -14,6 +14,7 @@ export default defineConfig([
     plugins: {
       react,
       perfectionist,
+      '@typescript-eslint': tseslint.plugin,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
     },
@@ -29,6 +30,7 @@ export default defineConfig([
       ...tseslint.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
 
+      'no-unused-vars': 'off',
       'semi': ['warn', 'always'],
 
       'no-multiple-empty-lines': ['warn', {
@@ -54,7 +56,6 @@ export default defineConfig([
             'external',
             'internal',
             ['parent', 'sibling', 'index'],
-            'object',
             'unknown',
           ],
         },

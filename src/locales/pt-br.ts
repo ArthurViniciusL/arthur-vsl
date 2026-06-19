@@ -1,4 +1,4 @@
-import { DEFAULT_NS } from './consts'
+import { DEFAULT_NS } from './consts';
 
 export const ptBR = {
   [DEFAULT_NS]: {
@@ -31,4 +31,4 @@ export const ptBR = {
 
     'app.btn.home.view_all': 'Ver mais'
   },
-}
+};

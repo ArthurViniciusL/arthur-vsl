@@ -1,8 +1,9 @@
+import { useEffect, useRef, useState } from "react";
+
 import TooltipApp from "@/components/tooltip";
 import { cn } from "@/lib/utils";
 import { useTranslation } from "@/utils/hooks/useTranslation";
 import { IcVolume, IcVolume2 } from "@/utils/modules/icons";
-import { useEffect, useRef, useState } from "react";
 
 export default function SpeakAboutMe() {
 
@@ -39,9 +40,11 @@ export default function SpeakAboutMe() {
     }
 
     useEffect(() => {
+        const onEndedHandler = onEndedRef.current;
+
         return () => {
             audioRef.current?.pause();
-            audioRef.current?.removeEventListener('ended', onEndedRef.current);
+            audioRef.current?.removeEventListener('ended', onEndedHandler);
         };
     }, []);
 
@@ -57,5 +60,5 @@ export default function SpeakAboutMe() {
                 }
             </button>
         </TooltipApp>
-    )
+    );
 }
