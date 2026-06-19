@@ -5,6 +5,8 @@ import Section from '@/components/layout/section';
 
 import '@/styles/global.css';
 import MyLinks from '@/components/app/home/MyLinks';
+import { MyProjects } from '@/components/app/home/MyProjects';
+import MyProfessionalJourney from '@/components/app/home/MyProfessionalJourney';
 
 export const Route = createFileRoute('/')({
   component: Home,
@@ -21,11 +23,12 @@ function Home() {
           <AboutMe />
           <MyLinks />
         </Section>
-        <Section direction='col'>
+        <Section direction='col' className='border-b border-border pb-4'>
           {/*TODO: Add my professional history*/}
+          <MyProfessionalJourney />
         </Section>
-        <Section direction='col'>
-          {/* TODO: Add my projects section */}
+        <Section direction='col' className='border-b border-border pb-4'>
+          <MyProjects />
         </Section>
       </Main>
     </>

@@ -16,12 +16,19 @@ export const ptBR = {
     'app.header.btn.projects': 'Projetos',
     'app.header.btn.dev_setup': 'Dev Setup',
 
-    'app.period.greeting.madrugada': 'Boa madrugada',
-    'app.period.greeting.dia': 'Bom dia',
-    'app.period.greeting.tarde': 'Boa tarde',
-    'app.period.greeting.noite': 'Boa noite',
+    'app.period.greeting.madrugada': 'boa madrugada',
+    'app.period.greeting.dia': 'bom dia',
+    'app.period.greeting.tarde': 'boa tarde',
+    'app.period.greeting.noite': 'boa noite',
 
     'app.home.title.about_me': 'Sobre mim',
     'app.home.description.about_me': 'Olá, bem vindo e {{period_of_day}}! \n\n Meu nome é Arthur, sou desenvolvedor backend, cinéfilo nas horas vagas e paraibano de coração. Sou formado em Sistemas de Informação, encontrei na graduação um espaço para explorar projetos colaborativos que moldaram minha bagagem profissional e me aproximaram da filosofia do software livre, que carrego como valor até hoje. \n\n Atualmente atuo como desenvolvedor e consultor na Else Consultoria, onde me comunico diariamente com times internacionais para construir e manter soluções da empresa francesa 3DSoft — uma rotina que combina agilidade, qualidade e a convicção de que tecnologia e colaboração geram os melhores resultados.',
+
+    'app.home.subtitle.my_professional_history': 'Jornada Profissional',
+
+    'app.home.subtitle.my_projects': 'Meus Projetos',
+    'app.home.my_projects.no_description': 'Sem descrição',
+
+    'app.btn.home.view_all': 'Ver mais'
   },
 }
