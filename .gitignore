@@ -12,5 +12,6 @@ count.txt
 .env
 .env.*
 
+AGENTS.md
 .hermes/*
 .claude/

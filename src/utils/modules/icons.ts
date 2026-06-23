@@ -10,4 +10,5 @@ export {
     Inbox as IcMyEmail,
     VolumeX as IcVolume,
     Volume2 as IcVolume2,
+    Link2 as IcLink,
 } from 'lucide-react';

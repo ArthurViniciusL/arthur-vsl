@@ -2,254 +2,254 @@ const projects = [
     {
         id: 1089729998,
         name: "task-flow-back",
-        description: "Back-end REST API do Task Flow, aplicação de gerenciamento de tarefas construída com Java e Spring Boot.",
+        description: "projects.description.task-flow-back",
         github: "https://github.com/ArthurViniciusL/task-flow-back",
-        stacks: ["Java", "Spring Boot", "REST API"]
+        stacks: ["java", "spring boot", "jpa", "swagger", "hibernate", "actuator", "lombok", "rest api", "postgresql"]
     },
     {
         id: 1090677144,
         name: "task-flow-front",
-        description: "Front-end web do Task Flow, aplicação de gerenciamento de tarefas construída com TypeScript e React.",
+        description: "projects.description.task-flow-front",
         github: "https://github.com/ArthurViniciusL/task-flow-front",
-        stacks: ["TypeScript", "React", "Frontend"]
+        stacks: ["typescript", "react", "vite", "tailwindcss", "tanstack router", "ai"]
     },
     {
         id: 723524777,
         name: "config-my-debian",
-        description: "Conjunto de scripts Shell para automação e configuração do ambiente Debian/Linux.",
+        description: "projects.description.config-my-debian",
         github: "https://github.com/ArthurViniciusL/config-my-debian",
-        stacks: ["Shell", "Linux", "Debian", "Automação"]
+        stacks: ["shell", "linux", "automation"]
     },
     {
         id: 826852439,
         name: "arthur-vsl",
-        description: "Site pessoal e portfólio construído com React, TypeScript, Vite e TailwindCSS.",
+        description: "projects.description.arthur-vsl",
         github: "https://github.com/ArthurViniciusL/arthur-vsl",
-        stacks: ["TypeScript", "React", "Vite", "TailwindCSS", "TanStack Router"]
+        stacks: ["typescript", "react", "vite", "tailwindcss", "tanstack router"]
     },
     {
         id: 1013967600,
         name: "products-api",
-        description: "API REST de produtos com modelagem complexa, DTOs, validações, JPA/Hibernate e banco relacional. Construída com Spring Boot 3, Lombok e MapStruct.",
+        description: "projects.description.products-api",
         github: "https://github.com/ArthurViniciusL/products-api",
-        stacks: ["Java", "Spring Boot", "JPA", "Hibernate", "Lombok", "MapStruct", "REST API"]
+        stacks: ["java", "spring boot", "jpa", "swagger", "actuator", "lombok", "rest api", "postgresql", "hibernate"]
     },
     {
         id: 1012175555,
         name: "todo-api",
-        description: "Projeto de estudo focado em Spring Boot: conceitos, boas práticas e funcionalidades do framework aplicadas a uma API de tarefas (To-Do).",
+        description: "projects.description.todo-api",
         github: "https://github.com/ArthurViniciusL/todo-api",
-        stacks: ["Java", "Spring Boot", "REST API"]
+        stacks: ["java", "spring boot", "jpa", "swagger", "actuator", "lombok", "rest api", "postgresql"]
     },
     {
         id: 632620847,
         name: "arthurviniciusl",
-        description: "Repositório de perfil do GitHub com README de apresentação profissional.",
+        description: "projects.description.arthurviniciusl",
         github: "https://github.com/ArthurViniciusL/arthurviniciusl",
-        stacks: ["Markdown"]
+        stacks: ["markdown"]
     },
     {
         id: 871252720,
         name: "art-css",
-        description: "Coleção pessoal de classes CSS reunindo padrões de design reutilizáveis para projetos front-end.",
+        description: "projects.description.art-css",
         github: "https://github.com/ArthurViniciusL/art-css",
-        stacks: ["CSS", "Design System"]
+        stacks: ["css", "design system"]
     },
     {
         id: 991706155,
         name: "art-and-may",
-        description: "Aplicação web interativa criada como presente de Dia dos Namorados, construída com React e TypeScript.",
+        description: "projects.description.art-and-may",
         github: "https://github.com/ArthurViniciusL/art-and-may",
-        stacks: ["TypeScript", "React", "Frontend"]
+        stacks: ["typescript", "react", "vite", "tailwindcss"]
     },
     {
         id: 983609663,
         name: "bug-report",
-        description: "Sistema de reporte de bugs desenvolvido com Vue.js para a disciplina de Programação Web.",
+        description: "projects.description.bug-report",
         github: "https://github.com/ArthurViniciusL/bug-report",
-        stacks: ["Vue.js", "JavaScript", "Frontend"]
+        stacks: ["vue.js", "javascript"]
     },
     {
         id: 901612683,
         name: "munin-app",
-        description: "Aplicação interna de compartilhamento de imagens para o MAC Museum Store, construída com React e TypeScript.",
+        description: "projects.description.munin-app",
         github: "https://github.com/ArthurViniciusL/munin-app",
-        stacks: ["TypeScript", "React", "Frontend"]
+        stacks: ["typescript", "react", "vite", "tailwindcss", "tanstack router"]
     },
     {
         id: 964649693,
         name: "stripe-api-p1",
-        description: "Projeto acadêmico de integração com a API do Stripe para a disciplina de Tópicos Avançados em Programação.",
+        description: "projects.description.stripe-api-p1",
         github: "https://github.com/ArthurViniciusL/stripe-api-p1",
-        stacks: ["Stripe API", "REST API"]
+        stacks: ["stripe", "rest api"]
     },
     {
         id: 807775479,
         name: "EVE",
-        description: "Gerenciador de arquivos baseado em nuvem com Docker, desenvolvido para a disciplina de Desenvolvimento de Sistemas de Informação.",
+        description: "projects.description.EVE",
         github: "https://github.com/ArthurViniciusL/EVE",
-        stacks: ["JavaScript", "Docker", "Cloud"]
+        stacks: ["javascript", "docker", "cloud"]
     },
     {
         id: 864620958,
         name: "Gerencia-de-BD",
-        description: "Resumo do conteúdo prático da disciplina de MongoDB: consultas, agregações e modelagem de dados NoSQL.",
+        description: "projects.description.Gerencia-de-BD",
         github: "https://github.com/ArthurViniciusL/Gerencia-de-BD",
-        stacks: ["MongoDB", "NoSQL", "Database"]
+        stacks: ["mongodb", "nosql", "database"]
     },
     {
         id: 878016591,
         name: "monitoria-front-end-2024",
-        description: "Material de apoio para a monitoria da disciplina de Desenvolvimento Web e Front-End (2024).",
+        description: "projects.description.monitoria-front-end-2024",
         github: "https://github.com/ArthurViniciusL/monitoria-front-end-2024",
-        stacks: ["HTML", "CSS", "JavaScript", "Frontend", "Educação"]
+        stacks: ["html", "css", "javascript"]
     },
     {
         id: 845282393,
         name: "improve-next-app",
-        description: "Script Shell para automatizar etapas de configuração em projetos Next.js no Linux.",
+        description: "projects.description.improve-next-app",
         github: "https://github.com/ArthurViniciusL/improve-next-app",
-        stacks: ["Shell", "Next.js", "Linux", "Automação"]
+        stacks: ["shell", "next.js", "linux", "automação"]
     },
     {
         id: 860686550,
         name: "BASIC-GIT-AND-GITHUB-GUIDE",
-        description: "Material didático sobre Git e GitHub para o curso de Front-End: comandos essenciais, fluxos de trabalho e boas práticas.",
+        description: "projects.description.BASIC-GIT-AND-GITHUB-GUIDE",
         github: "https://github.com/ArthurViniciusL/BASIC-GIT-AND-GITHUB-GUIDE",
-        stacks: ["Git", "GitHub", "Educação"]
+        stacks: ["git", "github"]
     },
     {
         id: 830603469,
         name: "User-adm",
-        description: "Painel administrativo de usuários com operações CRUD, desenvolvido como teste técnico para a Reliance.",
+        description: "projects.description.User-adm",
         github: "https://github.com/ArthurViniciusL/User-adm",
-        stacks: ["TypeScript", "React", "CRUD", "Admin Panel"]
+        stacks: ["typescript", "react", "vite", "tailwindcss", "tanstack router"]
     },
     {
         id: 529893080,
         name: "arthur-vs-lucena",
-        description: "Versão anterior do site pessoal, construída com HTML, CSS e JavaScript.",
+        description: "projects.description.arthur-vs-lucena",
         github: "https://github.com/ArthurViniciusL/arthur-vs-lucena",
-        stacks: ["HTML", "CSS", "JavaScript"]
+        stacks: ["html", "css", "javascript"]
     },
     {
         id: 767047952,
         name: "FACULDADE-RESUMOS",
-        description: "Coleção de resumos das disciplinas da faculdade organizados por período e matéria.",
+        description: "projects.description.FACULDADE-RESUMOS",
         github: "https://github.com/ArthurViniciusL/FACULDADE-RESUMOS",
-        stacks: ["Shell", "Markdown", "Educação"]
+        stacks: ["shell", "markdown"]
     },
     {
         id: 797907713,
         name: "REACT-JS-CONTEUDOS",
-        description: "Anotações e material de estudo sobre React.js: conceitos fundamentais, hooks, estado e ciclo de vida.",
+        description: "projects.description.REACT-JS-CONTEUDOS",
         github: "https://github.com/ArthurViniciusL/REACT-JS-CONTEUDOS",
-        stacks: ["React", "JavaScript", "Educação"]
+        stacks: ["react", "javascript"]
     },
     {
         id: 797799237,
         name: "REACT-CARDS-VIEW",
-        description: "Projeto de visualização em cards construído com React para praticar componentização, props e estado.",
+        description: "projects.description.REACT-CARDS-VIEW",
         github: "https://github.com/ArthurViniciusL/REACT-CARDS-VIEW",
-        stacks: ["React", "JavaScript", "Frontend"]
+        stacks: ["react", "javascript"]
     },
     {
         id: 781128052,
         name: "Sweet-Home-Firefox",
-        description: "Página inicial personalizada para o Firefox, construída com React como parte do ciclo de aprendizado da biblioteca.",
+        description: "projects.description.Sweet-Home-Firefox",
         github: "https://github.com/ArthurViniciusL/Sweet-Home-Firefox",
-        stacks: ["React", "JavaScript", "Firefox", "Frontend"]
+        stacks: ["html", "css",  "javascript"]
     },
     {
         id: 751510510,
         name: "CRUD-ANGULAR",
-        description: "Sistema CRUD construído com Angular 12 e JSON Server como back-end simulado, desenvolvido para prática dos fundamentos do framework.",
+        description: "projects.description.CRUD-ANGULAR",
         github: "https://github.com/ArthurViniciusL/CRUD-ANGULAR",
-        stacks: ["Angular", "TypeScript", "JSON Server", "CRUD"]
+        stacks: ["angular", "typescript", "json server"]
     },
     {
         id: 733561874,
         name: "TYPESCRIPT-ESTUDOS",
-        description: "Coletânea de anotações e exercícios do aprendizado de TypeScript: tipos, interfaces, generics e utilitários.",
+        description: "projects.description.TYPESCRIPT-ESTUDOS",
         github: "https://github.com/ArthurViniciusL/TYPESCRIPT-ESTUDOS",
-        stacks: ["TypeScript", "Educação"]
+        stacks: ["typescript"]
     },
     {
         id: 710814004,
         name: "write-me-app",
-        description: "Aplicação de chat em tempo real para a disciplina de Sistemas Distribuídos, implementada em Java.",
+        description: "projects.description.write-me-app",
         github: "https://github.com/ArthurViniciusL/write-me-app",
-        stacks: ["Java", "Chat", "Sistemas Distribuídos"]
+        stacks: ["java", "spring boot", "jpa", "swagger", "actuator", "lombok", "rest api", "postgresql", "websocket", "html", "css", "javascript"]
     },
     {
         id: 616506375,
         name: "DESIGN-PATTERNS-JAVA",
-        description: "Demonstração prática dos principais padrões de projeto (Design Patterns) implementados em Java.",
+        description: "projects.description.DESIGN-PATTERNS-JAVA",
         github: "https://github.com/ArthurViniciusL/DESIGN-PATTERNS-JAVA",
-        stacks: ["Java", "Design Patterns", "Educação"]
+        stacks: ["java", "spring boot", "jpa", "swagger", "actuator", "lombok", "rest api", "postgresql", "design patterns"]
     },
     {
         id: 510453880,
         name: "crud-python",
-        description: "Sistema CRUD em Python para gerenciamento de notas escolares com operações de criação, leitura, atualização e remoção.",
+        description: "projects.description.crud-python",
         github: "https://github.com/ArthurViniciusL/crud-python",
-        stacks: ["Python", "CRUD"]
+        stacks: ["python"]
     },
     {
         id: 591015189,
         name: "JAVA",
-        description: "Material completo de estudos em Java: fundamentos da linguagem, orientação a objetos, coleções e APIs.",
+        description: "projects.description.JAVA",
         github: "https://github.com/ArthurViniciusL/JAVA",
-        stacks: ["Java", "Educação"]
+        stacks: ["java", "spring boot", "jpa", "swagger", "actuator", "lombok", "rest api", "postgresql"]
     },
     {
         id: 589701646,
         name: "FRONT-END-PROJECTS",
-        description: "Projetos simples para prática da tríade Front-End: HTML, CSS e JavaScript puros.",
+        description: "projects.description.FRONT-END-PROJECTS",
         github: "https://github.com/ArthurViniciusL/FRONT-END-PROJECTS",
-        stacks: ["HTML", "CSS", "JavaScript", "Frontend"]
+        stacks: ["html", "css", "javascript"]
     },
     {
         id: 589711207,
         name: "PYTHON",
-        description: "Conjunto de exercícios resolvidos para prática da linguagem Python: estruturas de dados, funções e módulos.",
+        description: "projects.description.PYTHON",
         github: "https://github.com/ArthurViniciusL/PYTHON",
-        stacks: ["Python", "Educação"]
+        stacks: ["python"]
     },
     {
         id: 589711564,
         name: "C-LANGUAGE",
-        description: "Exercícios de introdução à linguagem C: ponteiros, alocação dinâmica, estruturas e algoritmos básicos.",
+        description: "projects.description.C-LANGUAGE",
         github: "https://github.com/ArthurViniciusL/C-LANGUAGE",
-        stacks: ["C", "Educação"]
+        stacks: ["c"]
     },
     {
         id: 515791373,
         name: "JAVASCRIPT",
-        description: "Exercícios e anotações do aprendizado de JavaScript: ES6+, manipulação do DOM e programação assíncrona.",
+        description: "projects.description.JAVASCRIPT",
         github: "https://github.com/ArthurViniciusL/JAVASCRIPT",
-        stacks: ["JavaScript", "Educação"]
+        stacks: ["javascript"]
     },
     {
         id: 452427838,
-        name: "HTML-CSS",
-        description: "Exercícios práticos de HTML5 e CSS3: semântica, layouts responsivos e estilização moderna.",
+        name: "HTML-and-CSS",
+        description: "projects.description.HTML-and-CSS",
         github: "https://github.com/ArthurViniciusL/HTML-CSS",
-        stacks: ["HTML", "CSS", "Educação"]
+        stacks: ["html", "css"]
     },
     {
         id: 540621583,
         name: "processos-projeto-so",
-        description: "Projeto acadêmico sobre processos e threads em Java para a disciplina de Sistemas Operacionais.",
+        description: "projects.description.processos-projeto-so",
         github: "https://github.com/ArthurViniciusL/processos-projeto-so",
-        stacks: ["Java", "Sistemas Operacionais"]
+        stacks: ["java", "spring boot", "jpa", "swagger", "actuator", "lombok", "rest api", "postgresql", "OS"]
     },
     {
         id: 533046375,
         name: "copiador-de-arquivos",
-        description: "Implementação de cópia de arquivos utilizando chamadas de sistema e threads em Java, com benchmark de desempenho em 10 rodadas para a disciplina de Sistemas Operacionais.",
+        description: "projects.description.copiador-de-arquivos",
         github: "https://github.com/ArthurViniciusL/copiador-de-arquivos",
-        stacks: ["Java", "Threads", "Sistemas Operacionais"]
+        stacks: ["java", "spring boot", "jpa", "swagger", "actuator", "lombok", "rest api", "postgresql", "threads", "OS"]
     }
 ];
 

@@ -9,7 +9,7 @@ export function Me() {
                 <P className='text-2xl font-semibold'>
                     Arthur Lucena
                 </P>
-                <P className='text-sm text-zinc-600 dark:text-zinc-400'>
+                <P description={true} className=''>
                     {t('app.header.subtitle')}
                 </P>
             </div>
